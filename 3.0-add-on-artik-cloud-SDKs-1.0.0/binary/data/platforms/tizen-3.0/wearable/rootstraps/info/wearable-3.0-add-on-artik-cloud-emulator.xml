@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<PackageInfo id="wearable-3.0-add-on-artik-cloud-emulator" path="wearable-3.0-add-on-artik-cloud-emulator" base_id="wearable-3.0-emulator.core">
-	<DevPackage name="artik-cloud" is_framework="true" is_virtual="false">
-		<include_path>/usr/include/artik-cloud</include_path>
-		<library_path>/usr/lib</library_path>
-		<library>libartik-cloud.so</library>
-		<description>Add-on SDK for artik-cloud</description>
-	</DevPackage>
-</PackageInfo>
