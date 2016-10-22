@@ -1,0 +1,12 @@
+package : 3.0 artik-cloud add-on sdk
+Label : 3.0 artik-cloud add-on sdk
+Version : 1.0.0
+OS : windows-32
+Build-host-os : windows-32
+Maintainer : Akhil Kedia<akhil.kedia@samsung.com>, Jiseob Jang<jiseob.jang@samsung.com>
+Attribute : extra
+Path : /binary/3.0-add-on-artik-cloud-1.0.0-windows-32.zip
+Origin : local
+SHA256 : b0fc8d97207b26a1e7e2f83a84b76056b249f6f2f41174a756ffb373b9707566
+Size : 5719320
+Description : artik-cloud add-on sdk rootstrap for Tizen SDK
