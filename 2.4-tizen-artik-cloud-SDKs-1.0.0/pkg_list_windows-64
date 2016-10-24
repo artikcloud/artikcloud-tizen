@@ -1,0 +1,12 @@
+package : 2.4 artik-cloud add-on sdk
+Label : 2.4 artik-cloud add-on sdk
+Version : 1.0.0
+OS : windows-64
+Build-host-os : windows-64
+Maintainer : Akhil Kedia<akhil.kedia@samsung.com>, Jiseob Jang<jiseob.jang@samsung.com>
+Attribute : extra
+Path : /binary/2.4-add-on-artik-cloud-1.0.0-windows-64.zip
+Origin : local
+SHA256 : a555511ab6365ecbe205734c5e68f29d3cd5658bc2e3b50fc9fa1ba1a234470f
+Size : 3415647
+Description : artik-cloud add-on sdk rootstrap for Tizen SDK

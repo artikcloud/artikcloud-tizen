@@ -1,0 +1,12 @@
+package : 2.4 artik-cloud add-on sdk
+Label : 2.4 artik-cloud add-on sdk
+Version : 1.0.0
+OS : macos-64
+Build-host-os : macos-64
+Maintainer : Akhil Kedia<akhil.kedia@samsung.com>, Jiseob Jang<jiseob.jang@samsung.com>
+Attribute : extra
+Path : /binary/2.4-add-on-artik-cloud-1.0.0-macos-64.zip
+Origin : local
+SHA256 : ecfbfd7ae9fd51a1165429681fb8bd2835054c14d493bb9b46319471808475e9
+Size : 3415647
+Description : artik-cloud add-on sdk rootstrap for Tizen SDK
