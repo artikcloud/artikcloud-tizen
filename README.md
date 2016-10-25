@@ -11,9 +11,9 @@ Installing the Extension (Add-on) SDK
 ---------------------
 
 1. Install the latest Tizen IDE / studio
-2. Use the Tizen package manager to install Tizen 2.4 packages (you may need to set the package server path to an appropriate server with Tizen 3.0)
+2. Use the Tizen package manager to install Tizen 2.4 packages 
 3. Unzip the attached 2.4-add-on-artik-cloud-SDKs-1.0.0.zip
-4. Change the settings in the Package Manager and Tizen in Go the Add new ares Extension SDK. Set Extension SDK The path to The extracted Folder
+4. Change the settings in the Package Manager and Tizen in Go the Add new Extension SDK. Set Extension SDK The path to The extracted Folder
 5. Install the Artik Cloud Extension SDK
  
 How to use the SDK
