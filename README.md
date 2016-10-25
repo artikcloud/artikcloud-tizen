@@ -1,6 +1,8 @@
 #ARTIK Cloud Tizen SDK
 ==========================
+
 Install the library on Tizen 2.4 device / emulator
+---------------------
 
 Use "sdb shell" to get a shell on the device / emulator
 Push the rpms to the device using sdb push
