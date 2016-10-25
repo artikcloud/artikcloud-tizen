@@ -22,4 +22,3 @@ How to use the SDK -
 Create a new Native App project for Tizen
 Right-click on the project in project Explorer -> Properties -> C / C + + Build -> Tizen Settings -> Framework tab -> Check the box artik-cloud
 Now simply import files like DevicesManager.h, UsersManager.h, MessagesManager.h and call the api endpoints.
->>>>>>> origin/master
