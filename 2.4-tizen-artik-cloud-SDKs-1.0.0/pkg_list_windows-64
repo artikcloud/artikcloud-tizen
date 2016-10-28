@@ -7,6 +7,6 @@ Maintainer : Akhil Kedia<akhil.kedia@samsung.com>, Jiseob Jang<jiseob.jang@samsu
 Attribute : extra
 Path : /binary/2.4-add-on-artik-cloud-1.0.0-windows-64.zip
 Origin : local
-SHA256 : a555511ab6365ecbe205734c5e68f29d3cd5658bc2e3b50fc9fa1ba1a234470f
-Size : 3415647
+SHA256 : d7b02657bffeb85ca76c4e833993085be509eef620f3644343a7792ff7421e0e
+Size : 3153883
 Description : artik-cloud add-on sdk rootstrap for Tizen SDK
