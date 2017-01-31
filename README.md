@@ -10,7 +10,7 @@ Installing the Extension (Add-on) SDK
 ---------------------
 
 1.	Use the Tizen IDE Package Manager (Update Manager) to install the “Native app. Development (IDE)” package for 2.4
-2.	Under artikcloud-tizen/2.4-tizen-artik-cloud-SDKs-1.0.0/binary, download and unzip 2.4-add-on-artik-cloud-SDKs-1.0.0.zip
+2.	Under artikcloud-tizen/2.4-tizen-artik-cloud-SDKs/binary, download and unzip 2.4-add-on-artik-cloud-SDKs.zip
 3.	Go to Package Manager -> Configuration -> Extra Repository -> Add -> Set Repository Path to “pkg_list_***” file from extracted folder and click ok. In the “name” field, give it any name and click ok.
 4.	In the main window of Package Manager, click on the Extension SDK tab (Extras), and install “2.4 artik-cloud add-on sdk”.
  
