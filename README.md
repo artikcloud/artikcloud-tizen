@@ -9,7 +9,7 @@ Using this SDK requires [Tizen IDE/Tizen Studio](https://developer.tizen.org/dev
 ##Installation
 
 1.	Use the Tizen IDE `Package Manager` (Update Manager) to install the `Native app. Development (IDE)` package for 2.4
-2.	From the current repository download the folder `artikcloud-tizen/2.4-tizen-artik-cloud-SDKs-2.x.x/`
+2.	From the current repository download the folder `artikcloud-tizen/2.4-tizen-artik-cloud-SDKs/`
 3.	Go to `Package Manager -> Configuration -> Extra Repository -> Add -> Set Repository Path`. Select the `pkg_list_***` file from inside the above folder and click ok. In the `name` field, give it any name and click ok.
 4.	In the main window of `Package Manager`, click on the `Extension SDK` tab (Extras), and install `2.4 artik-cloud add-on sdk`.
 
