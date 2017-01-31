@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
       <li><a href="functions_func_o.html#index_o"><span>o</span></a></li>
       <li><a href="functions_func_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_func_q.html#index_q"><span>q</span></a></li>
       <li><a href="functions_func_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_func_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_func_t.html#index_t"><span>t</span></a></li>
@@ -121,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -173,12 +175,19 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response.html#a97ec75fa5eb5d9e676ec4999ff42e7dd">Tizen::ArtikCloud::DeviceRegStatusResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response_envelope.html#a6f3a57d57cf717fdcd68406b657b6ff3">Tizen::ArtikCloud::DeviceRegStatusResponseEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#ac600e675fbac506f6b4b26ff30a80eb2">Tizen::ArtikCloud::DevicesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#ab58116dd04e07aea2788a41334bb93eb">Tizen::ArtikCloud::DeviceTask</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html#af6b4542865ae3a37a787342927203500">Tizen::ArtikCloud::DeviceTaskUpdateRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html#a2c5719920f87192c674acf7e75d4f610">Tizen::ArtikCloud::DeviceTaskUpdateResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a118310d943646d0704d384f8ffc1649b">Tizen::ArtikCloud::DeviceToken</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token_envelope.html#a494efe394e3ff022e9c45996f92a2471">Tizen::ArtikCloud::DeviceTokenEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ab3759787cd69673481e1814907983ba4">Tizen::ArtikCloud::DeviceType</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_array.html#a2beb3026f8af72bd956edec4674005eb">Tizen::ArtikCloud::DeviceTypeArray</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html#aa08009b322ce7aaa6a2d5a65851deb47">Tizen::ArtikCloud::DeviceTypeEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a7c7668117ee5f172d692692246caeb82">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html#a55daaf3a3465dab6001bdcecc8eb8059">Tizen::ArtikCloud::DeviceTypeInfoEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a214e90b2e1d545c2ee50e994e2ec64fa">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a39707eb9c43f5201d7d8b8a741a161cf">Tizen::ArtikCloud::DeviceTypesInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html#a734d9ac2dff521445d3b91481fd80ff9">Tizen::ArtikCloud::DeviceTypesInfoEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error_envelope.html#a2fe0defbdace6d024e13e92fba803bd4">Tizen::ArtikCloud::ErrorEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#af60860960d5f0b32513a731c498cb134">Tizen::ArtikCloud::EventFeedData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#ae3e32a470e52f431f8686289b7e4b490">Tizen::ArtikCloud::ExportData</a>
@@ -205,6 +214,9 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html#a40d34d986bd431fde30d650a448be80c">Tizen::ArtikCloud::MessageIDEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_in.html#a2f449181bf51d004a0d5c3a3818708a8">Tizen::ArtikCloud::MessageIn</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_out.html#a63413273dce0a0128c0d256cac95960c">Tizen::ArtikCloud::MessageOut</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html#ab895d73a6438d5b7827e45805579e573">Tizen::ArtikCloud::MetadataEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html#a537b53018c636449b51e5128f13a94e4">Tizen::ArtikCloud::MetadataPropertiesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#ac1691a7bcde51cdfa912b9e03424722b">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_non_empty_string.html#a23659a619486cafadd7a0443758f2311">Tizen::ArtikCloud::NonEmptyString</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_action.html#a33db786d63e1275f1b35d05661c15e9c">Tizen::ArtikCloud::NormalizedAction</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_actions_envelope.html#a00fd323814fffd6f0393d735360a3909">Tizen::ArtikCloud::NormalizedActionsEnvelope</a>
@@ -229,6 +241,25 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tag.html#ae37d251612a2406a57e96142eb9bc918">Tizen::ArtikCloud::Tag</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tag_array.html#af3774b908436ea36f9ced30499662ecd">Tizen::ArtikCloud::TagArray</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html#a04aa60111eaed1fab4a442f4a7a06c0d">Tizen::ArtikCloud::TagsEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a1527d37e211a282c251e52955797b878">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a170c682be91019a7721cea017c061d21">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list.html#aeaedb7359147332c3fd8fbb55769c922">Tizen::ArtikCloud::TaskByDidList</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#a8863fd5b9d8383643c5d4186508ced9c">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_envelope.html#a100a6efbe0862581c0d2b62f292b0c95">Tizen::ArtikCloud::TaskEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a7302a17f16297a4b98bada3c84d7b0e1">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history_list.html#a953ed364302ef7cdb3603df9d9054686">Tizen::ArtikCloud::TaskHistoryList</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list.html#a6ff90e7a026923650ec03ed8a24b9726">Tizen::ArtikCloud::TaskList</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#a3c6719d3ed8122f9ddcde3fecfdfdc85">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_parameters.html#af1b23536d55f74e56426ade8411943c1">Tizen::ArtikCloud::TaskParameters</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#a377805b5db5321e27d1806b0bc259a6f">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#a71074dfe9b99f39193408f406cdd22a5">Tizen::ArtikCloud::TasksStatusCounts</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#a575e0069a06f99b37d936c0c6af88147">Tizen::ArtikCloud::TaskStatus</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#a6fb990d8c3a9691542bfe267866a6b04">Tizen::ArtikCloud::TaskStatusCounts</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#af7bf84634d6045bdc21213116898125d">Tizen::ArtikCloud::TaskStatuses</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#a911faccb71f2bcf6188e5321542ada80">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_history_envelope.html#ada4f0111ee1a7f224ce291c3b3a79b8d">Tizen::ArtikCloud::TaskStatusesHistoryEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_request.html#af076e9a60e44347189588f8eae218352">Tizen::ArtikCloud::TaskUpdateRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_response.html#a44bfaa5a145f7a01b963e46325e8927d">Tizen::ArtikCloud::TaskUpdateResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token.html#a3b93599a9f211c3789a6b66ccc3c4e0e">Tizen::ArtikCloud::Token</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token_info.html#a302201fe4699fe8a164b6b21b8353920">Tizen::ArtikCloud::TokenInfo</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html#a08e776bbb7b0a363c29b9d835386d58a">Tizen::ArtikCloud::TokenInfoSuccessResponse</a>
@@ -246,7 +277,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:10 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

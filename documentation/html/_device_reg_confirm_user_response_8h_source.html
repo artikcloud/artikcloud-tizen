@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_device_reg_confirm_user_response_8h_s
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,42 +136,41 @@ $(document).ready(function(){initNavTree('_device_reg_confirm_user_response_8h_s
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">DeviceRegConfirmUserResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#af944421db9e3c64515afebd5cff2c237">DeviceRegConfirmUserResponse</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#af944421db9e3c64515afebd5cff2c237">DeviceRegConfirmUserResponse</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a30a819e09c2727c97e2cb301378fb839">~DeviceRegConfirmUserResponse</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a641619fad8fde927c512bbba83fe5fab">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a49f5c2d6a6e85c6d099132888feda2e8">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a717b37e5453cb62d46ee509c4e797986">getRid</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a132b125bc19954c40d54d5e14827e104">setRid</a>(std::string  rid);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string rid;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceRegConfirmUserResponse_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">DeviceRegConfirmUserResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#af944421db9e3c64515afebd5cff2c237">DeviceRegConfirmUserResponse</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#af944421db9e3c64515afebd5cff2c237">DeviceRegConfirmUserResponse</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a30a819e09c2727c97e2cb301378fb839">~DeviceRegConfirmUserResponse</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a641619fad8fde927c512bbba83fe5fab">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a49f5c2d6a6e85c6d099132888feda2e8">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a717b37e5453cb62d46ee509c4e797986">getRid</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a132b125bc19954c40d54d5e14827e104">setRid</a>(std::string  rid);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string rid;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceRegConfirmUserResponse_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_a49f5c2d6a6e85c6d099132888feda2e8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a49f5c2d6a6e85c6d099132888feda2e8">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00060">DeviceRegConfirmUserResponse.cpp:60</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_a132b125bc19954c40d54d5e14827e104"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a132b125bc19954c40d54d5e14827e104">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::setRid</a></div><div class="ttdeci">void setRid(std::string rid)</div><div class="ttdoc">Set The registration request id. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00111">DeviceRegConfirmUserResponse.cpp:111</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_af944421db9e3c64515afebd5cff2c237"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#af944421db9e3c64515afebd5cff2c237">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::DeviceRegConfirmUserResponse</a></div><div class="ttdeci">DeviceRegConfirmUserResponse()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00029">DeviceRegConfirmUserResponse.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_a641619fad8fde927c512bbba83fe5fab"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a641619fad8fde927c512bbba83fe5fab">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00083">DeviceRegConfirmUserResponse.cpp:83</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_a30a819e09c2727c97e2cb301378fb839"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a30a819e09c2727c97e2cb301378fb839">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::~DeviceRegConfirmUserResponse</a></div><div class="ttdeci">virtual ~DeviceRegConfirmUserResponse()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00034">DeviceRegConfirmUserResponse.cpp:34</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">Tizen::ArtikCloud::DeviceRegConfirmUserResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8h_source.html#l00038">DeviceRegConfirmUserResponse.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html">Tizen::ArtikCloud::DeviceRegConfirmUserResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8h_source.html#l00045">DeviceRegConfirmUserResponse.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_html_a717b37e5453cb62d46ee509c4e797986"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a717b37e5453cb62d46ee509c4e797986">Tizen::ArtikCloud::DeviceRegConfirmUserResponse::getRid</a></div><div class="ttdeci">std::string getRid()</div><div class="ttdoc">Get The registration request id. </div><div class="ttdef"><b>Definition:</b> <a href="_device_reg_confirm_user_response_8cpp_source.html#l00105">DeviceRegConfirmUserResponse.cpp:105</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('_device_reg_confirm_user_response_8h_s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>DeviceRegConfirmUserResponse.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

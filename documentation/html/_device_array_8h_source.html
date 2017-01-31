@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_device_array_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,42 +138,41 @@ $(document).ready(function(){initNavTree('_device_array_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_array.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html">DeviceArray</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afa24d3573d5d74bf2ff91af6c69d0f64">DeviceArray</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afa24d3573d5d74bf2ff91af6c69d0f64">DeviceArray</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#a662f04fb7723085c9f3604da32c77126">~DeviceArray</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ae085edfd5c8df2a12aa1fe3459369b2e">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#aa57f39d619d31a3020b1d3f87950cfef">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::list&lt;Device&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ac19651bf3a353bf27180e32167b717ac">getDevices</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afdbcceda319e4259376c3b160796ca74">setDevices</a>(std::list &lt;Device&gt; devices);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list &lt;Device&gt;devices;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceArray_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_array.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html">DeviceArray</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afa24d3573d5d74bf2ff91af6c69d0f64">DeviceArray</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afa24d3573d5d74bf2ff91af6c69d0f64">DeviceArray</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#a662f04fb7723085c9f3604da32c77126">~DeviceArray</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ae085edfd5c8df2a12aa1fe3459369b2e">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#aa57f39d619d31a3020b1d3f87950cfef">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list&lt;Device&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ac19651bf3a353bf27180e32167b717ac">getDevices</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afdbcceda319e4259376c3b160796ca74">setDevices</a>(std::list &lt;Device&gt; devices);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::list &lt;Device&gt;devices;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceArray_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_a662f04fb7723085c9f3604da32c77126"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#a662f04fb7723085c9f3604da32c77126">Tizen::ArtikCloud::DeviceArray::~DeviceArray</a></div><div class="ttdeci">virtual ~DeviceArray()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00034">DeviceArray.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_afa24d3573d5d74bf2ff91af6c69d0f64"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afa24d3573d5d74bf2ff91af6c69d0f64">Tizen::ArtikCloud::DeviceArray::DeviceArray</a></div><div class="ttdeci">DeviceArray()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00029">DeviceArray.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_ac19651bf3a353bf27180e32167b717ac"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ac19651bf3a353bf27180e32167b717ac">Tizen::ArtikCloud::DeviceArray::getDevices</a></div><div class="ttdeci">std::list&lt; Device &gt; getDevices()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00134">DeviceArray.cpp:134</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_afdbcceda319e4259376c3b160796ca74"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#afdbcceda319e4259376c3b160796ca74">Tizen::ArtikCloud::DeviceArray::setDevices</a></div><div class="ttdeci">void setDevices(std::list&lt; Device &gt; devices)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00140">DeviceArray.cpp:140</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_ae085edfd5c8df2a12aa1fe3459369b2e"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ae085edfd5c8df2a12aa1fe3459369b2e">Tizen::ArtikCloud::DeviceArray::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00096">DeviceArray.cpp:96</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html">Tizen::ArtikCloud::DeviceArray</a></div><div class="ttdoc">Holds an array of Devices. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8h_source.html#l00040">DeviceArray.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html">Tizen::ArtikCloud::DeviceArray</a></div><div class="ttdoc">Holds an array of Devices. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8h_source.html#l00047">DeviceArray.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_array_html_aa57f39d619d31a3020b1d3f87950cfef"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_array.html#aa57f39d619d31a3020b1d3f87950cfef">Tizen::ArtikCloud::DeviceArray::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_device_array_8cpp_source.html#l00060">DeviceArray.cpp:60</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_device_array_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>DeviceArray.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

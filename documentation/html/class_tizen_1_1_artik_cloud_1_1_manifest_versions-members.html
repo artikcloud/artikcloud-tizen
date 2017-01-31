@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_manife
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,10 +114,10 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_manife
 <p>This is the complete list of members for <a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a96c1da2e14a0fd309a33a4a7df4e65b9">fromJson</a>(char *jsonStr)</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a407a2215f9a81aeff9b2e74b85734364">getVersions</a>()</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#ae3673b21c8b7248a94b6c46ca97582dc">getVersions</a>()</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#abc25a6502942a8bfbc802c8f991de6c0">ManifestVersions</a>()</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>ManifestVersions</b>(char *str) (defined in <a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a>)</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a71128df0dbea002e9bcbc058ec273f8d">setVersions</a>(std::list&lt; std::string &gt; versions)</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#affdc2f78e3a905435bf2b02ef3cd7cbf">setVersions</a>(std::list&lt; int &gt; versions)</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a3142a2cb0ff18efba20ad9b9d82747f9">toJson</a>()</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a19e92427c93d28d1926cd48c07fe03fb">~ManifestVersions</a>()</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html">Tizen::ArtikCloud::ManifestVersions</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~Object</b>() (defined in <a class="el" href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a>)</td><td class="entry"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
@@ -125,7 +126,7 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_manife
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

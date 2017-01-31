@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_export_request_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,70 +136,69 @@ $(document).ready(function(){initNavTree('_export_request_8h_source.html','');})
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_export_request.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html">ExportRequest</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6c5b0945242cdb06efc49f2f37ff399e">ExportRequest</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6c5b0945242cdb06efc49f2f37ff399e">ExportRequest</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a654647400b9ef89bc38443c7553f76db">~ExportRequest</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ae59ba3f2eec487db41508deb64f6efd1">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aecd5d6b671a2de707ebed7e5a5bdb01e">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ae8a9acbdfbbb2075d825fd5812a187e2">getEndDate</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a92ff4e34610256d4b83eff1519d59ed7">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#af71f1bef71db13b7728e6649a694a3ab">getFormat</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_export_request.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html">ExportRequest</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6c5b0945242cdb06efc49f2f37ff399e">ExportRequest</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6c5b0945242cdb06efc49f2f37ff399e">ExportRequest</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a654647400b9ef89bc38443c7553f76db">~ExportRequest</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ae59ba3f2eec487db41508deb64f6efd1">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aecd5d6b671a2de707ebed7e5a5bdb01e">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ae8a9acbdfbbb2075d825fd5812a187e2">getEndDate</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a7c5899625730c67c27d9d0840b0eca00">setFormat</a>(std::string  format);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a15999eeff341ca25a670a091f05d88f0">getOrder</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a92ff4e34610256d4b83eff1519d59ed7">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#af71f1bef71db13b7728e6649a694a3ab">getFormat</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a3ee53056754f922e7c69c4fc6e365c74">setOrder</a>(std::string  order);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aa14f6210092471356c4336fc76407497">getSdids</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a7c5899625730c67c27d9d0840b0eca00">setFormat</a>(std::string  format);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a15999eeff341ca25a670a091f05d88f0">getOrder</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#affa7e12068101cc8a92c681507b9c030">setSdids</a>(std::string  sdids);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a0037aa48a75baf64a98a67292931f6c2">getSdtids</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a3ee53056754f922e7c69c4fc6e365c74">setOrder</a>(std::string  order);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aa14f6210092471356c4336fc76407497">getSdids</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#acdbc3618474e28bcb997dee0fa6ff211">setSdtids</a>(std::string  sdtids);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a7159826efab0d7160bca4a8bc3403e66">getStartDate</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#affa7e12068101cc8a92c681507b9c030">setSdids</a>(std::string  sdids);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a0037aa48a75baf64a98a67292931f6c2">getSdtids</a>();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a84df6a7f3abc28f2a22791035754b0c8">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aaa770492da21f289f30095b3f1bae914">getTrialId</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#acdbc3618474e28bcb997dee0fa6ff211">setSdtids</a>(std::string  sdtids);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a7159826efab0d7160bca4a8bc3403e66">getStartDate</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aef7280e711794274ad54a077791aeaac">setTrialId</a>(std::string  trialId);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6ed9b81839ac61943e728d15604cfd87">getUids</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a84df6a7f3abc28f2a22791035754b0c8">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aaa770492da21f289f30095b3f1bae914">getTrialId</a>();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ad3af4bdc67acefdb610f19d7e1c3e502">setUids</a>(std::string  uids);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::string format;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string order;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::string sdids;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::string sdtids;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::string trialId;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::string uids;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ExportRequest_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aef7280e711794274ad54a077791aeaac">setTrialId</a>(std::string  trialId);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6ed9b81839ac61943e728d15604cfd87">getUids</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#ad3af4bdc67acefdb610f19d7e1c3e502">setUids</a>(std::string  uids);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::string format;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::string order;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::string sdids;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::string sdtids;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    std::string trialId;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::string uids;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ExportRequest_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_aef7280e711794274ad54a077791aeaac"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aef7280e711794274ad54a077791aeaac">Tizen::ArtikCloud::ExportRequest::setTrialId</a></div><div class="ttdeci">void setTrialId(std::string trialId)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00379">ExportRequest.cpp:379</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_a92ff4e34610256d4b83eff1519d59ed7"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a92ff4e34610256d4b83eff1519d59ed7">Tizen::ArtikCloud::ExportRequest::setEndDate</a></div><div class="ttdeci">void setEndDate(long long endDate)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00307">ExportRequest.cpp:307</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_a654647400b9ef89bc38443c7553f76db"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a654647400b9ef89bc38443c7553f76db">Tizen::ArtikCloud::ExportRequest::~ExportRequest</a></div><div class="ttdeci">virtual ~ExportRequest()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00034">ExportRequest.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_af71f1bef71db13b7728e6649a694a3ab"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#af71f1bef71db13b7728e6649a694a3ab">Tizen::ArtikCloud::ExportRequest::getFormat</a></div><div class="ttdeci">std::string getFormat()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00313">ExportRequest.cpp:313</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_a6c5b0945242cdb06efc49f2f37ff399e"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a6c5b0945242cdb06efc49f2f37ff399e">Tizen::ArtikCloud::ExportRequest::ExportRequest</a></div><div class="ttdeci">ExportRequest()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00029">ExportRequest.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html">Tizen::ArtikCloud::ExportRequest</a></div><div class="ttdoc">Export Request. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8h_source.html#l00038">ExportRequest.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html">Tizen::ArtikCloud::ExportRequest</a></div><div class="ttdoc">Export Request. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8h_source.html#l00045">ExportRequest.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_a0037aa48a75baf64a98a67292931f6c2"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a0037aa48a75baf64a98a67292931f6c2">Tizen::ArtikCloud::ExportRequest::getSdtids</a></div><div class="ttdeci">std::string getSdtids()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00349">ExportRequest.cpp:349</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_aaa770492da21f289f30095b3f1bae914"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#aaa770492da21f289f30095b3f1bae914">Tizen::ArtikCloud::ExportRequest::getTrialId</a></div><div class="ttdeci">std::string getTrialId()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00373">ExportRequest.cpp:373</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_html_a15999eeff341ca25a670a091f05d88f0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request.html#a15999eeff341ca25a670a091f05d88f0">Tizen::ArtikCloud::ExportRequest::getOrder</a></div><div class="ttdeci">std::string getOrder()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_8cpp_source.html#l00325">ExportRequest.cpp:325</a></div></div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('_export_request_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>ExportRequest.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_rules_envelope_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,47 +138,46 @@ $(document).ready(function(){initNavTree('_rules_envelope_8h_source.html','');})
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">RulesEnvelope</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a839b5a2962cac8cb246a8252de2d0bde">RulesEnvelope</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a839b5a2962cac8cb246a8252de2d0bde">RulesEnvelope</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a6a4681e4a8a9440f9fc805f1b579181c">~RulesEnvelope</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a8c30acd3fb1e6494081bf1fb6c9c8e8f">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#af6c6e6bd4d726a840ee360ac9a638c74">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a0754351bdd6203d1618f2bbe59175794">getCount</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#af7ea83584b227bfc5bb8124d52db7d52">setCount</a>(<span class="keywordtype">int</span>  count);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list&lt;OutputRule&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a5e030f95f3081e45c851d247867285b8">getData</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">RulesEnvelope</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a839b5a2962cac8cb246a8252de2d0bde">RulesEnvelope</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a839b5a2962cac8cb246a8252de2d0bde">RulesEnvelope</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a6a4681e4a8a9440f9fc805f1b579181c">~RulesEnvelope</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a8c30acd3fb1e6494081bf1fb6c9c8e8f">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#af6c6e6bd4d726a840ee360ac9a638c74">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a0754351bdd6203d1618f2bbe59175794">getCount</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad371e0e04efe3b5970b734e11779742a">setData</a>(std::list &lt;OutputRule&gt; data);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a753614896230cf4547545b33c795fce6">getOffset</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#af7ea83584b227bfc5bb8124d52db7d52">setCount</a>(<span class="keywordtype">int</span>  count);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::list&lt;OutputRule&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a5e030f95f3081e45c851d247867285b8">getData</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a63b9f7500a8a3bdee62ff07dbfc58181">setOffset</a>(<span class="keywordtype">int</span>  offset);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad0717303b25679142bf4147eb20b82e7">getTotal</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad371e0e04efe3b5970b734e11779742a">setData</a>(std::list &lt;OutputRule&gt; data);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a753614896230cf4547545b33c795fce6">getOffset</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#aa7a7f1b715f90e4c64be570d6e2b0572">setTotal</a>(<span class="keywordtype">int</span>  total);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> count;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::list &lt;OutputRule&gt;data;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> offset;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> total;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RulesEnvelope_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a63b9f7500a8a3bdee62ff07dbfc58181">setOffset</a>(<span class="keywordtype">int</span>  offset);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad0717303b25679142bf4147eb20b82e7">getTotal</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#aa7a7f1b715f90e4c64be570d6e2b0572">setTotal</a>(<span class="keywordtype">int</span>  total);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> count;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::list &lt;OutputRule&gt;data;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> offset;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> total;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RulesEnvelope_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_ad0717303b25679142bf4147eb20b82e7"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad0717303b25679142bf4147eb20b82e7">Tizen::ArtikCloud::RulesEnvelope::getTotal</a></div><div class="ttdeci">int getTotal()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00254">RulesEnvelope.cpp:254</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_af7ea83584b227bfc5bb8124d52db7d52"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#af7ea83584b227bfc5bb8124d52db7d52">Tizen::ArtikCloud::RulesEnvelope::setCount</a></div><div class="ttdeci">void setCount(int count)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00224">RulesEnvelope.cpp:224</a></div></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('_rules_envelope_8h_source.html','');})
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_ad371e0e04efe3b5970b734e11779742a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad371e0e04efe3b5970b734e11779742a">Tizen::ArtikCloud::RulesEnvelope::setData</a></div><div class="ttdeci">void setData(std::list&lt; OutputRule &gt; data)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00236">RulesEnvelope.cpp:236</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_a839b5a2962cac8cb246a8252de2d0bde"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a839b5a2962cac8cb246a8252de2d0bde">Tizen::ArtikCloud::RulesEnvelope::RulesEnvelope</a></div><div class="ttdeci">RulesEnvelope()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00029">RulesEnvelope.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_a753614896230cf4547545b33c795fce6"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a753614896230cf4547545b33c795fce6">Tizen::ArtikCloud::RulesEnvelope::getOffset</a></div><div class="ttdeci">int getOffset()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00242">RulesEnvelope.cpp:242</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">Tizen::ArtikCloud::RulesEnvelope</a></div><div class="ttdoc">Rules Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8h_source.html#l00040">RulesEnvelope.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">Tizen::ArtikCloud::RulesEnvelope</a></div><div class="ttdoc">Rules Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8h_source.html#l00047">RulesEnvelope.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_a6a4681e4a8a9440f9fc805f1b579181c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a6a4681e4a8a9440f9fc805f1b579181c">Tizen::ArtikCloud::RulesEnvelope::~RulesEnvelope</a></div><div class="ttdeci">virtual ~RulesEnvelope()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00034">RulesEnvelope.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_a8c30acd3fb1e6494081bf1fb6c9c8e8f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a8c30acd3fb1e6494081bf1fb6c9c8e8f">Tizen::ArtikCloud::RulesEnvelope::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00153">RulesEnvelope.cpp:153</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html_a5e030f95f3081e45c851d247867285b8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a5e030f95f3081e45c851d247867285b8">Tizen::ArtikCloud::RulesEnvelope::getData</a></div><div class="ttdeci">std::list&lt; OutputRule &gt; getData()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8cpp_source.html#l00230">RulesEnvelope.cpp:230</a></div></div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('_rules_envelope_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>RulesEnvelope.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

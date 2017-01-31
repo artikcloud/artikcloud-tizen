@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_device_type_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,103 +138,102 @@ $(document).ready(function(){initNavTree('_device_type_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_type.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html">DeviceType</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a40391bd39dd3d3bb938107bad305b0f2">DeviceType</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a40391bd39dd3d3bb938107bad305b0f2">DeviceType</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a596a9ef8ba5ab6b8d647a8d71617c08e">~DeviceType</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a01f2127bb0ada4bdbe2434e063e39144">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ab3759787cd69673481e1814907983ba4">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a68c620cb84ed589b3a3f3162f81df2e9">getId</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af243093c089fb5bf665c6805a4267052">setId</a>(std::string  <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a819075d3445666f31e5104d5d150b805">getUniqueName</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_type.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html">DeviceType</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a40391bd39dd3d3bb938107bad305b0f2">DeviceType</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a40391bd39dd3d3bb938107bad305b0f2">DeviceType</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a596a9ef8ba5ab6b8d647a8d71617c08e">~DeviceType</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a01f2127bb0ada4bdbe2434e063e39144">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ab3759787cd69673481e1814907983ba4">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a68c620cb84ed589b3a3f3162f81df2e9">getId</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a0534f2a7fc613f2b21b0c496e490893f">setUniqueName</a>(std::string  uniqueName);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a634b802430e1224fcdc6f1aca33fb64e">getLatestVersion</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af243093c089fb5bf665c6805a4267052">setId</a>(std::string  <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a819075d3445666f31e5104d5d150b805">getUniqueName</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac2b703b0d642060cee08b2caedebea23">setLatestVersion</a>(<span class="keywordtype">int</span>  latestVersion);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a5cd85b1a38a927e5284301f54f30d1b6">getLastUpdated</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a0534f2a7fc613f2b21b0c496e490893f">setUniqueName</a>(std::string  uniqueName);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a634b802430e1224fcdc6f1aca33fb64e">getLatestVersion</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a6b61df300358c311a6e7c6dbd76b5ebb">setLastUpdated</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  lastUpdated);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a0dadc307e444086209a20bb35d761b67">getName</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac2b703b0d642060cee08b2caedebea23">setLatestVersion</a>(<span class="keywordtype">int</span>  latestVersion);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a5cd85b1a38a927e5284301f54f30d1b6">getLastUpdated</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a2d412962a5a0749b97d10c5d91466011">setName</a>(std::string  name);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aa3da6acf147783c14bbbbb39a32e0de6">getDescription</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a6b61df300358c311a6e7c6dbd76b5ebb">setLastUpdated</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  lastUpdated);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a0dadc307e444086209a20bb35d761b67">getName</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aae027aa93b1b50330af64c5a3f80764b">setDescription</a>(std::string  description);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#abe1e9de1fd34e00c692f15c184eff54f">getUid</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a2d412962a5a0749b97d10c5d91466011">setName</a>(std::string  name);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aa3da6acf147783c14bbbbb39a32e0de6">getDescription</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a3c32da561b8d8e0723fd188095e2fc3a">setUid</a>(std::string  uid);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a6b9eb239807f8cd37bf18be0e75165ba">getOid</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aae027aa93b1b50330af64c5a3f80764b">setDescription</a>(std::string  description);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#abe1e9de1fd34e00c692f15c184eff54f">getUid</a>();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a092f5dd63fb8020cf15948ff51a7eb1c">setOid</a>(std::string  oid);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#adcaf71e335e84885929d461d363db057">getHasCloudConnector</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a3c32da561b8d8e0723fd188095e2fc3a">setUid</a>(std::string  uid);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a6b9eb239807f8cd37bf18be0e75165ba">getOid</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a81c6d1b0f832f2cae795d23d042a4191">setHasCloudConnector</a>(<span class="keywordtype">bool</span>  hasCloudConnector);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#abb58ce8ac647e915cfa5796a2be8f0ef">getApproved</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a092f5dd63fb8020cf15948ff51a7eb1c">setOid</a>(std::string  oid);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#adcaf71e335e84885929d461d363db057">getHasCloudConnector</a>();</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af19fb2658544001d805f06994f1d0846">setApproved</a>(<span class="keywordtype">bool</span>  approved);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a2b9bb9865c45ff3a0d84545075f31a7a">getPublished</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a81c6d1b0f832f2cae795d23d042a4191">setHasCloudConnector</a>(<span class="keywordtype">bool</span>  hasCloudConnector);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#abb58ce8ac647e915cfa5796a2be8f0ef">getApproved</a>();</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aa59aaf24689fb2599c9d728c464f1da4">setPublished</a>(<span class="keywordtype">bool</span>  published);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a8aab6169603b96e017ddc2dad9297fbb">getProtected</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af19fb2658544001d805f06994f1d0846">setApproved</a>(<span class="keywordtype">bool</span>  approved);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a2b9bb9865c45ff3a0d84545075f31a7a">getPublished</a>();</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ae4e84d86e24519b6d2038ef944d0fb17">setProtected</a>(<span class="keywordtype">bool</span>  _protected);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af8436de0202b5d36f4166c7686c7c2f7">getInStore</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aa59aaf24689fb2599c9d728c464f1da4">setPublished</a>(<span class="keywordtype">bool</span>  published);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a8aab6169603b96e017ddc2dad9297fbb">getProtected</a>();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af9c85122b158a969de2ab8b05503d941">setInStore</a>(<span class="keywordtype">bool</span>  inStore);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a24fe92b784348befd1fccb76ccaa5c8b">getOwnedByCurrentUser</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ae4e84d86e24519b6d2038ef944d0fb17">setProtected</a>(<span class="keywordtype">bool</span>  _protected);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af8436de0202b5d36f4166c7686c7c2f7">getInStore</a>();</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac59a94b8ba878617a066e84cf681fc36">setOwnedByCurrentUser</a>(<span class="keywordtype">bool</span>  ownedByCurrentUser);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::list&lt;Tag&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a55d372ad2f77339ebe5deb416542e90c">getTags</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af9c85122b158a969de2ab8b05503d941">setInStore</a>(<span class="keywordtype">bool</span>  inStore);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a24fe92b784348befd1fccb76ccaa5c8b">getOwnedByCurrentUser</a>();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a590bac8965ad9b1f802ac85b763d6cc7">setTags</a>(std::list &lt;Tag&gt; tags);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a5028b59c8bd966f3c6206dddda4f5a06">getRsp</a>();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac59a94b8ba878617a066e84cf681fc36">setOwnedByCurrentUser</a>(<span class="keywordtype">bool</span>  ownedByCurrentUser);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    std::list&lt;Tag&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a55d372ad2f77339ebe5deb416542e90c">getTags</a>();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a18b2fc2dde44dd5d584c51ccc72d4c48">setRsp</a>(<span class="keywordtype">bool</span>  rsp);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a28212894f2f3a189b3f6f0e4ba856d0a">getIssuerDn</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a590bac8965ad9b1f802ac85b763d6cc7">setTags</a>(std::list &lt;Tag&gt; tags);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a5028b59c8bd966f3c6206dddda4f5a06">getRsp</a>();</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a380c25a73bc068d0213ef53dcc5df5e7">setIssuerDn</a>(std::string  issuerDn);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a97a13d73de118aa3477e1fe4c2426e5a">getVid</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a18b2fc2dde44dd5d584c51ccc72d4c48">setRsp</a>(<span class="keywordtype">bool</span>  rsp);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a28212894f2f3a189b3f6f0e4ba856d0a">getIssuerDn</a>();</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac0911df8316d184399416b1e2c9851bd">setVid</a>(std::string  vid);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::string id;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    std::string uniqueName;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">int</span> latestVersion;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> lastUpdated;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    std::string name;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    std::string description;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    std::string uid;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::string oid;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">bool</span> hasCloudConnector;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">bool</span> approved;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">bool</span> published;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">bool</span> _protected;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">bool</span> inStore;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">bool</span> ownedByCurrentUser;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::list &lt;Tag&gt;tags;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> rsp;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    std::string issuerDn;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    std::string vid;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;};</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceType_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a380c25a73bc068d0213ef53dcc5df5e7">setIssuerDn</a>(std::string  issuerDn);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a97a13d73de118aa3477e1fe4c2426e5a">getVid</a>();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac0911df8316d184399416b1e2c9851bd">setVid</a>(std::string  vid);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::string id;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::string uniqueName;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">int</span> latestVersion;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> lastUpdated;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    std::string name;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    std::string description;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    std::string uid;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    std::string oid;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">bool</span> hasCloudConnector;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">bool</span> approved;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">bool</span> published;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">bool</span> _protected;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">bool</span> inStore;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">bool</span> ownedByCurrentUser;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    std::list &lt;Tag&gt;tags;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">bool</span> rsp;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    std::string issuerDn;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    std::string vid;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;};</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceType_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_ac59a94b8ba878617a066e84cf681fc36"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac59a94b8ba878617a066e84cf681fc36">Tizen::ArtikCloud::DeviceType::setOwnedByCurrentUser</a></div><div class="ttdeci">void setOwnedByCurrentUser(bool ownedByCurrentUser)</div><div class="ttdoc">Set Does the current user own a device of this device type. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00772">DeviceType.cpp:772</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_a81c6d1b0f832f2cae795d23d042a4191"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a81c6d1b0f832f2cae795d23d042a4191">Tizen::ArtikCloud::DeviceType::setHasCloudConnector</a></div><div class="ttdeci">void setHasCloudConnector(bool hasCloudConnector)</div><div class="ttdoc">Set Uses Cloud Connectors SDK. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00712">DeviceType.cpp:712</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_ac0911df8316d184399416b1e2c9851bd"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#ac0911df8316d184399416b1e2c9851bd">Tizen::ArtikCloud::DeviceType::setVid</a></div><div class="ttdeci">void setVid(std::string vid)</div><div class="ttdoc">Set Vendor ID. (Used in SDR) </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00820">DeviceType.cpp:820</a></div></div>
@@ -259,7 +259,7 @@ $(document).ready(function(){initNavTree('_device_type_8h_source.html','');});
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_aae027aa93b1b50330af64c5a3f80764b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#aae027aa93b1b50330af64c5a3f80764b">Tizen::ArtikCloud::DeviceType::setDescription</a></div><div class="ttdeci">void setDescription(std::string description)</div><div class="ttdoc">Set Description. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00676">DeviceType.cpp:676</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_af243093c089fb5bf665c6805a4267052"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af243093c089fb5bf665c6805a4267052">Tizen::ArtikCloud::DeviceType::setId</a></div><div class="ttdeci">void setId(std::string id)</div><div class="ttdoc">Set Device Type ID. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00616">DeviceType.cpp:616</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_a2b9bb9865c45ff3a0d84545075f31a7a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a2b9bb9865c45ff3a0d84545075f31a7a">Tizen::ArtikCloud::DeviceType::getPublished</a></div><div class="ttdeci">bool getPublished()</div><div class="ttdoc">Get Published status. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00730">DeviceType.cpp:730</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html">Tizen::ArtikCloud::DeviceType</a></div><div class="ttdoc">Device Type Information. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8h_source.html#l00040">DeviceType.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html">Tizen::ArtikCloud::DeviceType</a></div><div class="ttdoc">Device Type Information. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8h_source.html#l00047">DeviceType.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_a5cd85b1a38a927e5284301f54f30d1b6"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a5cd85b1a38a927e5284301f54f30d1b6">Tizen::ArtikCloud::DeviceType::getLastUpdated</a></div><div class="ttdeci">long long getLastUpdated()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00646">DeviceType.cpp:646</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_a0534f2a7fc613f2b21b0c496e490893f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a0534f2a7fc613f2b21b0c496e490893f">Tizen::ArtikCloud::DeviceType::setUniqueName</a></div><div class="ttdeci">void setUniqueName(std::string uniqueName)</div><div class="ttdoc">Set Unique Name. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00628">DeviceType.cpp:628</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_type_html_af19fb2658544001d805f06994f1d0846"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_type.html#af19fb2658544001d805f06994f1d0846">Tizen::ArtikCloud::DeviceType::setApproved</a></div><div class="ttdeci">void setApproved(bool approved)</div><div class="ttdoc">Set Approval status. </div><div class="ttdef"><b>Definition:</b> <a href="_device_type_8cpp_source.html#l00724">DeviceType.cpp:724</a></div></div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('_device_type_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>DeviceType.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

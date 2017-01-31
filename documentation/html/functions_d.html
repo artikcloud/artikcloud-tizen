@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
       <li><a href="functions_o.html#index_o"><span>o</span></a></li>
       <li><a href="functions_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_q.html#index_q"><span>q</span></a></li>
       <li><a href="functions_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_t.html#index_t"><span>t</span></a></li>
@@ -121,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -151,6 +153,12 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>deleteRuleSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rules_manager.html#af24682f0bac4fac891275e775b181ad4">Tizen::ArtikCloud::RulesManager</a>
+</li>
+<li>deleteServerPropertiesAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a5a87d862d5b7a18068587656dc235032">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>deleteServerPropertiesSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#ab58efa8c38960887bde116a5954baa98">Tizen::ArtikCloud::DevicesManagementManager</a>
 </li>
 <li>deleteUserPropertiesAsync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_users_manager.html#a8084ccf1cb52d1d92c677baf0388161b">Tizen::ArtikCloud::UsersManager</a>
@@ -188,6 +196,15 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>DevicesEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a6c69c415c81ed9b49d21d21d079031b9">Tizen::ArtikCloud::DevicesEnvelope</a>
 </li>
+<li>DeviceTask()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#a044583aa37571c4505867e41aef0c05c">Tizen::ArtikCloud::DeviceTask</a>
+</li>
+<li>DeviceTaskUpdateRequest()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html#ad4575fa63f5c9729a744864dd81aade6">Tizen::ArtikCloud::DeviceTaskUpdateRequest</a>
+</li>
+<li>DeviceTaskUpdateResponse()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html#a3311b05d3a8b4428ff8c94ad7a26f134">Tizen::ArtikCloud::DeviceTaskUpdateResponse</a>
+</li>
 <li>DeviceToken()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a">Tizen::ArtikCloud::DeviceToken</a>
 </li>
@@ -203,8 +220,20 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>DeviceTypeEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html#a112645ab98dc7790d32aedad60e21f0e">Tizen::ArtikCloud::DeviceTypeEnvelope</a>
 </li>
+<li>DeviceTypeInfo()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#acf2e6d7b5956866707f1ddf4e8ba86e2">Tizen::ArtikCloud::DeviceTypeInfo</a>
+</li>
+<li>DeviceTypeInfoEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html#af68003a29731dc316902c84b42e79b16">Tizen::ArtikCloud::DeviceTypeInfoEnvelope</a>
+</li>
 <li>DeviceTypesEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#aa1404d83ba646d4c375e82ef30eae5f3">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
+</li>
+<li>DeviceTypesInfo()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a082dba5a77dcbce8e2b614d4e10f7302">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
+<li>DeviceTypesInfoEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html#a21c9b0f42bc6f5eec5d27d8306f6d1b1">Tizen::ArtikCloud::DeviceTypesInfoEnvelope</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -212,7 +241,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:10 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

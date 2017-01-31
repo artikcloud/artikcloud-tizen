@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_app_properties_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,48 +136,47 @@ $(document).ready(function(){initNavTree('_app_properties_8h_source.html','');})
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">AppProperties</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a333fcd95c6b0ee9dcd950801c0fcfb47">AppProperties</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a333fcd95c6b0ee9dcd950801c0fcfb47">AppProperties</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a1bb38246767c30921b900ade6caa4b5a">~AppProperties</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a4d996246c5e5046e4a71b4eee50e4d65">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a6b58dbdc7bfe57f5d5e422e5695800b6">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a3989b2ea8b18ab5ebe0a7198adaa36de">getUid</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a4ae75923866aa9137cacff5cb931aa58">setUid</a>(std::string  uid);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a571d425011ef5bf88ff6f1ecff22d876">getAid</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">AppProperties</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a333fcd95c6b0ee9dcd950801c0fcfb47">AppProperties</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a333fcd95c6b0ee9dcd950801c0fcfb47">AppProperties</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a1bb38246767c30921b900ade6caa4b5a">~AppProperties</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a4d996246c5e5046e4a71b4eee50e4d65">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a6b58dbdc7bfe57f5d5e422e5695800b6">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a3989b2ea8b18ab5ebe0a7198adaa36de">getUid</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a0fc8b6dc791749a8c8f4b13625c19391">setAid</a>(std::string  aid);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a5fe3cb2d63d5a0ac4bdf03bc82125685">getProperties</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a4ae75923866aa9137cacff5cb931aa58">setUid</a>(std::string  uid);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a571d425011ef5bf88ff6f1ecff22d876">getAid</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a26012bcb9eb919f9c8f721ffa1794e3d">setProperties</a>(std::string  properties);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string uid;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string aid;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string properties;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AppProperties_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a0fc8b6dc791749a8c8f4b13625c19391">setAid</a>(std::string  aid);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a5fe3cb2d63d5a0ac4bdf03bc82125685">getProperties</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a26012bcb9eb919f9c8f721ffa1794e3d">setProperties</a>(std::string  properties);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string uid;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string aid;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string properties;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AppProperties_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a571d425011ef5bf88ff6f1ecff22d876"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a571d425011ef5bf88ff6f1ecff22d876">Tizen::ArtikCloud::AppProperties::getAid</a></div><div class="ttdeci">std::string getAid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00173">AppProperties.cpp:173</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a6b58dbdc7bfe57f5d5e422e5695800b6"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a6b58dbdc7bfe57f5d5e422e5695800b6">Tizen::ArtikCloud::AppProperties::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00076">AppProperties.cpp:76</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a1bb38246767c30921b900ade6caa4b5a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a1bb38246767c30921b900ade6caa4b5a">Tizen::ArtikCloud::AppProperties::~AppProperties</a></div><div class="ttdeci">virtual ~AppProperties()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00034">AppProperties.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">Tizen::ArtikCloud::AppProperties</a></div><div class="ttdoc">User Application Properties. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8h_source.html#l00038">AppProperties.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">Tizen::ArtikCloud::AppProperties</a></div><div class="ttdoc">User Application Properties. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8h_source.html#l00045">AppProperties.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a4ae75923866aa9137cacff5cb931aa58"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a4ae75923866aa9137cacff5cb931aa58">Tizen::ArtikCloud::AppProperties::setUid</a></div><div class="ttdeci">void setUid(std::string uid)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00167">AppProperties.cpp:167</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a26012bcb9eb919f9c8f721ffa1794e3d"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a26012bcb9eb919f9c8f721ffa1794e3d">Tizen::ArtikCloud::AppProperties::setProperties</a></div><div class="ttdeci">void setProperties(std::string properties)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00191">AppProperties.cpp:191</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html_a5fe3cb2d63d5a0ac4bdf03bc82125685"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a5fe3cb2d63d5a0ac4bdf03bc82125685">Tizen::ArtikCloud::AppProperties::getProperties</a></div><div class="ttdeci">std::string getProperties()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8cpp_source.html#l00185">AppProperties.cpp:185</a></div></div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('_app_properties_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>AppProperties.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

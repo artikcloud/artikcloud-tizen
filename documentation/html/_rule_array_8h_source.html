@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_rule_array_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,40 +138,39 @@ $(document).ready(function(){initNavTree('_rule_array_8h_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">RuleArray</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#abedcceb6aba79dd58caf5f46b628a802">RuleArray</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#abedcceb6aba79dd58caf5f46b628a802">RuleArray</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#acc5dc8913067cf0cc5f890b50f386b80">~RuleArray</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a850229b1cae79e9f3621e23ece67b50c">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a64107e4b3e556b2415ee9c53d4cf867f">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::list&lt;OutputRule&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#aaab0236f5bde4d8aa575296646303b1d">getRules</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a3ef822455cbce707223cefdac3619878">setRules</a>(std::list &lt;OutputRule&gt; rules);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list &lt;OutputRule&gt;rules;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RuleArray_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">RuleArray</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#abedcceb6aba79dd58caf5f46b628a802">RuleArray</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#abedcceb6aba79dd58caf5f46b628a802">RuleArray</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#acc5dc8913067cf0cc5f890b50f386b80">~RuleArray</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a850229b1cae79e9f3621e23ece67b50c">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a64107e4b3e556b2415ee9c53d4cf867f">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list&lt;OutputRule&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#aaab0236f5bde4d8aa575296646303b1d">getRules</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a3ef822455cbce707223cefdac3619878">setRules</a>(std::list &lt;OutputRule&gt; rules);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::list &lt;OutputRule&gt;rules;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RuleArray_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_acc5dc8913067cf0cc5f890b50f386b80"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#acc5dc8913067cf0cc5f890b50f386b80">Tizen::ArtikCloud::RuleArray::~RuleArray</a></div><div class="ttdeci">virtual ~RuleArray()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00034">RuleArray.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_abedcceb6aba79dd58caf5f46b628a802"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#abedcceb6aba79dd58caf5f46b628a802">Tizen::ArtikCloud::RuleArray::RuleArray</a></div><div class="ttdeci">RuleArray()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00029">RuleArray.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_a850229b1cae79e9f3621e23ece67b50c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a850229b1cae79e9f3621e23ece67b50c">Tizen::ArtikCloud::RuleArray::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00096">RuleArray.cpp:96</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">Tizen::ArtikCloud::RuleArray</a></div><div class="ttdoc">Holds an array of Rules. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8h_source.html#l00040">RuleArray.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html">Tizen::ArtikCloud::RuleArray</a></div><div class="ttdoc">Holds an array of Rules. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8h_source.html#l00047">RuleArray.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_aaab0236f5bde4d8aa575296646303b1d"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#aaab0236f5bde4d8aa575296646303b1d">Tizen::ArtikCloud::RuleArray::getRules</a></div><div class="ttdeci">std::list&lt; OutputRule &gt; getRules()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00134">RuleArray.cpp:134</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_a64107e4b3e556b2415ee9c53d4cf867f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a64107e4b3e556b2415ee9c53d4cf867f">Tizen::ArtikCloud::RuleArray::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00060">RuleArray.cpp:60</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rule_array_html_a3ef822455cbce707223cefdac3619878"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rule_array.html#a3ef822455cbce707223cefdac3619878">Tizen::ArtikCloud::RuleArray::setRules</a></div><div class="ttdeci">void setRules(std::list&lt; OutputRule &gt; rules)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_rule_array_8cpp_source.html#l00140">RuleArray.cpp:140</a></div></div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('_rule_array_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>RuleArray.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

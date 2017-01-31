@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
       <li><a href="functions_o.html#index_o"><span>o</span></a></li>
       <li><a href="functions_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_q.html#index_q"><span>q</span></a></li>
       <li><a href="functions_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_t.html#index_t"><span>t</span></a></li>
@@ -121,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -154,6 +156,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a571d425011ef5bf88ff6f1ecff22d876">Tizen::ArtikCloud::AppProperties</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#ab6ed2e8f63fdc6e86989ee877213cd9f">Tizen::ArtikCloud::OutputRule</a>
 </li>
+<li>getAllByDidAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a5cf9d47e64756d671d40fa60940f918a">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getAllByDidSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a3116ffc2d327516a87bd0e262fb6874b">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
 <li>getApproved()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#abb58ce8ac647e915cfa5796a2be8f0ef">Tizen::ArtikCloud::DeviceType</a>
 </li>
@@ -165,6 +173,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getAvailableManifestVersionsSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#ae1ec83bf5ca666c59dc832f4811bf166">Tizen::ArtikCloud::DeviceTypesManager</a>
+</li>
+<li>getCANCELLED()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#a90e35378d2cac74a495181b7071a09b0">Tizen::ArtikCloud::TasksStatusCounts</a>
 </li>
 <li>getCertificateInfo()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#af2e2a8b055c6f1b095974736b68bfc0e">Tizen::ArtikCloud::Device</a>
@@ -190,6 +201,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rule_warning_output.html#a6baf2d03017686afbc1131b392080495">Tizen::ArtikCloud::RuleWarningOutput</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_web_socket_error.html#af2272b033967f0dbe290d956a6871baf">Tizen::ArtikCloud::WebSocketError</a>
 </li>
+<li>getCOMPLETE()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#ab13dff22e6a482403840a0d41b394329">Tizen::ArtikCloud::TasksStatusCounts</a>
+</li>
 <li>getConnected()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#a6543fcf90818b18d129ea9c4fafcb49b">Tizen::ArtikCloud::Device</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_presence_model.html#a2abeff658f3ad5ca9788632cc00f0bfe">Tizen::ArtikCloud::PresenceModel</a>
@@ -200,13 +214,22 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a8fb8895b4dd376b279957b4518ed8d3a">Tizen::ArtikCloud::DevicesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a8e0c50654994c35ac8c17123d2a1b23f">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a41023e1cd8f3cdbc1bb2dc9cbe00e9cb">Tizen::ArtikCloud::ExportHistoryResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#a457ec0c587365cdbdd6ddc679f7b4786">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_actions_envelope.html#a0a4c92baeae9b6460dcb85ee420bb43e">Tizen::ArtikCloud::NormalizedActionsEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_messages_envelope.html#afdf861a4c4e383463cc5b9749f2090a2">Tizen::ArtikCloud::NormalizedMessagesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a0754351bdd6203d1618f2bbe59175794">Tizen::ArtikCloud::RulesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#a37dc77b52788c0876c7f0e1eb2388914">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#af01313b52e2de314ec6122736b53a6dd">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#a82e83104cb03fdfe36bba32d59b04e8b">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
 </li>
 <li>getCreatedOn()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#a316f91a1e0d28bef201364b5113978f4">Tizen::ArtikCloud::Device</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a029c516a30c5634e3dcc904a6be1ced5">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#af7d38e76dbb520da5018fe4518044081">Tizen::ArtikCloud::DeviceTypesInfo</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#aea7a66f7c4555703b4e721ced21e2dc3">Tizen::ArtikCloud::OutputRule</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#af412c2de8b65b4f744a77e0880d50ba2">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a195751630e225787acf7f515d72ebad7">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a1443e4eff200797f222560015f74fdcd">Tizen::ArtikCloud::TaskStatuses</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response.html#ac34dc322591ccc24a6cda705345ea2b6">Tizen::ArtikCloud::UnregisterDeviceResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_user.html#afb98c46c3f8c805a924e0b7710429503">Tizen::ArtikCloud::User</a>
 </li>
@@ -233,9 +256,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response_envelope.html#afb56a248e0155d5bb545b1bcfb26b4e0">Tizen::ArtikCloud::DeviceRegConfirmUserResponseEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response_envelope.html#a462c90b64077a84b221d09121d7744f1">Tizen::ArtikCloud::DeviceRegStatusResponseEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a7500cc3236018dc134f9016c75c82951">Tizen::ArtikCloud::DevicesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html#ab27f828f56193cb7722cc744c7ff6ec5">Tizen::ArtikCloud::DeviceTaskUpdateResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token_envelope.html#a491d3ff9c691e2a4071ea2aed9fd055f">Tizen::ArtikCloud::DeviceTokenEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html#af1271a50d63973c31a838a7abd776fe2">Tizen::ArtikCloud::DeviceTypeEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html#a01e04dd03d3e26049b138f147f0b6691">Tizen::ArtikCloud::DeviceTypeInfoEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a24c2ffdc336772f0e6977ebbf025980c">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html#a86be3570a376b045fc776b21ad936fbe">Tizen::ArtikCloud::DeviceTypesInfoEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a6d56be8f80f937c411189419d35d98ea">Tizen::ArtikCloud::EventFeedData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ae6364d4bce641ca4d1b29a664afaf200">Tizen::ArtikCloud::ExportHistoryResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html#a2e2ef837a8242a1efe0da5d5f56c0f9e">Tizen::ArtikCloud::ExportRequestResponse</a>
@@ -246,6 +272,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_action.html#a6cf52da05764553bc0c51de1bd1dc865">Tizen::ArtikCloud::MessageAction</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html#a29c316ced6df4c84c9101f44cc3756a0">Tizen::ArtikCloud::MessageIDEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_in.html#a700dbe8d3f3362dc03a0139f574fc455">Tizen::ArtikCloud::MessageIn</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html#a2aced832dedf4632df732d1a470ddcd9">Tizen::ArtikCloud::MetadataEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html#a267ebaa846ba44bb63fee1f371effe6a">Tizen::ArtikCloud::MetadataPropertiesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#a5f6f8b0480369bb10104269bec6b87fb">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_action.html#ac4fd9091b074597e35039840891ad6dc">Tizen::ArtikCloud::NormalizedAction</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_actions_envelope.html#aee7be83515a0ec4d97f2fa083517e190">Tizen::ArtikCloud::NormalizedActionsEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a719a83fbd31321f81633cde50d82392b">Tizen::ArtikCloud::NormalizedMessage</a>
@@ -258,6 +287,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a54a8122550a434bea3ab4df64bd9f1ea">Tizen::ArtikCloud::SnapshotResponses</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_snapshots_response_envelope.html#aa571ddc36648dd0338882f0ad2caad56">Tizen::ArtikCloud::SnapshotsResponseEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html#a3611edcda41706535a04910783e7d8b1">Tizen::ArtikCloud::TagsEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#a0dc9105ea73a43ac79bac58e7cb90c91">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_envelope.html#a23c3f05d81f932c73b4cd813e37a7b9b">Tizen::ArtikCloud::TaskEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#a7cc58f63e36c0fa540bda0bd43601673">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#a70c55b9f849186b1fa7cff17299f9350">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_history_envelope.html#a0ad427672e0d02844bd4071b6d609b30">Tizen::ArtikCloud::TaskStatusesHistoryEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_response.html#a9ff424fe56efe456479358d282b113e0">Tizen::ArtikCloud::TaskUpdateResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html#a2ab8b8318bc6f4a63c112f8d91b0fb35">Tizen::ArtikCloud::TokenInfoSuccessResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token_response.html#a859804b8ad2ca6e835c31cac04beb3d3">Tizen::ArtikCloud::TokenResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response_envelope.html#a50864ba4302a92e771fe35fb0938616b">Tizen::ArtikCloud::UnregisterDeviceResponseEnvelope</a>
@@ -299,6 +334,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getDevicePresenceSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_manager.html#a4b931380955fb873437bffa279a8cdc7">Tizen::ArtikCloud::DevicesManager</a>
 </li>
+<li>getDevicePropertiesEnabled()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a25ac9a6b48db6b21ee13afa291e0c6b7">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#aaca69cb7370b3c8ba7b0ec1ef9a44efe">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
 <li>getDevices()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_array.html#ac19651bf3a353bf27180e32167b717ac">Tizen::ArtikCloud::DeviceArray</a>
 </li>
@@ -320,6 +359,18 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getDeviceTypesAsync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a151ffa30df399c99addf4402df42cbd2">Tizen::ArtikCloud::DeviceTypesManager</a>
 </li>
+<li>getDeviceTypesByApplicationAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a27f84d3974b53695353d5d78746cc185">Tizen::ArtikCloud::DeviceTypesManager</a>
+</li>
+<li>getDeviceTypesByApplicationSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#aff81118a5c4eccb19c06e2702f02afd4">Tizen::ArtikCloud::DeviceTypesManager</a>
+</li>
+<li>getDeviceTypesInfoAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a2bf7a5a59ae0870470ef5a0561336753">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getDeviceTypesInfoSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#ac34a85bd194c3e18caf56dd43ed09a31">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
 <li>getDeviceTypesSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a91735beb16632a648964ae482986006a">Tizen::ArtikCloud::DeviceTypesManager</a>
 </li>
@@ -328,10 +379,25 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getDid()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response.html#a7a9e468c67e1a646a7b62d1566b44b43">Tizen::ArtikCloud::DeviceRegStatusResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#a65f658019c93fb823ec46b758b7c7f75">Tizen::ArtikCloud::DeviceTask</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a17af9f13ede8ba9f0c04805fe2eca07c">Tizen::ArtikCloud::DeviceToken</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a26e6454c52b5e37ca67bc1060b0cee64">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#abd6f8007a8ce17029a7d41938d253f17">Tizen::ArtikCloud::TaskStatus</a>
+</li>
+<li>getDids()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#ab35ba5749722c2a9de63815807ad5913">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a2826c15236371d366e3f22ec6e084495">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#a40dab302e6a9f4573e5453c68b10e89d">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#ab455c90ef824656fe4eeccc4b5692b64">Tizen::ArtikCloud::TaskStatuses</a>
 </li>
 <li>getDtid()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#ae4a6782fdd0d0555ec0c1330c3339aa1">Tizen::ArtikCloud::Device</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a082369662f031a18582d56df1f69229c">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a81d6ee791da892c2b98e65b9a576b149">Tizen::ArtikCloud::DeviceTypesInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a772f15362d7b21be1def593c0d5983fe">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a9106b479691efc8fa2153d86cf384cc8">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#a82b1f80f9e55bea7d8af3035e1ea13cb">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a43da726118850628d99a4f549a0752f1">Tizen::ArtikCloud::TaskStatuses</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response.html#ac943a0dd36788bd5248a1a567f1a5655">Tizen::ArtikCloud::UnregisterDeviceResponse</a>
 </li>
 <li>getEid()
@@ -363,7 +429,15 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#ad7ba576cacdff477d60ba803bfe5b4ac">Tizen::ArtikCloud::OutputRule</a>
 </li>
 <li>getErrorCode()
-: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rule_error.html#a51432cfc0fc66ccda51386d16202e7aa">Tizen::ArtikCloud::RuleError</a>
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#aaa9c09141ba8862ed1f4bf549d563f6a">Tizen::ArtikCloud::DeviceTask</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rule_error.html#a51432cfc0fc66ccda51386d16202e7aa">Tizen::ArtikCloud::RuleError</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#aed60b4c95618f166b81ee05b17ea363d">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#af10bd4f1a56801f547408fe39d0da393">Tizen::ArtikCloud::TaskStatus</a>
+</li>
+<li>getErrorMessage()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#a4103dd37a315f0a05b30f23f3987af36">Tizen::ArtikCloud::DeviceTask</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a72d7ddb1418ff8b5e0c9a94b9cf70077">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#a715d4656b27f09494f07883ffa62020f">Tizen::ArtikCloud::TaskStatus</a>
 </li>
 <li>getEvent()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a50d5c8afa4d9fc7a04b03e67b9f5f638">Tizen::ArtikCloud::EventFeedData</a>
@@ -371,6 +445,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getExpirationDate()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#a869b2c86bea47f3b0ac8084849e5e546">Tizen::ArtikCloud::ExportData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html#aeec3942a1d837eb8f0dcba2f5e680242">Tizen::ArtikCloud::ExportStatusResponse</a>
+</li>
+<li>getExpiresAfter()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_parameters.html#a11308eeeb31eb09108bbdeddfdb93b74">Tizen::ArtikCloud::TaskParameters</a>
 </li>
 <li>getExpiresIn()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a4031d4dc497ae85f96231ebecb98e767">Tizen::ArtikCloud::RefreshTokenResponse</a>
@@ -427,6 +504,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getFileSize()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#a933537c069ae1b19f10b46fe9c959709">Tizen::ArtikCloud::ExportData</a>
 </li>
+<li>getFilter()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#abc7fef86781dff758e054d898bdfa07f">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#aaad086ac2848b79550db494c8d355573">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#a5ba5f61f67708ced502b0a5b9021fe1f">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a2641e2adcc532d163e5e5c6116b9fa76">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
 <li>getFormat()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_normalized_messages_response.html#a83ee7eb5255fb8ebd03bae027f42932b">Tizen::ArtikCloud::ExportNormalizedMessagesResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_request.html#af71f1bef71db13b7728e6649a694a3ab">Tizen::ArtikCloud::ExportRequest</a>
@@ -440,10 +523,16 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getHasCloudConnector()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#adcaf71e335e84885929d461d363db057">Tizen::ArtikCloud::DeviceType</a>
 </li>
+<li>getHistory()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history_list.html#a91ed6e11e683a5e93dfd5b0a7894ba83">Tizen::ArtikCloud::TaskHistoryList</a>
+</li>
 <li>getId()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#aa356c49000a4a7eea1d014dd5245ff51">Tizen::ArtikCloud::Device</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a68c620cb84ed589b3a3f3162f81df2e9">Tizen::ArtikCloud::DeviceType</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#a810ae5049000ebcaf246c16458b6935d">Tizen::ArtikCloud::OutputRule</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#aaedd022552533793d72f2a6ffb3123e8">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a04291dd557e6a6de9dffb994180a1e94">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a09eeb92c68eab69a5295881efecd4f81">Tizen::ArtikCloud::TaskStatuses</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response.html#a37812418f437c400ec69eaabcf1bd04d">Tizen::ArtikCloud::UnregisterDeviceResponse</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_user.html#ab175e988ebbc1057c70da1c2e8110a6a">Tizen::ArtikCloud::User</a>
 </li>
@@ -491,10 +580,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a634b802430e1224fcdc6f1aca33fb64e">Tizen::ArtikCloud::DeviceType</a>
 </li>
 <li>getManifestPropertiesAsync()
-: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a68d197bf4216afea34a154dad8bd700b">Tizen::ArtikCloud::DeviceTypesManager</a>
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#aa4c34103e4f32f6880efae429552ee02">Tizen::ArtikCloud::DevicesManagementManager</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a68d197bf4216afea34a154dad8bd700b">Tizen::ArtikCloud::DeviceTypesManager</a>
 </li>
 <li>getManifestPropertiesSync()
-: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#afc875a2e39dbe1b8a8043b1c0f12b420">Tizen::ArtikCloud::DeviceTypesManager</a>
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a3e4a3e9494f8caa65034999cfcd8f8f1">Tizen::ArtikCloud::DevicesManagementManager</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#afc875a2e39dbe1b8a8043b1c0f12b420">Tizen::ArtikCloud::DeviceTypesManager</a>
 </li>
 <li>getManifestVersion()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#a1c04498c88cc4cc7be93b0e8f1140c53">Tizen::ArtikCloud::Device</a>
@@ -553,7 +644,12 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ae7e50cef84e8bed2031fb900947f6c52">Tizen::ArtikCloud::AggregatesHistogramData</a>
 </li>
 <li>getModifiedOn()
-: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#a62206c5e8fd65cb8861dfc1f6c2b9cc5">Tizen::ArtikCloud::OutputRule</a>
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a710e37bdeda478911cf8a0f1b33ba9dd">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a896d892f7b2116ac8ecdbbbe3aa7f83b">Tizen::ArtikCloud::DeviceTypesInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_output_rule.html#a62206c5e8fd65cb8861dfc1f6c2b9cc5">Tizen::ArtikCloud::OutputRule</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a32c8d35e69f1f3fc27f1d54b1cd297db">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a7345d406060e73d1e263c8b932d58a54">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a879fb893a57906a8e0fd5db6de83e5d8">Tizen::ArtikCloud::TaskStatuses</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_user.html#a7b55c6225d7914659a7aee2d4d47b558">Tizen::ArtikCloud::User</a>
 </li>
 <li>getMv()
@@ -597,11 +693,32 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getNormalizedMessagesSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_messages_manager.html#a22ec757cb85b749e25baaf002831bd69">Tizen::ArtikCloud::MessagesManager</a>
 </li>
+<li>getNumAttempts()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#abadd93ba27c58092f7058c364035adbd">Tizen::ArtikCloud::DeviceTask</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a5743b3b05ae1e36cb69a7d71afaca9fc">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#aa232c482d7b910458aeac2956c0f901c">Tizen::ArtikCloud::TaskStatus</a>
+</li>
+<li>getNumCancelled()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#ad08a29aacb0bed82ee638530b9e83122">Tizen::ArtikCloud::TaskStatusCounts</a>
+</li>
+<li>getNumCompleted()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#a69aac572ea254fd2216714350db00b32">Tizen::ArtikCloud::TaskStatusCounts</a>
+</li>
+<li>getNumFailed()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#a0b9932dbe5ed222b68ec69d14927f365">Tizen::ArtikCloud::TaskStatusCounts</a>
+</li>
+<li>getNumSucceeded()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#adef0d2263c71481b93e5bfaa6be8d43e">Tizen::ArtikCloud::TaskStatusCounts</a>
+</li>
 <li>getOffset()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a8dc079cdf8a74fad6e2612abf8d58b08">Tizen::ArtikCloud::DevicesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#afc30bfa95ad6171791504a047ae36d5f">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ad3027fa3f4337d0999171d4794ef8354">Tizen::ArtikCloud::ExportHistoryResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#a547cff78c1d6f3b61a8be43a3a2de165">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#a753614896230cf4547545b33c795fce6">Tizen::ArtikCloud::RulesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#a4e03ef8c4885afdd09ba33599fea2366">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#a247c601ed59f14cc4e8352f6941a33b6">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#a89840a8ee4a5a772115d43207250af5e">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
 </li>
 <li>getOid()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a6b9eb239807f8cd37bf18be0e75165ba">Tizen::ArtikCloud::DeviceType</a>
@@ -628,10 +745,33 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getPin()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_request.html#a6a95e11863ce31445fb1f69fff671ade">Tizen::ArtikCloud::DeviceRegConfirmUserRequest</a>
 </li>
+<li>getPmax()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a491e793747a5f0a21b4bb83a889bda99">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#ab3ce978ce6086cbe9b3376c801da2bf1">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
+<li>getPmin()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a6acfc42a4985836082781e5d9a8516a6">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a1c2e86e8d44f41496ce3c91ba8544428">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
+<li>getPROCESSING()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#a1ecb9fb2f80e3b32c53c9e47756eaf2f">Tizen::ArtikCloud::TasksStatusCounts</a>
+</li>
 <li>getProperties()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html#a5fe3cb2d63d5a0ac4bdf03bc82125685">Tizen::ArtikCloud::AppProperties</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html#a317630b3cfa72fa36bcce66f2574db50">Tizen::ArtikCloud::Device</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_properties.html#afe85a5400098c252d3a1d16bcefc2eb4">Tizen::ArtikCloud::ManifestProperties</a>
+</li>
+<li>getPropertiesAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a2d7fe777155503b357ff4621d6c842d2">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getPropertiesSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a0d080f5f8cffd84cdd16dda407a52d16">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getProperty()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#ae70dd376e22868e0bc977b45f8ce5717">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#ac5d01a00cebe843d0fd46e9d4babbd92">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#ac2061467dd142f5a411da1394c5c88ee">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a2b1f340a22cdc3df21164cd403738960">Tizen::ArtikCloud::TaskStatuses</a>
 </li>
 <li>getProtected()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a8aab6169603b96e017ddc2dad9297fbb">Tizen::ArtikCloud::DeviceType</a>
@@ -647,6 +787,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getRequest()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#a4c96e9f218ff15295b4423610bdd5276">Tizen::ArtikCloud::ExportData</a>
+</li>
+<li>getREQUESTED()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#a0810d7c609467d6072bb9f2d61b8ca0a">Tizen::ArtikCloud::TasksStatusCounts</a>
 </li>
 <li>getRequestStatusForUserAsync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_registrations_manager.html#a7a6c29f9505dafa892128bbb47e0164e">Tizen::ArtikCloud::RegistrationsManager</a>
@@ -747,8 +890,38 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getStatus()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response.html#a652ffd18fc6560d02087472122275bc7">Tizen::ArtikCloud::DeviceRegStatusResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#ab51884113258a1226913f260bbc41af4">Tizen::ArtikCloud::DeviceTask</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html#a79c8b2c3d30d7a92fd512016b7a95cbb">Tizen::ArtikCloud::DeviceTaskUpdateRequest</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#a5fd54010f177ef5cc868c6fa7d8b5775">Tizen::ArtikCloud::ExportData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html#a994a1acecfe9d4f59cf95f0865e77d91">Tizen::ArtikCloud::ExportStatusResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a054098114740c9fdd8dca1f871416601">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a9f428ddbf864cc72c468e804b5c96943">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a6a9c7b435e69a89010b4d4cf568e9d5f">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#afd67cefcda23cc77ff6634626a02c9ee">Tizen::ArtikCloud::TaskStatus</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#ae55b3b633a0e063b70f0dd646d1c8af4">Tizen::ArtikCloud::TaskStatuses</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_request.html#aa016e3908425ee2fb1849401481808e3">Tizen::ArtikCloud::TaskUpdateRequest</a>
+</li>
+<li>getStatusCounts()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a39e42da4fa049c28e9a6dad14db9bcb3">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a504bd55cd6549f2513ae1c7414caf1fd">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#af4c99338f4d3eb55dfb5f383b153b971">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a3b17f7c3fdfd271f149a5f00ddb66679">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
+<li>getStatuses()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a8718a1241f5f9736d9fa3bb41b3455c5">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a396901d5e6c141e6d810c4dd3617dec0">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
+<li>getStatusesAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a50a4f6f4e295c882e7244c1e5a8ec09c">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getStatusesHistoryAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#ae54d553ee63e5e2c3e377ab13959d657">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getStatusesHistorySync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a2ada5537040c141ccee314b8a3b59519">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getStatusesSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#aaa4393a9a9adda87a048b7acda679b55">Tizen::ArtikCloud::DevicesManagementManager</a>
 </li>
 <li>getStdids()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_normalized_messages_response.html#a7df831fcff4663c86451eec8a08a3459">Tizen::ArtikCloud::ExportNormalizedMessagesResponse</a>
@@ -779,6 +952,38 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getTagSuggestionsSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a4991a34437dd8fbe7b3a50f718cf231d">Tizen::ArtikCloud::TagsManager</a>
 </li>
+<li>getTaskByIDAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#aad13d37e3be0ab2f9c5fddce3d6e8bea">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getTaskByIDSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a99f1ade3a83eb7c4284f4e9399b870db">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getTaskExpiresAfter()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a79a05653536bf6cec1bcc964837beca3">Tizen::ArtikCloud::DeviceTypeInfo</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#aedd8d33b3d48381b80a06e49ae0b39b9">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
+<li>getTaskParameters()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a458490c50607c4346e03dd1eb037ca37">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a123ff848845f0f1fefafe783ab755787">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#aeeadce6535f3a33dcafe228c6fd78e70">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a49009f4c0390262e6526264d530883a6">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
+<li>getTasks()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list.html#a4be7c03e4c055765118c85c0432858c3">Tizen::ArtikCloud::TaskByDidList</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list.html#a7a3a43b2a2eb8080d26145aca272bcd5">Tizen::ArtikCloud::TaskList</a>
+</li>
+<li>getTasksAsync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#abd94f4e86b0116595093f74777997a26">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getTasksSync()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#ad39ecfd90dfad2d1393a5a0aa11cdcc2">Tizen::ArtikCloud::DevicesManagementManager</a>
+</li>
+<li>getTaskType()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#ada8d88e724ffb6bdb3fa56d36c446f19">Tizen::ArtikCloud::Task</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a84155d6673b1d78b62fe0a7c473e1252">Tizen::ArtikCloud::TaskByDid</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#a751c26da8fb485b0ac75cf27219ea06e">Tizen::ArtikCloud::TaskRequest</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a4ceeaad9ecbac844478fe089a918963f">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
 <li>getText()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_non_empty_string.html#a2cd3e9deb0c06e755a3c621ba4907715">Tizen::ArtikCloud::NonEmptyString</a>
 </li>
@@ -793,7 +998,14 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a483592df759ce103d497fdd0caf66ecf">Tizen::ArtikCloud::DevicesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#aa7e425236fc8607e4b81dc0b0cc13866">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ab83b5d41908efe2d0308bcf47cadba6d">Tizen::ArtikCloud::ExportHistoryResponse</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#a9e9078aaa5ad50b464fd55d7e2c54281">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html#ad0717303b25679142bf4147eb20b82e7">Tizen::ArtikCloud::RulesEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#ae311fe491a13cbba12d02363679f879e">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#a970f80ee2f1cf397a7f9ec8762c525fd">Tizen::ArtikCloud::TaskListEnvelope</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#aa221a5f238c28daed9dfb4af5546cb65">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
+</li>
+<li>getTotalDevices()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#a059bd0680e7dad6307fddfa3f27e01b7">Tizen::ArtikCloud::TaskStatusCounts</a>
 </li>
 <li>getTotalMessages()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_data.html#ab0abbaeaf206d5da96aa9e56212e01ad">Tizen::ArtikCloud::ExportData</a>
@@ -809,6 +1021,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a069eff0932e35752dced651f28be2912">Tizen::ArtikCloud::ActionIn</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_actions.html#a260a4b6207f6133e689646f7fee96a52">Tizen::ArtikCloud::Actions</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a12611eb053f21d072c9aede27b00af45">Tizen::ArtikCloud::AggregatesHistogramData</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#a883fc56c52a51b9c093111e3bc25f26d">Tizen::ArtikCloud::DeviceTask</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a9a027f55ad68d467ccd591f54b9e69d1">Tizen::ArtikCloud::EventFeedData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message.html#aa6563b834f3576aa4c6a3ea61bfbab70">Tizen::ArtikCloud::Message</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_action.html#af2df62b86e6e02988fa52161affca6d6">Tizen::ArtikCloud::MessageAction</a>
@@ -816,6 +1029,8 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_action.html#adc2f170e62b6ef4f31b2132bc479e781">Tizen::ArtikCloud::NormalizedAction</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a197c602534adc82ce1f45c94b98de968">Tizen::ArtikCloud::NormalizedMessage</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_register_message.html#a64a67d1b073966bd03eadfa4ea7f3ec4">Tizen::ArtikCloud::RegisterMessage</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#ab03190050b93d488e4791831659e8720">Tizen::ArtikCloud::TaskHistory</a>
+, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#a717d50437dbf32ba6c31e0e38654dfad">Tizen::ArtikCloud::TaskStatus</a>
 </li>
 <li>getTtl()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html#a2fd2d3f7ea456e2168b0da4451667615">Tizen::ArtikCloud::ExportStatusResponse</a>
@@ -886,12 +1101,15 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>getUserRulesSync()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_users_manager.html#a49f187b70cec2b317ee1c66568a3c1fa">Tizen::ArtikCloud::UsersManager</a>
 </li>
+<li>getValue()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_parameters.html#a1b74e85cec65d89f033b0ea06cc9bc07">Tizen::ArtikCloud::TaskParameters</a>
+</li>
 <li>getVariance()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_aggregate_data.html#adddb8a08c35b15694aefaebc21442c29">Tizen::ArtikCloud::AggregateData</a>
 , <a class="el" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74907dea738a5e5e14bb92d677f0b3c3">Tizen::ArtikCloud::AggregatesHistogramData</a>
 </li>
 <li>getVersions()
-: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#a407a2215f9a81aeff9b2e74b85734364">Tizen::ArtikCloud::ManifestVersions</a>
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html#ae3673b21c8b7248a94b6c46ca97582dc">Tizen::ArtikCloud::ManifestVersions</a>
 </li>
 <li>getVid()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type.html#a97a13d73de118aa3477e1fe4c2426e5a">Tizen::ArtikCloud::DeviceType</a>
@@ -905,7 +1123,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:10 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

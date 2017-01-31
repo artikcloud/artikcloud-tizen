@@ -1,12 +1,12 @@
 package : 2.4 artik-cloud add-on sdk
 Label : 2.4 artik-cloud add-on sdk
-Version : 1.0.0
+Version : 2.0.0
 OS : ubuntu-32
 Build-host-os : ubuntu-32
 Maintainer : Akhil Kedia<akhil.kedia@samsung.com>, Jiseob Jang<jiseob.jang@samsung.com>
 Attribute : extra
-Path : /binary/2.4-add-on-artik-cloud-1.0.0-ubuntu-32.zip
+Path : /binary/2.4-add-on-artik-cloud-2.0.0-ubuntu-32.zip
 Origin : local
-SHA256 : d7b02657bffeb85ca76c4e833993085be509eef620f3644343a7792ff7421e0e
-Size : 3153883
+SHA256 : dc53c047d567958b722142d73dd5ba97f59a07d7e248954c16155e9090e19b09
+Size : 4114449
 Description : artik-cloud add-on sdk rootstrap for Tizen SDK

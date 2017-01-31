@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_normalized_message_8h_source.html',''
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,70 +138,69 @@ $(document).ready(function(){initNavTree('_normalized_message_8h_source.html',''
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">NormalizedMessage</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a23243b7fdab3598d63c9d5bc0cd33d01">NormalizedMessage</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a23243b7fdab3598d63c9d5bc0cd33d01">NormalizedMessage</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a13678942766d345b61ff53f500478dbd">~NormalizedMessage</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#abda3d05e5ffac3b2afb7298a4fcdf7a6">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#adc50005a0e377e75163fbd21f6c9a282">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a75cedafb0d57c0e23b592a8165d4286f">getCts</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a8b08bda9251414897c995948e39eed1a">setCts</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  cts);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a197c602534adc82ce1f45c94b98de968">getTs</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">NormalizedMessage</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a23243b7fdab3598d63c9d5bc0cd33d01">NormalizedMessage</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a23243b7fdab3598d63c9d5bc0cd33d01">NormalizedMessage</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a13678942766d345b61ff53f500478dbd">~NormalizedMessage</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#abda3d05e5ffac3b2afb7298a4fcdf7a6">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#adc50005a0e377e75163fbd21f6c9a282">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a75cedafb0d57c0e23b592a8165d4286f">getCts</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4bfe11ab4d243fa2882defcc0d2bb8f8">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4e6045e6f2a42ff3ce40c0680a335fa3">getMid</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a8b08bda9251414897c995948e39eed1a">setCts</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  cts);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a197c602534adc82ce1f45c94b98de968">getTs</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a82028d23b988d167a94985e96b248515">setMid</a>(std::string  mid);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#abe656ad92acf0bc4ff3126b4d6e49520">getSdid</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4bfe11ab4d243fa2882defcc0d2bb8f8">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4e6045e6f2a42ff3ce40c0680a335fa3">getMid</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a9079a586e1e8a3b23405b0cd8f77f206">setSdid</a>(std::string  sdid);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#aa729839a73e195d0bb6157a96142aacb">getSdtid</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a82028d23b988d167a94985e96b248515">setMid</a>(std::string  mid);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#abe656ad92acf0bc4ff3126b4d6e49520">getSdid</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a8390244b134998db44c249c19ba2a130">setSdtid</a>(std::string  sdtid);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#ad1c1dba10c2149403b6fb6cbd7f67198">getUid</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a9079a586e1e8a3b23405b0cd8f77f206">setSdid</a>(std::string  sdid);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#aa729839a73e195d0bb6157a96142aacb">getSdtid</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a49573c725785f887fe589aacd97ebfbe">setUid</a>(std::string  uid);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#aeee5bd53d54af6783f288acd99a6a045">getMv</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a8390244b134998db44c249c19ba2a130">setSdtid</a>(std::string  sdtid);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#ad1c1dba10c2149403b6fb6cbd7f67198">getUid</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a627b770b8ddf9d0eaa1ace5425387dff">setMv</a>(<span class="keywordtype">int</span>  mv);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a719a83fbd31321f81633cde50d82392b">getData</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a49573c725785f887fe589aacd97ebfbe">setUid</a>(std::string  uid);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#aeee5bd53d54af6783f288acd99a6a045">getMv</a>();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#ad057ee563d6bba850212875613017b81">setData</a>(std::map &lt;std::string, std::string&gt; data);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> cts;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::string mid;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::string sdid;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::string sdtid;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::string uid;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> mv;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::map &lt;std::string, std::string&gt;data;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NormalizedMessage_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a627b770b8ddf9d0eaa1ace5425387dff">setMv</a>(<span class="keywordtype">int</span>  mv);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a719a83fbd31321f81633cde50d82392b">getData</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#ad057ee563d6bba850212875613017b81">setData</a>(std::map &lt;std::string, std::string&gt; data);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> cts;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::string mid;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    std::string sdid;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    std::string sdtid;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::string uid;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> mv;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    std::map &lt;std::string, std::string&gt;data;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NormalizedMessage_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_aeee5bd53d54af6783f288acd99a6a045"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#aeee5bd53d54af6783f288acd99a6a045">Tizen::ArtikCloud::NormalizedMessage::getMv</a></div><div class="ttdeci">int getMv()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00384">NormalizedMessage.cpp:384</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_ad057ee563d6bba850212875613017b81"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#ad057ee563d6bba850212875613017b81">Tizen::ArtikCloud::NormalizedMessage::setData</a></div><div class="ttdeci">void setData(std::map&lt; std::string, std::string &gt; data)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00402">NormalizedMessage.cpp:402</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_a4e6045e6f2a42ff3ce40c0680a335fa3"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4e6045e6f2a42ff3ce40c0680a335fa3">Tizen::ArtikCloud::NormalizedMessage::getMid</a></div><div class="ttdeci">std::string getMid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00336">NormalizedMessage.cpp:336</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_a75cedafb0d57c0e23b592a8165d4286f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a75cedafb0d57c0e23b592a8165d4286f">Tizen::ArtikCloud::NormalizedMessage::getCts</a></div><div class="ttdeci">long long getCts()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00312">NormalizedMessage.cpp:312</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_a4bfe11ab4d243fa2882defcc0d2bb8f8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a4bfe11ab4d243fa2882defcc0d2bb8f8">Tizen::ArtikCloud::NormalizedMessage::setTs</a></div><div class="ttdeci">void setTs(long long ts)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00330">NormalizedMessage.cpp:330</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">Tizen::ArtikCloud::NormalizedMessage</a></div><div class="ttdoc">Normalized Message. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8h_source.html#l00040">NormalizedMessage.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html">Tizen::ArtikCloud::NormalizedMessage</a></div><div class="ttdoc">Normalized Message. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8h_source.html#l00047">NormalizedMessage.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_adc50005a0e377e75163fbd21f6c9a282"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#adc50005a0e377e75163fbd21f6c9a282">Tizen::ArtikCloud::NormalizedMessage::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00116">NormalizedMessage.cpp:116</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_abda3d05e5ffac3b2afb7298a4fcdf7a6"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#abda3d05e5ffac3b2afb7298a4fcdf7a6">Tizen::ArtikCloud::NormalizedMessage::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00217">NormalizedMessage.cpp:217</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_normalized_message_html_a8b08bda9251414897c995948e39eed1a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html#a8b08bda9251414897c995948e39eed1a">Tizen::ArtikCloud::NormalizedMessage::setCts</a></div><div class="ttdeci">void setCts(long long cts)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_normalized_message_8cpp_source.html#l00318">NormalizedMessage.cpp:318</a></div></div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_normalized_message_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>NormalizedMessage.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

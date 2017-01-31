@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_tokens_manager_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,59 +136,64 @@ $(document).ready(function(){initNavTree('_tokens_manager_8h_source.html','');})
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;TokenInfoSuccessResponse.h&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Error.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a1e2310dc56f78f17238cc654916dfa02">checkTokenSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_request.html">TokenRequest</a> tokenInfo, </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">CheckTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#ab4dbe97b51d657d5a2ef432c315c56e7">checkTokenAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_request.html">TokenRequest</a> tokenInfo, </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">CheckTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a53491df9b90bd2ea038a31072c6d61c5">refreshTokenSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::string grantType, std::string refreshToken, </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a7324380bf185984a6f504a5edea05c84">refreshTokenAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::string grantType, std::string refreshToken, </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a2204e4d26f8a05c00323e656f86d1e4d">tokenInfoSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">TokenInfoSuccessResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">TokensManager</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a1e2310dc56f78f17238cc654916dfa02">checkTokenSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_request.html">TokenRequest</a> tokenInfo, </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">CheckTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#ab4dbe97b51d657d5a2ef432c315c56e7">checkTokenAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_request.html">TokenRequest</a> tokenInfo, </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">CheckTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a53491df9b90bd2ea038a31072c6d61c5">refreshTokenSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::string grantType, std::string refreshToken, </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a7324380bf185984a6f504a5edea05c84">refreshTokenAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string grantType, std::string refreshToken, </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a8954d2a37f6c5b833c6761d5216f68e1">tokenInfoAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">TokenInfoSuccessResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> std::string getBasePath()</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;https://api.artik.cloud/v1.1&quot;</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TokensManager_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_token_request_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_token_request.html">Tizen::ArtikCloud::TokenRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_token_request_8h_source.html#l00038">TokenRequest.h:38</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_token_info_success_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">Tizen::ArtikCloud::TokenInfoSuccessResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_token_info_success_response_8h_source.html#l00039">TokenInfoSuccessResponse.h:39</a></div></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a2204e4d26f8a05c00323e656f86d1e4d">tokenInfoSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">TokenInfoSuccessResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a8954d2a37f6c5b833c6761d5216f68e1">tokenInfoAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">TokenInfoSuccessResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">static</span> std::string getBasePath()</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;https://api.artik.cloud/v1.1&quot;</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TokensManager_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_token_request_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_token_request.html">Tizen::ArtikCloud::TokenRequest</a></div><div class="ttdef"><b>Definition:</b> <a href="_token_request_8h_source.html#l00045">TokenRequest.h:45</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_token_info_success_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html">Tizen::ArtikCloud::TokenInfoSuccessResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_token_info_success_response_8h_source.html#l00046">TokenInfoSuccessResponse.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_a2204e4d26f8a05c00323e656f86d1e4d"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a2204e4d26f8a05c00323e656f86d1e4d">Tizen::ArtikCloud::TokensManager::tokenInfoSync</a></div><div class="ttdeci">bool tokenInfoSync(char *accessToken, void(*handler)(TokenInfoSuccessResponse, Error, void *), void *userData)</div><div class="ttdoc">Token Info. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00508">TokensManager.cpp:508</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_a1e2310dc56f78f17238cc654916dfa02"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a1e2310dc56f78f17238cc654916dfa02">Tizen::ArtikCloud::TokensManager::checkTokenSync</a></div><div class="ttdeci">bool checkTokenSync(char *accessToken, TokenRequest tokenInfo, void(*handler)(CheckTokenResponse, Error, void *), void *userData)</div><div class="ttdoc">Check Token. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00216">TokensManager.cpp:216</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">Tizen::ArtikCloud::TokensManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8h_source.html#l00032">TokensManager.h:32</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">Tizen::ArtikCloud::RefreshTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8h_source.html#l00038">RefreshTokenResponse.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html">Tizen::ArtikCloud::TokensManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8h_source.html#l00041">TokensManager.h:41</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">Tizen::ArtikCloud::RefreshTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8h_source.html#l00045">RefreshTokenResponse.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_a8954d2a37f6c5b833c6761d5216f68e1"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a8954d2a37f6c5b833c6761d5216f68e1">Tizen::ArtikCloud::TokensManager::tokenInfoAsync</a></div><div class="ttdeci">bool tokenInfoAsync(char *accessToken, void(*handler)(TokenInfoSuccessResponse, Error, void *), void *userData)</div><div class="ttdoc">Token Info. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00498">TokensManager.cpp:498</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_error_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_error.html">Tizen::ArtikCloud::Error</a></div><div class="ttdef"><b>Definition:</b> <a href="_error_8h_source.html#l00024">Error.h:24</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_check_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">Tizen::ArtikCloud::CheckTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_check_token_response_8h_source.html#l00039">CheckTokenResponse.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_check_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_check_token_response.html">Tizen::ArtikCloud::CheckTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_check_token_response_8h_source.html#l00046">CheckTokenResponse.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_ab4dbe97b51d657d5a2ef432c315c56e7"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#ab4dbe97b51d657d5a2ef432c315c56e7">Tizen::ArtikCloud::TokensManager::checkTokenAsync</a></div><div class="ttdeci">bool checkTokenAsync(char *accessToken, TokenRequest tokenInfo, void(*handler)(CheckTokenResponse, Error, void *), void *userData)</div><div class="ttdoc">Check Token. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00206">TokensManager.cpp:206</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_a53491df9b90bd2ea038a31072c6d61c5"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a53491df9b90bd2ea038a31072c6d61c5">Tizen::ArtikCloud::TokensManager::refreshTokenSync</a></div><div class="ttdeci">bool refreshTokenSync(char *accessToken, std::string grantType, std::string refreshToken, void(*handler)(RefreshTokenResponse, Error, void *), void *userData)</div><div class="ttdoc">Refresh Token. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00362">TokensManager.cpp:362</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tokens_manager_html_a7324380bf185984a6f504a5edea05c84"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tokens_manager.html#a7324380bf185984a6f504a5edea05c84">Tizen::ArtikCloud::TokensManager::refreshTokenAsync</a></div><div class="ttdeci">bool refreshTokenAsync(char *accessToken, std::string grantType, std::string refreshToken, void(*handler)(RefreshTokenResponse, Error, void *), void *userData)</div><div class="ttdoc">Refresh Token. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tokens_manager_8cpp_source.html#l00352">TokensManager.cpp:352</a></div></div>
@@ -197,7 +203,7 @@ $(document).ready(function(){initNavTree('_tokens_manager_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>TokensManager.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

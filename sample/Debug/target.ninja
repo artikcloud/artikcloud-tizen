@@ -1,5 +1,5 @@
-build main_build: phony basicui
+build main_build: phony uibuildersingleview
 build all: phony main_build
 default all
 edje-cc-options = -deps
-binaryName = basicui
+binaryName = uibuildersingleview

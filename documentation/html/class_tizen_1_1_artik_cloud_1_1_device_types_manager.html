@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_device
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -110,7 +111,7 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_device
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_tizen_1_1_artik_cloud_1_1_device_types_manager-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Tizen::ArtikCloud::DeviceTypesManager Class Reference</div>  </div>
+<div class="title">Tizen::ArtikCloud::DeviceTypesManager Class Reference<div class="ingroups"><a class="el" href="group___device_types.html">DeviceTypes</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -134,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a151ffa30df399c99addf4402df42cbd2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a151ffa30df399c99addf4402df42cbd2">getDeviceTypesAsync</a> (char *accessToken, std::string name, int offset, int count, std::string tags, void(*handler)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *), void *userData)</td></tr>
 <tr class="memdesc:a151ffa30df399c99addf4402df42cbd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types. <em>Asynchronous</em>  <a href="#a151ffa30df399c99addf4402df42cbd2">More...</a><br/></td></tr>
 <tr class="separator:a151ffa30df399c99addf4402df42cbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff81118a5c4eccb19c06e2702f02afd4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#aff81118a5c4eccb19c06e2702f02afd4">getDeviceTypesByApplicationSync</a> (char *accessToken, std::string appId, bool productInfo, int count, int offset, void(*handler)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *), void *userData)</td></tr>
+<tr class="memdesc:aff81118a5c4eccb19c06e2702f02afd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application. <em>Synchronous</em>  <a href="#aff81118a5c4eccb19c06e2702f02afd4">More...</a><br/></td></tr>
+<tr class="separator:aff81118a5c4eccb19c06e2702f02afd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f84d3974b53695353d5d78746cc185"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a27f84d3974b53695353d5d78746cc185">getDeviceTypesByApplicationAsync</a> (char *accessToken, std::string appId, bool productInfo, int count, int offset, void(*handler)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *), void *userData)</td></tr>
+<tr class="memdesc:a27f84d3974b53695353d5d78746cc185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application. <em>Asynchronous</em>  <a href="#a27f84d3974b53695353d5d78746cc185">More...</a><br/></td></tr>
+<tr class="separator:a27f84d3974b53695353d5d78746cc185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448de223e061a53bc9d176c8d4c6e945"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html#a448de223e061a53bc9d176c8d4c6e945">getLatestManifestPropertiesSync</a> (char *accessToken, std::string deviceTypeId, void(*handler)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_manifest_properties_envelope.html">ManifestPropertiesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *), void *userData)</td></tr>
 <tr class="memdesc:a448de223e061a53bc9d176c8d4c6e945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Latest Manifest Properties. <em>Synchronous</em>  <a href="#a448de223e061a53bc9d176c8d4c6e945">More...</a><br/></td></tr>
 <tr class="separator:a448de223e061a53bc9d176c8d4c6e945"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +162,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_device_types_manager_8h_source.html#l00032">32</a> of file <a class="el" href="_device_types_manager_8h_source.html">DeviceTypesManager.h</a>.</p>
+<p>Definition at line <a class="el" href="_device_types_manager_8h_source.html#l00041">41</a> of file <a class="el" href="_device_types_manager_8h_source.html">DeviceTypesManager.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae701e9975709a672f9808130beb38bb0"></a>
 <div class="memitem">
@@ -386,6 +393,152 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
 
 </div>
 </div>
+<a class="anchor" id="a27f84d3974b53695353d5d78746cc185"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceTypesManager::getDeviceTypesByApplicationAsync </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>accessToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>appId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>productInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *)&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application. <em>Asynchronous</em> </p>
+<p>Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appId</td><td>Application ID. <em>Required</em> </td></tr>
+    <tr><td class="paramname">productInfo</td><td>Flag to include the associated ProductInfo if present </td></tr>
+    <tr><td class="paramname">count</td><td>Desired count of items in the result set. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset for pagination. </td></tr>
+    <tr><td class="paramname">handler</td><td>The callback function to be invoked on completion. <em>Required</em> </td></tr>
+    <tr><td class="paramname">accessToken</td><td>The Authorization token. <em>Required</em> </td></tr>
+    <tr><td class="paramname">userData</td><td>The user data to be passed to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00695">695</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff81118a5c4eccb19c06e2702f02afd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DeviceTypesManager::getDeviceTypesByApplicationSync </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>accessToken</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>appId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>productInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(<a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, void *)&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>userData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application. <em>Synchronous</em> </p>
+<p>Get <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device.html" title="Device information. ">Device</a> Types by Application </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appId</td><td>Application ID. <em>Required</em> </td></tr>
+    <tr><td class="paramname">productInfo</td><td>Flag to include the associated ProductInfo if present </td></tr>
+    <tr><td class="paramname">count</td><td>Desired count of items in the result set. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset for pagination. </td></tr>
+    <tr><td class="paramname">handler</td><td>The callback function to be invoked on completion. <em>Required</em> </td></tr>
+    <tr><td class="paramname">accessToken</td><td>The Authorization token. <em>Required</em> </td></tr>
+    <tr><td class="paramname">userData</td><td>The user data to be passed to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00705">705</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a91735beb16632a648964ae482986006a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -559,7 +712,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00674">674</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00847">847</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -611,7 +764,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00684">684</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00857">857</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -670,7 +823,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00832">832</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l01005">1005</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -729,7 +882,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l00842">842</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
+<p>Definition at line <a class="el" href="_device_types_manager_8cpp_source.html#l01015">1015</a> of file <a class="el" href="_device_types_manager_8cpp_source.html">DeviceTypesManager.cpp</a>.</p>
 
 </div>
 </div>
@@ -743,7 +896,7 @@ static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getBase
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Tizen</b></li><li class="navelem"><b>ArtikCloud</b></li><li class="navelem"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_manager.html">DeviceTypesManager</a></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

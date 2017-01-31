@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_device_token_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,47 +136,46 @@ $(document).ready(function(){initNavTree('_device_token_8h_source.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_token.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html">DeviceToken</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a">DeviceToken</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a">DeviceToken</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a43178ff56871ba5e2af28e0397e148f0">~DeviceToken</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a5791c15eb0857d5cea8bcd1cac174da6">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a118310d943646d0704d384f8ffc1649b">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#aba86937e36abc8aa780530a98b9979cb">getAccessToken</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2cf8453dfc67bbe59a41dfb5b54941f8">setAccessToken</a>(std::string  accessToken);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#ac3135e0d7271493424384d5259fe6f11">getUid</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_device_token.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html">DeviceToken</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a">DeviceToken</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a">DeviceToken</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a43178ff56871ba5e2af28e0397e148f0">~DeviceToken</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a5791c15eb0857d5cea8bcd1cac174da6">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a118310d943646d0704d384f8ffc1649b">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#aba86937e36abc8aa780530a98b9979cb">getAccessToken</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a1a5c51a7120f46bc6682629f14a6aa5e">setUid</a>(std::string  uid);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a17af9f13ede8ba9f0c04805fe2eca07c">getDid</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2cf8453dfc67bbe59a41dfb5b54941f8">setAccessToken</a>(std::string  accessToken);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#ac3135e0d7271493424384d5259fe6f11">getUid</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#adc63416db82db2de97b258a7659f3296">setDid</a>(std::string  did);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#ab457a22b9da7f6f369ab525e0fce4f47">getCid</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a1a5c51a7120f46bc6682629f14a6aa5e">setUid</a>(std::string  uid);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a17af9f13ede8ba9f0c04805fe2eca07c">getDid</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2ec9d9bd6cb98b06dd3c03cb9b6e4253">setCid</a>(std::string  cid);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string accessToken;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string uid;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string did;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string cid;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceToken_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#adc63416db82db2de97b258a7659f3296">setDid</a>(std::string  did);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#ab457a22b9da7f6f369ab525e0fce4f47">getCid</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2ec9d9bd6cb98b06dd3c03cb9b6e4253">setCid</a>(std::string  cid);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string accessToken;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string uid;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string did;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string cid;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _DeviceToken_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_a118310d943646d0704d384f8ffc1649b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a118310d943646d0704d384f8ffc1649b">Tizen::ArtikCloud::DeviceToken::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00084">DeviceToken.cpp:84</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_adc63416db82db2de97b258a7659f3296"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#adc63416db82db2de97b258a7659f3296">Tizen::ArtikCloud::DeviceToken::setDid</a></div><div class="ttdeci">void setDid(std::string did)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00219">DeviceToken.cpp:219</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_device_token_8h_source.html','');});
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_a2ec9d9bd6cb98b06dd3c03cb9b6e4253"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2ec9d9bd6cb98b06dd3c03cb9b6e4253">Tizen::ArtikCloud::DeviceToken::setCid</a></div><div class="ttdeci">void setCid(std::string cid)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00231">DeviceToken.cpp:231</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_aba86937e36abc8aa780530a98b9979cb"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#aba86937e36abc8aa780530a98b9979cb">Tizen::ArtikCloud::DeviceToken::getAccessToken</a></div><div class="ttdeci">std::string getAccessToken()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00189">DeviceToken.cpp:189</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_a2cf8453dfc67bbe59a41dfb5b54941f8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a2cf8453dfc67bbe59a41dfb5b54941f8">Tizen::ArtikCloud::DeviceToken::setAccessToken</a></div><div class="ttdeci">void setAccessToken(std::string accessToken)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00195">DeviceToken.cpp:195</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html">Tizen::ArtikCloud::DeviceToken</a></div><div class="ttdoc">Device Token. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8h_source.html#l00038">DeviceToken.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html">Tizen::ArtikCloud::DeviceToken</a></div><div class="ttdoc">Device Token. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8h_source.html#l00045">DeviceToken.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_ab457a22b9da7f6f369ab525e0fce4f47"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#ab457a22b9da7f6f369ab525e0fce4f47">Tizen::ArtikCloud::DeviceToken::getCid</a></div><div class="ttdeci">std::string getCid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00225">DeviceToken.cpp:225</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_a17af9f13ede8ba9f0c04805fe2eca07c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a17af9f13ede8ba9f0c04805fe2eca07c">Tizen::ArtikCloud::DeviceToken::getDid</a></div><div class="ttdeci">std::string getDid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00213">DeviceToken.cpp:213</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_token_html_a43178ff56871ba5e2af28e0397e148f0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a43178ff56871ba5e2af28e0397e148f0">Tizen::ArtikCloud::DeviceToken::~DeviceToken</a></div><div class="ttdeci">virtual ~DeviceToken()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_device_token_8cpp_source.html#l00034">DeviceToken.cpp:34</a></div></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('_device_token_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>DeviceToken.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

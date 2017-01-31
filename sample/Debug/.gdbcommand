@@ -1,0 +1,4 @@
+set sysroot /home/akhil/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core
+set debug-file-directory /home/akhil/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/lib/debug
+set solib-search-path /home/akhil/workspace2/UIBuilderSingleView/Debug
+dir /home/akhil/tizen-studio/tools/smart-build-interface/../../platforms/tizen-2.4/mobile/rootstraps/mobile-2.4-device.core/usr/src/debug

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document>
+	<mscreen>
+		<configuration device="HD" id="config1" name="common"
+			orientation="portrait" type="common" />
+	</mscreen>
+	<views startup="view1">
+		<view id="view1" indicator="true" screen_orientation="full_sensor"
+			type="view">
+
+			<grid weight_h="1" id="grid1" vsize_w="1000" visible="true"
+				align_v="fill" align_h="fill" vsize_h="1000" weight_v="1">
+				
+				<button text="Send Message" visible="true" align_v="fill" pack_h="75"
+					weight_h="1" id="button1" style="default" align_h="fill" pack_w="250"
+					pack_x="675" disable="false" pack_y="262" weight_v="1">
+					<event signal="clicked" function_name="view1_button1_onclicked"></event>
+				</button>
+				
+				<button text="Get Message" visible="true" align_v="fill" pack_h="75"
+					weight_h="1" id="button2" style="default" align_h="fill" pack_w="250"
+					pack_x="675" disable="false" pack_y="462" weight_v="1">
+					<event signal="clicked" function_name="view1_button2_onclicked"></event>
+				</button>
+
+				<box homogeneous="false" padding_v="0" visible="true" align_v="fill"
+					direction="vertical" pack_h="500" weight_h="1" id="box1" padding_h="0"
+					align_h="fill" pack_w="500" pack_x="100" pack_y="150" weight_v="1">			
+				</box>
+				
+				<box homogeneous="false" padding_v="0" visible="true" align_v="fill"
+					direction="vertical" pack_h="100" weight_h="1" id="box2" padding_h="0"
+					align_h="fill" pack_w="1000" pack_x="0" pack_y="0" weight_v="1">
+
+					<label wrap_width="0"
+						text="&lt;align=center&gt;&lt;font_size=80&gt;&lt;backing_color=FFFF00&gt;Artik Cloud&lt;/backing_color&gt;&lt;/font&gt;&lt;/align&gt;"
+						visible="true" align_v="fill" ellipsis="false" weight_h="1" id="label4"
+						line_wrap="none" align_h="fill" disable="false" weight_v="1">
+					</label>
+				</box>
+
+			</grid>
+		</view>
+	</views>
+</document>

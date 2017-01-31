@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -172,7 +173,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> createUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> createUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
@@ -227,7 +228,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">bool</span> createUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> createUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::string userId, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">AppProperties</a> properties, std::string aid, </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -344,7 +345,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">bool</span> deleteUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> deleteUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;{</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -399,7 +400,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;}</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keywordtype">bool</span> deleteUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> deleteUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    std::string userId, std::string aid, </div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -503,7 +504,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;}</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keywordtype">bool</span> getSelfProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getSelfProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;{</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html">UserEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -558,7 +559,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            }</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keywordtype">bool</span> getSelfHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getSelfHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    </div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html">UserEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -649,7 +650,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;}</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="keywordtype">bool</span> getUserDeviceTypesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserDeviceTypesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;{</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -704,7 +705,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            }</div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;}</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keywordtype">bool</span> getUserDeviceTypesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserDeviceTypesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    std::string userId, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> count, <span class="keywordtype">bool</span> includeShared, </div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">DeviceTypesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -822,7 +823,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;}</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="keywordtype">bool</span> getUserDevicesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserDevicesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;{</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html">DevicesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -877,7 +878,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;            }</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;}</div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="keywordtype">bool</span> getUserDevicesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserDevicesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    std::string userId, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> count, <span class="keywordtype">bool</span> includeProperties, </div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html">DevicesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -995,7 +996,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;}</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;<span class="keywordtype">bool</span> getUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;{</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -1050,7 +1051,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;            }</div>
 <div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;}</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;</div>
-<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="keywordtype">bool</span> getUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    std::string userId, std::string aid, </div>
 <div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -1154,7 +1155,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;}</div>
 <div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;</div>
-<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keywordtype">bool</span> getUserRulesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserRulesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;{</div>
 <div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">RulesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -1209,7 +1210,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;            }</div>
 <div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;}</div>
 <div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="keywordtype">bool</span> getUserRulesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getUserRulesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    std::string userId, <span class="keywordtype">bool</span> excludeDisabled, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> offset, </div>
 <div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">RulesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -1327,7 +1328,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l01219"></a><span class="lineno"> 1219</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;}</div>
 <div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;<span class="keywordtype">bool</span> updateUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> updateUserPropertiesProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;{</div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -1382,7 +1383,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;            }</div>
 <div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;}</div>
 <div class="line"><a name="l01276"></a><span class="lineno"> 1276</span>&#160;</div>
-<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="keywordtype">bool</span> updateUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l01277"></a><span class="lineno"> 1277</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> updateUserPropertiesHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l01278"></a><span class="lineno"> 1278</span>&#160;    std::string userId, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">AppProperties</a> properties, std::string aid, </div>
 <div class="line"><a name="l01279"></a><span class="lineno"> 1279</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">PropertiesEnvelope</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l01280"></a><span class="lineno"> 1280</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -1499,20 +1500,20 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;}</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;</div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_devices_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html">Tizen::ArtikCloud::DevicesEnvelope</a></div><div class="ttdoc">Devices Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_devices_envelope_8h_source.html#l00039">DevicesEnvelope.h:39</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_user_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html">Tizen::ArtikCloud::UserEnvelope</a></div><div class="ttdoc">User Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_user_envelope_8h_source.html#l00039">UserEnvelope.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_devices_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html">Tizen::ArtikCloud::DevicesEnvelope</a></div><div class="ttdoc">Devices Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_devices_envelope_8h_source.html#l00046">DevicesEnvelope.h:46</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_user_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html">Tizen::ArtikCloud::UserEnvelope</a></div><div class="ttdoc">User Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_user_envelope_8h_source.html#l00046">UserEnvelope.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_devices_envelope_html_ae76861a880de90d01f0f84770eb83c2b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#ae76861a880de90d01f0f84770eb83c2b">Tizen::ArtikCloud::DevicesEnvelope::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_devices_envelope_8cpp_source.html#l00143">DevicesEnvelope.cpp:143</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_properties_envelope_html_ae2692b9eb4d47a474f78c71878ef6b7c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html#ae2692b9eb4d47a474f78c71878ef6b7c">Tizen::ArtikCloud::PropertiesEnvelope::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_properties_envelope_8cpp_source.html#l00086">PropertiesEnvelope.cpp:86</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_request_info_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_request_info.html">Tizen::ArtikCloud::RequestInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_request_info_8h_source.html#l00027">RequestInfo.h:27</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_types_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">Tizen::ArtikCloud::DeviceTypesEnvelope</a></div><div class="ttdoc">DeviceTypes Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_device_types_envelope_8h_source.html#l00039">DeviceTypesEnvelope.h:39</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">Tizen::ArtikCloud::AppProperties</a></div><div class="ttdoc">User Application Properties. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8h_source.html#l00038">AppProperties.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_types_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html">Tizen::ArtikCloud::DeviceTypesEnvelope</a></div><div class="ttdoc">DeviceTypes Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_device_types_envelope_8h_source.html#l00046">DeviceTypesEnvelope.h:46</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_app_properties_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_app_properties.html">Tizen::ArtikCloud::AppProperties</a></div><div class="ttdoc">User Application Properties. </div><div class="ttdef"><b>Definition:</b> <a href="_app_properties_8h_source.html#l00045">AppProperties.h:45</a></div></div>
 <div class="ttc" id="struct_memory_struct__s_html"><div class="ttname"><a href="struct_memory_struct__s.html">MemoryStruct_s</a></div><div class="ttdef"><b>Definition:</b> <a href="_net_client_8h_source.html#l00055">NetClient.h:55</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_user_envelope_html_ac78eb8b37de836b4c6302c398262d265"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html#ac78eb8b37de836b4c6302c398262d265">Tizen::ArtikCloud::UserEnvelope::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_user_envelope_8cpp_source.html#l00086">UserEnvelope.cpp:86</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_types_envelope_html_a214e90b2e1d545c2ee50e994e2ec64fa"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a214e90b2e1d545c2ee50e994e2ec64fa">Tizen::ArtikCloud::DeviceTypesEnvelope::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_device_types_envelope_8cpp_source.html#l00084">DeviceTypesEnvelope.cpp:84</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_properties_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">Tizen::ArtikCloud::PropertiesEnvelope</a></div><div class="ttdoc">User Application Properties Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_properties_envelope_8h_source.html#l00039">PropertiesEnvelope.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_properties_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html">Tizen::ArtikCloud::PropertiesEnvelope</a></div><div class="ttdoc">User Application Properties Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_properties_envelope_8h_source.html#l00046">PropertiesEnvelope.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_devices_envelope_html_ac600e675fbac506f6b4b26ff30a80eb2"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#ac600e675fbac506f6b4b26ff30a80eb2">Tizen::ArtikCloud::DevicesEnvelope::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_devices_envelope_8cpp_source.html#l00084">DevicesEnvelope.cpp:84</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_device_types_envelope_html_a15ef28bb3f41407293f00dfd633d8fa0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a15ef28bb3f41407293f00dfd633d8fa0">Tizen::ArtikCloud::DeviceTypesEnvelope::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_device_types_envelope_8cpp_source.html#l00143">DeviceTypesEnvelope.cpp:143</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">Tizen::ArtikCloud::RulesEnvelope</a></div><div class="ttdoc">Rules Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8h_source.html#l00040">RulesEnvelope.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_rules_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html">Tizen::ArtikCloud::RulesEnvelope</a></div><div class="ttdoc">Rules Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_rules_envelope_8h_source.html#l00047">RulesEnvelope.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_error_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_error.html">Tizen::ArtikCloud::Error</a></div><div class="ttdef"><b>Definition:</b> <a href="_error_8h_source.html#l00024">Error.h:24</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_properties_envelope_html_afea7d2adc963083f4868f5c71a9e3abb"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html#afea7d2adc963083f4868f5c71a9e3abb">Tizen::ArtikCloud::PropertiesEnvelope::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_properties_envelope_8cpp_source.html#l00060">PropertiesEnvelope.cpp:60</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_user_envelope_html_af60b11aa6836d1aa668e8e2a202c98d8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html#af60b11aa6836d1aa668e8e2a202c98d8">Tizen::ArtikCloud::UserEnvelope::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_user_envelope_8cpp_source.html#l00060">UserEnvelope.cpp:60</a></div></div>
@@ -1525,7 +1526,7 @@ $(document).ready(function(){initNavTree('_users_manager_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>UsersManager.cpp</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

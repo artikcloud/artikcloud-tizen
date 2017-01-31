@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_refresh_token_response_8h_source.html
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,52 +136,51 @@ $(document).ready(function(){initNavTree('_refresh_token_response_8h_source.html
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a786b31426a48027b16260685109ecb1e">RefreshTokenResponse</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a786b31426a48027b16260685109ecb1e">RefreshTokenResponse</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#aadd1b4d3d1245211bcd0ec3969ef2b28">~RefreshTokenResponse</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a1d5c807664f45d4fd3e074b8ae905cc1">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a9a470a0134533b22a83a57706a11ad5c">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a8095bdd2a46c66bf16c563a537178d27">getAccessToken</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a0f6557d14a7d04cc70e27fe050733897">setAccessToken</a>(std::string  access_token);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a4031d4dc497ae85f96231ebecb98e767">getExpiresIn</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">RefreshTokenResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a786b31426a48027b16260685109ecb1e">RefreshTokenResponse</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a786b31426a48027b16260685109ecb1e">RefreshTokenResponse</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#aadd1b4d3d1245211bcd0ec3969ef2b28">~RefreshTokenResponse</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a1d5c807664f45d4fd3e074b8ae905cc1">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a9a470a0134533b22a83a57706a11ad5c">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a8095bdd2a46c66bf16c563a537178d27">getAccessToken</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ab74b63aff8036aec48c3a6bfd35ba62b">setExpiresIn</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  expires_in);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ab60b8677d2e555f8b4088f2c772aa4d0">getRefreshToken</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a0f6557d14a7d04cc70e27fe050733897">setAccessToken</a>(std::string  access_token);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a4031d4dc497ae85f96231ebecb98e767">getExpiresIn</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a507087276587ab3631a39613271c92f5">setRefreshToken</a>(std::string  refresh_token);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ae817e9e6897f9b976f15d0ad323ddcae">getTokenType</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ab74b63aff8036aec48c3a6bfd35ba62b">setExpiresIn</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  expires_in);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ab60b8677d2e555f8b4088f2c772aa4d0">getRefreshToken</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ac108ab8ac159adbeb1d2cb3f3da45f0f">setTokenType</a>(std::string  token_type);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string access_token;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> expires_in;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string refresh_token;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::string token_type;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RefreshTokenResponse_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a507087276587ab3631a39613271c92f5">setRefreshToken</a>(std::string  refresh_token);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ae817e9e6897f9b976f15d0ad323ddcae">getTokenType</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ac108ab8ac159adbeb1d2cb3f3da45f0f">setTokenType</a>(std::string  token_type);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string access_token;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> expires_in;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string refresh_token;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string token_type;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _RefreshTokenResponse_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_a8095bdd2a46c66bf16c563a537178d27"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a8095bdd2a46c66bf16c563a537178d27">Tizen::ArtikCloud::RefreshTokenResponse::getAccessToken</a></div><div class="ttdeci">std::string getAccessToken()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00189">RefreshTokenResponse.cpp:189</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_ab60b8677d2e555f8b4088f2c772aa4d0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#ab60b8677d2e555f8b4088f2c772aa4d0">Tizen::ArtikCloud::RefreshTokenResponse::getRefreshToken</a></div><div class="ttdeci">std::string getRefreshToken()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00213">RefreshTokenResponse.cpp:213</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_aadd1b4d3d1245211bcd0ec3969ef2b28"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#aadd1b4d3d1245211bcd0ec3969ef2b28">Tizen::ArtikCloud::RefreshTokenResponse::~RefreshTokenResponse</a></div><div class="ttdeci">virtual ~RefreshTokenResponse()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00034">RefreshTokenResponse.cpp:34</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">Tizen::ArtikCloud::RefreshTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8h_source.html#l00038">RefreshTokenResponse.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html">Tizen::ArtikCloud::RefreshTokenResponse</a></div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8h_source.html#l00045">RefreshTokenResponse.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_a1d5c807664f45d4fd3e074b8ae905cc1"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a1d5c807664f45d4fd3e074b8ae905cc1">Tizen::ArtikCloud::RefreshTokenResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00140">RefreshTokenResponse.cpp:140</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_a4031d4dc497ae85f96231ebecb98e767"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a4031d4dc497ae85f96231ebecb98e767">Tizen::ArtikCloud::RefreshTokenResponse::getExpiresIn</a></div><div class="ttdeci">long long getExpiresIn()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00201">RefreshTokenResponse.cpp:201</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_refresh_token_response_html_a9a470a0134533b22a83a57706a11ad5c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html#a9a470a0134533b22a83a57706a11ad5c">Tizen::ArtikCloud::RefreshTokenResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_refresh_token_response_8cpp_source.html#l00084">RefreshTokenResponse.cpp:84</a></div></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('_refresh_token_response_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>RefreshTokenResponse.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

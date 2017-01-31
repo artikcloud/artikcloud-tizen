@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -172,7 +173,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> exportRequestProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> exportRequestProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html">ExportRequestResponse</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
@@ -227,7 +228,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">bool</span> exportRequestHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> exportRequestHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html">ExportRequestInfo</a> exportRequestInfo, </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html">ExportRequestResponse</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -331,7 +332,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keywordtype">bool</span> getExportHistoryProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportHistoryProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;{</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">ExportHistoryResponse</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -386,7 +387,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            }</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keywordtype">bool</span> getExportHistoryHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportHistoryHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    std::string trialId, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> offset, </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">ExportHistoryResponse</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -498,7 +499,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;}</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keywordtype">bool</span> getExportResultProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportResultProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;{</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    void(* handler)(std::string, Error, <span class="keywordtype">void</span>* )</div>
@@ -548,7 +549,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            }</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">bool</span> getExportResultHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportResultHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    std::string exportId, </div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keywordtype">void</span>(* handler)(std::string, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -645,7 +646,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    handler, userData, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="keywordtype">bool</span> getExportStatusProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportStatusProcessor(<a class="code" href="struct_memory_struct__s.html">MemoryStruct_s</a> p_chunk, <span class="keywordtype">long</span> code, <span class="keywordtype">char</span>* errormsg, <span class="keywordtype">void</span>* userData,</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordtype">void</span>(* voidHandler)())</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;{</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    void(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html">ExportStatusResponse</a>, Error, <span class="keywordtype">void</span>* )</div>
@@ -700,7 +701,7 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;            }</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;}</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="keywordtype">bool</span> getExportStatusHelper(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> getExportStatusHelper(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    std::string exportId, </div>
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html">ExportStatusResponse</a>, Error, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    , <span class="keywordtype">void</span>* userData, <span class="keywordtype">bool</span> isAsync)</div>
@@ -800,24 +801,24 @@ $(document).ready(function(){initNavTree('_export_manager_8cpp_source.html','');
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_status_response_html_adb105da9dec5954bf2da47934c1924e2"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html#adb105da9dec5954bf2da47934c1924e2">Tizen::ArtikCloud::ExportStatusResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_export_status_response_8cpp_source.html#l00092">ExportStatusResponse.cpp:92</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_response_html_a8f78907ed96d8f8b708c1ab5e53c7464"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html#a8f78907ed96d8f8b708c1ab5e53c7464">Tizen::ArtikCloud::ExportRequestResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_response_8cpp_source.html#l00060">ExportRequestResponse.cpp:60</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_request_info_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_request_info.html">Tizen::ArtikCloud::RequestInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="_request_info_8h_source.html#l00027">RequestInfo.h:27</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_info_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html">Tizen::ArtikCloud::ExportRequestInfo</a></div><div class="ttdoc">Export Request Info. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_info_8h_source.html#l00038">ExportRequestInfo.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_info_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html">Tizen::ArtikCloud::ExportRequestInfo</a></div><div class="ttdoc">Export Request Info. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_info_8h_source.html#l00045">ExportRequestInfo.h:45</a></div></div>
 <div class="ttc" id="struct_memory_struct__s_html"><div class="ttname"><a href="struct_memory_struct__s.html">MemoryStruct_s</a></div><div class="ttdef"><b>Definition:</b> <a href="_net_client_8h_source.html#l00055">NetClient.h:55</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_info_html_add5868e16286e4dc991aee72bc291094"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html#add5868e16286e4dc991aee72bc291094">Tizen::ArtikCloud::ExportRequestInfo::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_info_8cpp_source.html#l00254">ExportRequestInfo.cpp:254</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html">Tizen::ArtikCloud::ExportRequestResponse</a></div><div class="ttdoc">Export Request Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_response_8h_source.html#l00039">ExportRequestResponse.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html">Tizen::ArtikCloud::ExportRequestResponse</a></div><div class="ttdoc">Export Request Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_response_8h_source.html#l00046">ExportRequestResponse.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_request_response_html_a760cd634f7e951ec3b243ccad39d140f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html#a760cd634f7e951ec3b243ccad39d140f">Tizen::ArtikCloud::ExportRequestResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_export_request_response_8cpp_source.html#l00086">ExportRequestResponse.cpp:86</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_error_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_error.html">Tizen::ArtikCloud::Error</a></div><div class="ttdef"><b>Definition:</b> <a href="_error_8h_source.html#l00024">Error.h:24</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_aebff2386c9e971ea37dd9fda7be03541"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aebff2386c9e971ea37dd9fda7be03541">Tizen::ArtikCloud::ExportHistoryResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00143">ExportHistoryResponse.cpp:143</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_adbfbc5c4276bfeac3e040e7d09995dd0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#adbfbc5c4276bfeac3e040e7d09995dd0">Tizen::ArtikCloud::ExportHistoryResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00084">ExportHistoryResponse.cpp:84</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_status_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html">Tizen::ArtikCloud::ExportStatusResponse</a></div><div class="ttdoc">Export Status Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_status_response_8h_source.html#l00038">ExportStatusResponse.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_status_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html">Tizen::ArtikCloud::ExportStatusResponse</a></div><div class="ttdoc">Export Status Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_status_response_8h_source.html#l00045">ExportStatusResponse.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_status_response_html_a4cb510bca3870b2a3d7bb7e51524c1ad"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html#a4cb510bca3870b2a3d7bb7e51524c1ad">Tizen::ArtikCloud::ExportStatusResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_export_status_response_8cpp_source.html#l00159">ExportStatusResponse.cpp:159</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">Tizen::ArtikCloud::ExportHistoryResponse</a></div><div class="ttdoc">Export History Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8h_source.html#l00039">ExportHistoryResponse.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">Tizen::ArtikCloud::ExportHistoryResponse</a></div><div class="ttdoc">Export History Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8h_source.html#l00046">ExportHistoryResponse.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><b>ExportManager.cpp</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

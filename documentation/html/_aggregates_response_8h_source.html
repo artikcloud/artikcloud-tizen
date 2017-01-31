@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_aggregates_response_8h_source.html','
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,55 +138,54 @@ $(document).ready(function(){initNavTree('_aggregates_response_8h_source.html','
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">AggregatesResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10">AggregatesResponse</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10">AggregatesResponse</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a5f3d7260a8df8d01a91e39b1d4c9085f">~AggregatesResponse</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a4116f675a468ed7020c1752fedc864dd">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#adcb555327be64819a7161fd201a6c90d">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::list&lt;AggregateData&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a60a54e385a88b813cdc59e15ed8501b2">getData</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a6709b0a44841239c5e679a5308bb3adb">setData</a>(std::list &lt;AggregateData&gt; data);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a0381e5a3959c9f00ece138ccf41dbfd9">getEndDate</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">AggregatesResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10">AggregatesResponse</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10">AggregatesResponse</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a5f3d7260a8df8d01a91e39b1d4c9085f">~AggregatesResponse</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a4116f675a468ed7020c1752fedc864dd">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#adcb555327be64819a7161fd201a6c90d">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::list&lt;AggregateData&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a60a54e385a88b813cdc59e15ed8501b2">getData</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad30a37d4e6207a9eecdcf3b50a78a828">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a44702dfc48853fd5c7a1ea027e7739ab">getField</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a6709b0a44841239c5e679a5308bb3adb">setData</a>(std::list &lt;AggregateData&gt; data);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a0381e5a3959c9f00ece138ccf41dbfd9">getEndDate</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a232d9e169616abb21ccdb05022ff2f28">setField</a>(std::string  field);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad885745bc8454830cf978f41db4da7e7">getSdid</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad30a37d4e6207a9eecdcf3b50a78a828">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a44702dfc48853fd5c7a1ea027e7739ab">getField</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a9d3daa904889109e2702b4dfc6708ac3">setSdid</a>(std::string  sdid);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#aa5af54ab57a9a9be17726e6d7ce51000">getSize</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a232d9e169616abb21ccdb05022ff2f28">setField</a>(std::string  field);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad885745bc8454830cf978f41db4da7e7">getSdid</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#aff713e125dd3a2b4824b2457a98e4bbd">setSize</a>(<span class="keywordtype">int</span>  size);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a34e2d5a4b8a81e4d0a2680c334a1e856">getStartDate</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a9d3daa904889109e2702b4dfc6708ac3">setSdid</a>(std::string  sdid);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#aa5af54ab57a9a9be17726e6d7ce51000">getSize</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a35579031582f211de26b94cdb11afe52">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::list &lt;AggregateData&gt;data;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::string field;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::string sdid;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AggregatesResponse_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#aff713e125dd3a2b4824b2457a98e4bbd">setSize</a>(<span class="keywordtype">int</span>  size);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a34e2d5a4b8a81e4d0a2680c334a1e856">getStartDate</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a35579031582f211de26b94cdb11afe52">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::list &lt;AggregateData&gt;data;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::string field;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::string sdid;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AggregatesResponse_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_ad885745bc8454830cf978f41db4da7e7"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad885745bc8454830cf978f41db4da7e7">Tizen::ArtikCloud::AggregatesResponse::getSdid</a></div><div class="ttdeci">std::string getSdid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00310">AggregatesResponse.cpp:310</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_a232d9e169616abb21ccdb05022ff2f28"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a232d9e169616abb21ccdb05022ff2f28">Tizen::ArtikCloud::AggregatesResponse::setField</a></div><div class="ttdeci">void setField(std::string field)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00304">AggregatesResponse.cpp:304</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_aggregates_response_8h_source.html','
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_a9d3daa904889109e2702b4dfc6708ac3"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a9d3daa904889109e2702b4dfc6708ac3">Tizen::ArtikCloud::AggregatesResponse::setSdid</a></div><div class="ttdeci">void setSdid(std::string sdid)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00316">AggregatesResponse.cpp:316</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_ad30a37d4e6207a9eecdcf3b50a78a828"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#ad30a37d4e6207a9eecdcf3b50a78a828">Tizen::ArtikCloud::AggregatesResponse::setEndDate</a></div><div class="ttdeci">void setEndDate(long long endDate)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00292">AggregatesResponse.cpp:292</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_aa5af54ab57a9a9be17726e6d7ce51000"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#aa5af54ab57a9a9be17726e6d7ce51000">Tizen::ArtikCloud::AggregatesResponse::getSize</a></div><div class="ttdeci">int getSize()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00322">AggregatesResponse.cpp:322</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">Tizen::ArtikCloud::AggregatesResponse</a></div><div class="ttdoc">Aggregates Response. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8h_source.html#l00040">AggregatesResponse.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html">Tizen::ArtikCloud::AggregatesResponse</a></div><div class="ttdoc">Aggregates Response. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8h_source.html#l00047">AggregatesResponse.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_a4116f675a468ed7020c1752fedc864dd"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a4116f675a468ed7020c1752fedc864dd">Tizen::ArtikCloud::AggregatesResponse::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00191">AggregatesResponse.cpp:191</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_a07948ada0ec1d2b9ce43c17152672e10"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10">Tizen::ArtikCloud::AggregatesResponse::AggregatesResponse</a></div><div class="ttdeci">AggregatesResponse()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00029">AggregatesResponse.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_response_html_a0381e5a3959c9f00ece138ccf41dbfd9"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a0381e5a3959c9f00ece138ccf41dbfd9">Tizen::ArtikCloud::AggregatesResponse::getEndDate</a></div><div class="ttdeci">long long getEndDate()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_response_8cpp_source.html#l00286">AggregatesResponse.cpp:286</a></div></div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('_aggregates_response_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>AggregatesResponse.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

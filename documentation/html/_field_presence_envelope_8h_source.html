@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_field_presence_envelope_8h_source.htm
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,59 +138,58 @@ $(document).ready(function(){initNavTree('_field_presence_envelope_8h_source.htm
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">FieldPresenceEnvelope</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8f2e1ac42d45eb36bdda9670ddf1f27c">FieldPresenceEnvelope</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8f2e1ac42d45eb36bdda9670ddf1f27c">FieldPresenceEnvelope</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ac0b9d3922af8c42fee02e0f3e8ce8313">~FieldPresenceEnvelope</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a259e9409390667b292523f45573242a4">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a3f8e7aae4cdaa3cd0244fbe050528465">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a32c62afd24f4be5785d5fc61be7b04c8">getSdid</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a4a72c737df240592c36179907e0b0bff">setSdid</a>(std::string  sdid);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aa9a06403a617a58bc2adf0d1a4d079cc">getFieldPresence</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">FieldPresenceEnvelope</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8f2e1ac42d45eb36bdda9670ddf1f27c">FieldPresenceEnvelope</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8f2e1ac42d45eb36bdda9670ddf1f27c">FieldPresenceEnvelope</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ac0b9d3922af8c42fee02e0f3e8ce8313">~FieldPresenceEnvelope</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a259e9409390667b292523f45573242a4">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a3f8e7aae4cdaa3cd0244fbe050528465">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a32c62afd24f4be5785d5fc61be7b04c8">getSdid</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ae996d4cf3baaf2d1e967b6a65efa564e">setFieldPresence</a>(std::string  fieldPresence);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8eeb20571522974496b9e65278882160">getStartDate</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a4a72c737df240592c36179907e0b0bff">setSdid</a>(std::string  sdid);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aa9a06403a617a58bc2adf0d1a4d079cc">getFieldPresence</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aaf0223643da7828df21d4169bf336c9b">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ace7467910384788247f1844726bc01a6">getEndDate</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ae996d4cf3baaf2d1e967b6a65efa564e">setFieldPresence</a>(std::string  fieldPresence);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a8eeb20571522974496b9e65278882160">getStartDate</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a47fcdfa5404f31ff29cfbb278cfd6b46">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a5ed195ca51c66c2d9a04a0548f4eaf7e">getInterval</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aaf0223643da7828df21d4169bf336c9b">setStartDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  startDate);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ace7467910384788247f1844726bc01a6">getEndDate</a>();</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af43d3e9333cf577f90ce2834a3fc6146">setInterval</a>(std::string  interval);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af27813c9d6de675a2b89f5662817ff18">getSize</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a47fcdfa5404f31ff29cfbb278cfd6b46">setEndDate</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  endDate);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a5ed195ca51c66c2d9a04a0548f4eaf7e">getInterval</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aec6d942d95984d22dd98aa8e7c8f98d4">setSize</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  size);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::list&lt;FieldPresence&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a6da376d2e58f0de729aa4cd81dcacca7">getData</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af43d3e9333cf577f90ce2834a3fc6146">setInterval</a>(std::string  interval);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af27813c9d6de675a2b89f5662817ff18">getSize</a>();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a4456d6e7b88aa7cbb3c90316f6d19ff4">setData</a>(std::list &lt;FieldPresence&gt; data);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string sdid;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::string fieldPresence;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::string interval;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> size;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::list &lt;FieldPresence&gt;data;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FieldPresenceEnvelope_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aec6d942d95984d22dd98aa8e7c8f98d4">setSize</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  size);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::list&lt;FieldPresence&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a6da376d2e58f0de729aa4cd81dcacca7">getData</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a4456d6e7b88aa7cbb3c90316f6d19ff4">setData</a>(std::list &lt;FieldPresence&gt; data);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string sdid;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::string fieldPresence;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> startDate;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> endDate;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::string interval;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> size;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::list &lt;FieldPresence&gt;data;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FieldPresenceEnvelope_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_af43d3e9333cf577f90ce2834a3fc6146"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af43d3e9333cf577f90ce2834a3fc6146">Tizen::ArtikCloud::FieldPresenceEnvelope::setInterval</a></div><div class="ttdeci">void setInterval(std::string interval)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00356">FieldPresenceEnvelope.cpp:356</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_a6da376d2e58f0de729aa4cd81dcacca7"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a6da376d2e58f0de729aa4cd81dcacca7">Tizen::ArtikCloud::FieldPresenceEnvelope::getData</a></div><div class="ttdeci">std::list&lt; FieldPresence &gt; getData()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00374">FieldPresenceEnvelope.cpp:374</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_aa9a06403a617a58bc2adf0d1a4d079cc"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aa9a06403a617a58bc2adf0d1a4d079cc">Tizen::ArtikCloud::FieldPresenceEnvelope::getFieldPresence</a></div><div class="ttdeci">std::string getFieldPresence()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00314">FieldPresenceEnvelope.cpp:314</a></div></div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('_field_presence_envelope_8h_source.htm
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_aaf0223643da7828df21d4169bf336c9b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#aaf0223643da7828df21d4169bf336c9b">Tizen::ArtikCloud::FieldPresenceEnvelope::setStartDate</a></div><div class="ttdeci">void setStartDate(long long startDate)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00332">FieldPresenceEnvelope.cpp:332</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_ae996d4cf3baaf2d1e967b6a65efa564e"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#ae996d4cf3baaf2d1e967b6a65efa564e">Tizen::ArtikCloud::FieldPresenceEnvelope::setFieldPresence</a></div><div class="ttdeci">void setFieldPresence(std::string fieldPresence)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00320">FieldPresenceEnvelope.cpp:320</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_a32c62afd24f4be5785d5fc61be7b04c8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a32c62afd24f4be5785d5fc61be7b04c8">Tizen::ArtikCloud::FieldPresenceEnvelope::getSdid</a></div><div class="ttdeci">std::string getSdid()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00302">FieldPresenceEnvelope.cpp:302</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">Tizen::ArtikCloud::FieldPresenceEnvelope</a></div><div class="ttdoc">Field Presence Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8h_source.html#l00040">FieldPresenceEnvelope.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html">Tizen::ArtikCloud::FieldPresenceEnvelope</a></div><div class="ttdoc">Field Presence Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8h_source.html#l00047">FieldPresenceEnvelope.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_a47fcdfa5404f31ff29cfbb278cfd6b46"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a47fcdfa5404f31ff29cfbb278cfd6b46">Tizen::ArtikCloud::FieldPresenceEnvelope::setEndDate</a></div><div class="ttdeci">void setEndDate(long long endDate)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00344">FieldPresenceEnvelope.cpp:344</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_af27813c9d6de675a2b89f5662817ff18"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#af27813c9d6de675a2b89f5662817ff18">Tizen::ArtikCloud::FieldPresenceEnvelope::getSize</a></div><div class="ttdeci">long long getSize()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00362">FieldPresenceEnvelope.cpp:362</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope_html_a5ed195ca51c66c2d9a04a0548f4eaf7e"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html#a5ed195ca51c66c2d9a04a0548f4eaf7e">Tizen::ArtikCloud::FieldPresenceEnvelope::getInterval</a></div><div class="ttdeci">std::string getInterval()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_field_presence_envelope_8cpp_source.html#l00350">FieldPresenceEnvelope.cpp:350</a></div></div>
@@ -216,7 +216,7 @@ $(document).ready(function(){initNavTree('_field_presence_envelope_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>FieldPresenceEnvelope.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

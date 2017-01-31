@@ -1,6 +1,7 @@
 var NAVTREE =
 [
   [ "ARTIK Cloud API 2.0.0 Tizen SDK", "index.html", [
+    [ "Modules", "modules.html", "modules" ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -19,12 +20,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"class_tizen_1_1_artik_cloud_1_1_action_array.html#a45604c770ed710ef6623fa4498a96df5",
-"class_tizen_1_1_artik_cloud_1_1_device_reg_confirm_user_response.html#a30a819e09c2727c97e2cb301378fb839",
-"class_tizen_1_1_artik_cloud_1_1_export_manager.html#a833e1287c4686d29e734f79687ce8c70",
-"class_tizen_1_1_artik_cloud_1_1_message.html#a9aa278e5533a8bbaeca5347eaaff5c60",
-"class_tizen_1_1_artik_cloud_1_1_presence_model.html#a096d21012f05ecde1ed1d646c3590cd5",
-"class_tizen_1_1_artik_cloud_1_1_token_info.html#a36853ed955bbc27943d39e07a2962e8e"
+"_token_info_8cpp_source.html",
+"class_tizen_1_1_artik_cloud_1_1_device.html#a316f91a1e0d28bef201364b5113978f4",
+"class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a082dba5a77dcbce8e2b614d4e10f7302",
+"class_tizen_1_1_artik_cloud_1_1_export_request_data.html#a2258d883ceb2a01014b7b512869a3492",
+"class_tizen_1_1_artik_cloud_1_1_message_out.html#ab5d13fb0deaa72f0dd7cd26ebd4af05e",
+"class_tizen_1_1_artik_cloud_1_1_register_message.html#a3cf52105f6550ea8b895870388de44fb",
+"class_tizen_1_1_artik_cloud_1_1_task_by_did.html#ac5d01a00cebe843d0fd46e9d4babbd92",
+"class_tizen_1_1_artik_cloud_1_1_token_info.html#a4a64bceda3c49db62d781d6236656aa2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

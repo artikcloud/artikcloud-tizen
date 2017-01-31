@@ -9,5 +9,8 @@ var searchData=
   ['messageid',['MessageID',['../class_tizen_1_1_artik_cloud_1_1_message_i_d.html#af9e8cce0dcf4ba06793d1b025ef61134',1,'Tizen::ArtikCloud::MessageID']]],
   ['messageidenvelope',['MessageIDEnvelope',['../class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html#aa7fb4a8983b194bdc3fa4dedc0fe39a5',1,'Tizen::ArtikCloud::MessageIDEnvelope']]],
   ['messagein',['MessageIn',['../class_tizen_1_1_artik_cloud_1_1_message_in.html#aa7d626e229dfe76d713d4b03915fb24d',1,'Tizen::ArtikCloud::MessageIn']]],
-  ['messageout',['MessageOut',['../class_tizen_1_1_artik_cloud_1_1_message_out.html#aa8e2f36194caed7417cf28be3036faac',1,'Tizen::ArtikCloud::MessageOut']]]
+  ['messageout',['MessageOut',['../class_tizen_1_1_artik_cloud_1_1_message_out.html#aa8e2f36194caed7417cf28be3036faac',1,'Tizen::ArtikCloud::MessageOut']]],
+  ['metadataenvelope',['MetadataEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html#a8e38b079f397d7765ab97ba23e07afce',1,'Tizen::ArtikCloud::MetadataEnvelope']]],
+  ['metadatapropertiesenvelope',['MetadataPropertiesEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html#a4fcf3046eeb49697f7bf319c9e8bd631',1,'Tizen::ArtikCloud::MetadataPropertiesEnvelope']]],
+  ['metadataqueryenvelope',['MetadataQueryEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#a6267ed0c5a790ae38ad01ddf754b2d30',1,'Tizen::ArtikCloud::MetadataQueryEnvelope']]]
 ];

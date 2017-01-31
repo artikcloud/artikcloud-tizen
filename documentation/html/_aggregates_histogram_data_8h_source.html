@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_aggregates_histogram_data_8h_source.h
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -135,59 +136,58 @@ $(document).ready(function(){initNavTree('_aggregates_histogram_data_8h_source.h
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">AggregatesHistogramData</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f">AggregatesHistogramData</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f">AggregatesHistogramData</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a7d572391c4d59f396f6dbb9feb7da462">~AggregatesHistogramData</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#afaf1d7f1dca684b4bb302b2e3d79ec0c">toJson</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a1d91143e79e9caa4d7d820462865a8f6">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a9f0d18b9575721ac332ba8f48ed5c628">getCount</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ac8fbdbd23e78e312f3e97c2e6c8781b2">setCount</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  count);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ac80f3c32dacc637183f2751001d190a6">getMax</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">AggregatesHistogramData</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f">AggregatesHistogramData</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f">AggregatesHistogramData</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a7d572391c4d59f396f6dbb9feb7da462">~AggregatesHistogramData</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#afaf1d7f1dca684b4bb302b2e3d79ec0c">toJson</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a1d91143e79e9caa4d7d820462865a8f6">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a9f0d18b9575721ac332ba8f48ed5c628">getCount</a>();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a1588ed788aa9ce238cb8023524d4e9a5">setMax</a>(<span class="keywordtype">float</span>  max);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ad0d27c145c39d59a856eb4bd4771fe13">getMean</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ac8fbdbd23e78e312f3e97c2e6c8781b2">setCount</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  count);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ac80f3c32dacc637183f2751001d190a6">getMax</a>();</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#aceb333eb024cf14e4517fb50d5c6b0a2">setMean</a>(<span class="keywordtype">float</span>  mean);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ae7e50cef84e8bed2031fb900947f6c52">getMin</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a1588ed788aa9ce238cb8023524d4e9a5">setMax</a>(<span class="keywordtype">float</span>  max);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ad0d27c145c39d59a856eb4bd4771fe13">getMean</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a91cc2b4b03d39f8f70503b33102a5658">setMin</a>(<span class="keywordtype">float</span>  min);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a0e45421c6650df23eb1d3300c707045a">getSum</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#aceb333eb024cf14e4517fb50d5c6b0a2">setMean</a>(<span class="keywordtype">float</span>  mean);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ae7e50cef84e8bed2031fb900947f6c52">getMin</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a0456655723a5af757355f17e3055d48f">setSum</a>(<span class="keywordtype">float</span>  sum);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a12611eb053f21d072c9aede27b00af45">getTs</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a91cc2b4b03d39f8f70503b33102a5658">setMin</a>(<span class="keywordtype">float</span>  min);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a0e45421c6650df23eb1d3300c707045a">getSum</a>();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#accdd3c5d03f8659300f1bd02c5e85436">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74907dea738a5e5e14bb92d677f0b3c3">getVariance</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a0456655723a5af757355f17e3055d48f">setSum</a>(<span class="keywordtype">float</span>  sum);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a12611eb053f21d072c9aede27b00af45">getTs</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#abcec6212f2cc2b9cece69f8d631573ac">setVariance</a>(<span class="keywordtype">float</span>  variance);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> count;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">float</span> max;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">float</span> mean;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">float</span> min;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">float</span> sum;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">float</span> variance;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AggregatesHistogramData_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#accdd3c5d03f8659300f1bd02c5e85436">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74907dea738a5e5e14bb92d677f0b3c3">getVariance</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#abcec6212f2cc2b9cece69f8d631573ac">setVariance</a>(<span class="keywordtype">float</span>  variance);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> count;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">float</span> max;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">float</span> mean;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">float</span> min;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">float</span> sum;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">float</span> variance;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _AggregatesHistogramData_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_a12611eb053f21d072c9aede27b00af45"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a12611eb053f21d072c9aede27b00af45">Tizen::ArtikCloud::AggregatesHistogramData::getTs</a></div><div class="ttdeci">long long getTs()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00333">AggregatesHistogramData.cpp:333</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_ad0d27c145c39d59a856eb4bd4771fe13"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ad0d27c145c39d59a856eb4bd4771fe13">Tizen::ArtikCloud::AggregatesHistogramData::getMean</a></div><div class="ttdeci">float getMean()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00297">AggregatesHistogramData.cpp:297</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_afaf1d7f1dca684b4bb302b2e3d79ec0c"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#afaf1d7f1dca684b4bb302b2e3d79ec0c">Tizen::ArtikCloud::AggregatesHistogramData::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00197">AggregatesHistogramData.cpp:197</a></div></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_aggregates_histogram_data_8h_source.h
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_ae7e50cef84e8bed2031fb900947f6c52"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ae7e50cef84e8bed2031fb900947f6c52">Tizen::ArtikCloud::AggregatesHistogramData::getMin</a></div><div class="ttdeci">float getMin()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00309">AggregatesHistogramData.cpp:309</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_a91cc2b4b03d39f8f70503b33102a5658"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a91cc2b4b03d39f8f70503b33102a5658">Tizen::ArtikCloud::AggregatesHistogramData::setMin</a></div><div class="ttdeci">void setMin(float min)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00315">AggregatesHistogramData.cpp:315</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_a7d572391c4d59f396f6dbb9feb7da462"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a7d572391c4d59f396f6dbb9feb7da462">Tizen::ArtikCloud::AggregatesHistogramData::~AggregatesHistogramData</a></div><div class="ttdeci">virtual ~AggregatesHistogramData()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00034">AggregatesHistogramData.cpp:34</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">Tizen::ArtikCloud::AggregatesHistogramData</a></div><div class="ttdoc">Aggregates Histogram Data. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8h_source.html#l00038">AggregatesHistogramData.h:38</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html">Tizen::ArtikCloud::AggregatesHistogramData</a></div><div class="ttdoc">Aggregates Histogram Data. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8h_source.html#l00045">AggregatesHistogramData.h:45</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_a74bfe15963b8452af923b2dec317a68f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f">Tizen::ArtikCloud::AggregatesHistogramData::AggregatesHistogramData</a></div><div class="ttdeci">AggregatesHistogramData()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00029">AggregatesHistogramData.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_ac80f3c32dacc637183f2751001d190a6"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#ac80f3c32dacc637183f2751001d190a6">Tizen::ArtikCloud::AggregatesHistogramData::getMax</a></div><div class="ttdeci">float getMax()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00285">AggregatesHistogramData.cpp:285</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data_html_accdd3c5d03f8659300f1bd02c5e85436"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#accdd3c5d03f8659300f1bd02c5e85436">Tizen::ArtikCloud::AggregatesHistogramData::setTs</a></div><div class="ttdeci">void setTs(long long ts)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_aggregates_histogram_data_8cpp_source.html#l00339">AggregatesHistogramData.cpp:339</a></div></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('_aggregates_histogram_data_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>AggregatesHistogramData.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

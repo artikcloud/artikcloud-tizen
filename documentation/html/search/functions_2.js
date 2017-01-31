@@ -6,6 +6,8 @@ var searchData=
   ['deletedevicetokensync',['deleteDeviceTokenSync',['../class_tizen_1_1_artik_cloud_1_1_devices_manager.html#a700107427120d8e9417badf9f4e70f25',1,'Tizen::ArtikCloud::DevicesManager']]],
   ['deleteruleasync',['deleteRuleAsync',['../class_tizen_1_1_artik_cloud_1_1_rules_manager.html#a1e6933339eb949341935912e1e7a638b',1,'Tizen::ArtikCloud::RulesManager']]],
   ['deleterulesync',['deleteRuleSync',['../class_tizen_1_1_artik_cloud_1_1_rules_manager.html#af24682f0bac4fac891275e775b181ad4',1,'Tizen::ArtikCloud::RulesManager']]],
+  ['deleteserverpropertiesasync',['deleteServerPropertiesAsync',['../class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a5a87d862d5b7a18068587656dc235032',1,'Tizen::ArtikCloud::DevicesManagementManager']]],
+  ['deleteserverpropertiessync',['deleteServerPropertiesSync',['../class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#ab58efa8c38960887bde116a5954baa98',1,'Tizen::ArtikCloud::DevicesManagementManager']]],
   ['deleteuserpropertiesasync',['deleteUserPropertiesAsync',['../class_tizen_1_1_artik_cloud_1_1_users_manager.html#a8084ccf1cb52d1d92c677baf0388161b',1,'Tizen::ArtikCloud::UsersManager']]],
   ['deleteuserpropertiessync',['deleteUserPropertiesSync',['../class_tizen_1_1_artik_cloud_1_1_users_manager.html#a4bed5dc2f7d0257871e71c56309ec236',1,'Tizen::ArtikCloud::UsersManager']]],
   ['device',['Device',['../class_tizen_1_1_artik_cloud_1_1_device.html#a64ba12dcc5f4267486c5d545d04dcf68',1,'Tizen::ArtikCloud::Device']]],
@@ -18,10 +20,17 @@ var searchData=
   ['deviceregstatusresponse',['DeviceRegStatusResponse',['../class_tizen_1_1_artik_cloud_1_1_device_reg_status_response.html#a28aaa249e61a28ac1f17a16a2cdac5ed',1,'Tizen::ArtikCloud::DeviceRegStatusResponse']]],
   ['deviceregstatusresponseenvelope',['DeviceRegStatusResponseEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_reg_status_response_envelope.html#a84f66f316b4aec9047d7c4c668108d28',1,'Tizen::ArtikCloud::DeviceRegStatusResponseEnvelope']]],
   ['devicesenvelope',['DevicesEnvelope',['../class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a6c69c415c81ed9b49d21d21d079031b9',1,'Tizen::ArtikCloud::DevicesEnvelope']]],
+  ['devicetask',['DeviceTask',['../class_tizen_1_1_artik_cloud_1_1_device_task.html#a044583aa37571c4505867e41aef0c05c',1,'Tizen::ArtikCloud::DeviceTask']]],
+  ['devicetaskupdaterequest',['DeviceTaskUpdateRequest',['../class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html#ad4575fa63f5c9729a744864dd81aade6',1,'Tizen::ArtikCloud::DeviceTaskUpdateRequest']]],
+  ['devicetaskupdateresponse',['DeviceTaskUpdateResponse',['../class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html#a3311b05d3a8b4428ff8c94ad7a26f134',1,'Tizen::ArtikCloud::DeviceTaskUpdateResponse']]],
   ['devicetoken',['DeviceToken',['../class_tizen_1_1_artik_cloud_1_1_device_token.html#a62f2ed478350d6aa5d67e22fb301b84a',1,'Tizen::ArtikCloud::DeviceToken']]],
   ['devicetokenenvelope',['DeviceTokenEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_token_envelope.html#a368eb11a3538d65ba0d40c2d2d151614',1,'Tizen::ArtikCloud::DeviceTokenEnvelope']]],
   ['devicetype',['DeviceType',['../class_tizen_1_1_artik_cloud_1_1_device_type.html#a40391bd39dd3d3bb938107bad305b0f2',1,'Tizen::ArtikCloud::DeviceType']]],
   ['devicetypearray',['DeviceTypeArray',['../class_tizen_1_1_artik_cloud_1_1_device_type_array.html#a34f8beb7f82bf3415b6325f58a5bb2a0',1,'Tizen::ArtikCloud::DeviceTypeArray']]],
   ['devicetypeenvelope',['DeviceTypeEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html#a112645ab98dc7790d32aedad60e21f0e',1,'Tizen::ArtikCloud::DeviceTypeEnvelope']]],
-  ['devicetypesenvelope',['DeviceTypesEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#aa1404d83ba646d4c375e82ef30eae5f3',1,'Tizen::ArtikCloud::DeviceTypesEnvelope']]]
+  ['devicetypeinfo',['DeviceTypeInfo',['../class_tizen_1_1_artik_cloud_1_1_device_type_info.html#acf2e6d7b5956866707f1ddf4e8ba86e2',1,'Tizen::ArtikCloud::DeviceTypeInfo']]],
+  ['devicetypeinfoenvelope',['DeviceTypeInfoEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html#af68003a29731dc316902c84b42e79b16',1,'Tizen::ArtikCloud::DeviceTypeInfoEnvelope']]],
+  ['devicetypesenvelope',['DeviceTypesEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#aa1404d83ba646d4c375e82ef30eae5f3',1,'Tizen::ArtikCloud::DeviceTypesEnvelope']]],
+  ['devicetypesinfo',['DeviceTypesInfo',['../class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a082dba5a77dcbce8e2b614d4e10f7302',1,'Tizen::ArtikCloud::DeviceTypesInfo']]],
+  ['devicetypesinfoenvelope',['DeviceTypesInfoEnvelope',['../class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html#a21c9b0f42bc6f5eec5d27d8306f6d1b1',1,'Tizen::ArtikCloud::DeviceTypesInfoEnvelope']]]
 ];

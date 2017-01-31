@@ -8,6 +8,8 @@ var searchData=
   ['confirmusersync',['confirmUserSync',['../class_tizen_1_1_artik_cloud_1_1_registrations_manager.html#a7b0641236d83a7f11385a42e58baf2f0',1,'Tizen::ArtikCloud::RegistrationsManager']]],
   ['createruleasync',['createRuleAsync',['../class_tizen_1_1_artik_cloud_1_1_rules_manager.html#a7817fead431c54bad9f9b74b533c48c8',1,'Tizen::ArtikCloud::RulesManager']]],
   ['createrulesync',['createRuleSync',['../class_tizen_1_1_artik_cloud_1_1_rules_manager.html#aa91a4ad6132bf1c81e0b2edac1d2d50d',1,'Tizen::ArtikCloud::RulesManager']]],
+  ['createtasksasync',['createTasksAsync',['../class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#a4f77314e7cafc691f8f0aaf503cbe189',1,'Tizen::ArtikCloud::DevicesManagementManager']]],
+  ['createtaskssync',['createTasksSync',['../class_tizen_1_1_artik_cloud_1_1_devices_management_manager.html#aac7cac199b1ab835347c59131e0686a0',1,'Tizen::ArtikCloud::DevicesManagementManager']]],
   ['createuserpropertiesasync',['createUserPropertiesAsync',['../class_tizen_1_1_artik_cloud_1_1_users_manager.html#a5434d012e487737acb83ad580453373b',1,'Tizen::ArtikCloud::UsersManager']]],
   ['createuserpropertiessync',['createUserPropertiesSync',['../class_tizen_1_1_artik_cloud_1_1_users_manager.html#a2c1073d1fc0b7b98586044e2d501325e',1,'Tizen::ArtikCloud::UsersManager']]]
 ];

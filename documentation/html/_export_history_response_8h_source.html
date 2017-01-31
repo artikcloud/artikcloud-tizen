@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_export_history_response_8h_source.htm
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,49 +137,48 @@ $(document).ready(function(){initNavTree('_export_history_response_8h_source.htm
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;ExportDataArray.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">ExportHistoryResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a5b27db00b838ba6703488efeec329947">ExportHistoryResponse</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a5b27db00b838ba6703488efeec329947">ExportHistoryResponse</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a2a5212e03dae6fb0fa8bd88fffddd616">~ExportHistoryResponse</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aebff2386c9e971ea37dd9fda7be03541">toJson</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#adbfbc5c4276bfeac3e040e7d09995dd0">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a41023e1cd8f3cdbc1bb2dc9cbe00e9cb">getCount</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a916b3817a529fdc541f1c7858bd3fc7b">setCount</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  count);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ae6364d4bce641ca4d1b29a664afaf200">getData</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">ExportHistoryResponse</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a5b27db00b838ba6703488efeec329947">ExportHistoryResponse</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a5b27db00b838ba6703488efeec329947">ExportHistoryResponse</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a2a5212e03dae6fb0fa8bd88fffddd616">~ExportHistoryResponse</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aebff2386c9e971ea37dd9fda7be03541">toJson</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#adbfbc5c4276bfeac3e040e7d09995dd0">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a41023e1cd8f3cdbc1bb2dc9cbe00e9cb">getCount</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aa1a5e80e7fef45607917f4d5a43ceba0">setData</a>(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a>  data);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ad3027fa3f4337d0999171d4794ef8354">getOffset</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a916b3817a529fdc541f1c7858bd3fc7b">setCount</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  count);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ae6364d4bce641ca4d1b29a664afaf200">getData</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a9429fe98ac8390a6c65c44008564290a">setOffset</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  offset);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ab83b5d41908efe2d0308bcf47cadba6d">getTotal</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aa1a5e80e7fef45607917f4d5a43ceba0">setData</a>(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a>  data);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ad3027fa3f4337d0999171d4794ef8354">getOffset</a>();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a6740371760cab97c532b3015e09d5594">setTotal</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  total);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> count;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a> data;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> offset;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> total;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ExportHistoryResponse_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a9429fe98ac8390a6c65c44008564290a">setOffset</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  offset);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ab83b5d41908efe2d0308bcf47cadba6d">getTotal</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a6740371760cab97c532b3015e09d5594">setTotal</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  total);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> count;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">ExportDataArray</a> data;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> offset;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> total;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ExportHistoryResponse_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_ab83b5d41908efe2d0308bcf47cadba6d"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#ab83b5d41908efe2d0308bcf47cadba6d">Tizen::ArtikCloud::ExportHistoryResponse::getTotal</a></div><div class="ttdeci">long long getTotal()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00233">ExportHistoryResponse.cpp:233</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_data_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">Tizen::ArtikCloud::ExportDataArray</a></div><div class="ttdoc">Export Data Array. </div><div class="ttdef"><b>Definition:</b> <a href="_export_data_array_8h_source.html#l00040">ExportDataArray.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_data_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html">Tizen::ArtikCloud::ExportDataArray</a></div><div class="ttdoc">Export Data Array. </div><div class="ttdef"><b>Definition:</b> <a href="_export_data_array_8h_source.html#l00047">ExportDataArray.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_a41023e1cd8f3cdbc1bb2dc9cbe00e9cb"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a41023e1cd8f3cdbc1bb2dc9cbe00e9cb">Tizen::ArtikCloud::ExportHistoryResponse::getCount</a></div><div class="ttdeci">long long getCount()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00197">ExportHistoryResponse.cpp:197</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_aa1a5e80e7fef45607917f4d5a43ceba0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#aa1a5e80e7fef45607917f4d5a43ceba0">Tizen::ArtikCloud::ExportHistoryResponse::setData</a></div><div class="ttdeci">void setData(ExportDataArray data)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00215">ExportHistoryResponse.cpp:215</a></div></div>
@@ -191,14 +191,14 @@ $(document).ready(function(){initNavTree('_export_history_response_8h_source.htm
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_a916b3817a529fdc541f1c7858bd3fc7b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a916b3817a529fdc541f1c7858bd3fc7b">Tizen::ArtikCloud::ExportHistoryResponse::setCount</a></div><div class="ttdeci">void setCount(long long count)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00203">ExportHistoryResponse.cpp:203</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_adbfbc5c4276bfeac3e040e7d09995dd0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#adbfbc5c4276bfeac3e040e7d09995dd0">Tizen::ArtikCloud::ExportHistoryResponse::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00084">ExportHistoryResponse.cpp:84</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html_a9429fe98ac8390a6c65c44008564290a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html#a9429fe98ac8390a6c65c44008564290a">Tizen::ArtikCloud::ExportHistoryResponse::setOffset</a></div><div class="ttdeci">void setOffset(long long offset)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8cpp_source.html#l00227">ExportHistoryResponse.cpp:227</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">Tizen::ArtikCloud::ExportHistoryResponse</a></div><div class="ttdoc">Export History Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8h_source.html#l00039">ExportHistoryResponse.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_export_history_response_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html">Tizen::ArtikCloud::ExportHistoryResponse</a></div><div class="ttdoc">Export History Response. </div><div class="ttdef"><b>Definition:</b> <a href="_export_history_response_8h_source.html#l00046">ExportHistoryResponse.h:46</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>ExportHistoryResponse.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_event_feed_data_8h_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,43 +138,42 @@ $(document).ready(function(){initNavTree('_event_feed_data_8h_source.html','');}
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">EventFeedData</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abc5e15df1df574e9bcbb7ef97ecb30cd">EventFeedData</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abc5e15df1df574e9bcbb7ef97ecb30cd">EventFeedData</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#aa6202a7c720bf03cbb8854a0bb3a1902">~EventFeedData</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a7e6a8ab639abae96fe440b7effbf69f4">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#af60860960d5f0b32513a731c498cb134">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a50d5c8afa4d9fc7a04b03e67b9f5f638">getEvent</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#ad68f3a16f10b7201043b3938ac513599">setEvent</a>(std::string  event);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a9a027f55ad68d467ccd591f54b9e69d1">getTs</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">EventFeedData</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abc5e15df1df574e9bcbb7ef97ecb30cd">EventFeedData</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abc5e15df1df574e9bcbb7ef97ecb30cd">EventFeedData</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#aa6202a7c720bf03cbb8854a0bb3a1902">~EventFeedData</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a7e6a8ab639abae96fe440b7effbf69f4">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#af60860960d5f0b32513a731c498cb134">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a50d5c8afa4d9fc7a04b03e67b9f5f638">getEvent</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abb4d739bc5ffd9d6a871db15623cb1ac">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a6d56be8f80f937c411189419d35d98ea">getData</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#ad68f3a16f10b7201043b3938ac513599">setEvent</a>(std::string  event);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a9a027f55ad68d467ccd591f54b9e69d1">getTs</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a412da9b78b5b86d3955fd01709ed5e19">setData</a>(std::map &lt;std::string, std::string&gt; data);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string event;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::map &lt;std::string, std::string&gt;data;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _EventFeedData_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abb4d739bc5ffd9d6a871db15623cb1ac">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a6d56be8f80f937c411189419d35d98ea">getData</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a412da9b78b5b86d3955fd01709ed5e19">setData</a>(std::map &lt;std::string, std::string&gt; data);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string event;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::map &lt;std::string, std::string&gt;data;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _EventFeedData_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_a412da9b78b5b86d3955fd01709ed5e19"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a412da9b78b5b86d3955fd01709ed5e19">Tizen::ArtikCloud::EventFeedData::setData</a></div><div class="ttdeci">void setData(std::map&lt; std::string, std::string &gt; data)</div><div class="ttdoc">Set Message Payload. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00202">EventFeedData.cpp:202</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_af60860960d5f0b32513a731c498cb134"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#af60860960d5f0b32513a731c498cb134">Tizen::ArtikCloud::EventFeedData::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00076">EventFeedData.cpp:76</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_event_feed_data_8h_source.html','');}
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_ad68f3a16f10b7201043b3938ac513599"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#ad68f3a16f10b7201043b3938ac513599">Tizen::ArtikCloud::EventFeedData::setEvent</a></div><div class="ttdeci">void setEvent(std::string event)</div><div class="ttdoc">Set Event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00178">EventFeedData.cpp:178</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_aa6202a7c720bf03cbb8854a0bb3a1902"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#aa6202a7c720bf03cbb8854a0bb3a1902">Tizen::ArtikCloud::EventFeedData::~EventFeedData</a></div><div class="ttdeci">virtual ~EventFeedData()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00034">EventFeedData.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_a9a027f55ad68d467ccd591f54b9e69d1"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a9a027f55ad68d467ccd591f54b9e69d1">Tizen::ArtikCloud::EventFeedData::getTs</a></div><div class="ttdeci">long long getTs()</div><div class="ttdoc">Get Timestamp. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00184">EventFeedData.cpp:184</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">Tizen::ArtikCloud::EventFeedData</a></div><div class="ttdoc">WebSocket Event Feed. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8h_source.html#l00040">EventFeedData.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html">Tizen::ArtikCloud::EventFeedData</a></div><div class="ttdoc">WebSocket Event Feed. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8h_source.html#l00047">EventFeedData.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_abc5e15df1df574e9bcbb7ef97ecb30cd"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#abc5e15df1df574e9bcbb7ef97ecb30cd">Tizen::ArtikCloud::EventFeedData::EventFeedData</a></div><div class="ttdeci">EventFeedData()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00029">EventFeedData.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_a50d5c8afa4d9fc7a04b03e67b9f5f638"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a50d5c8afa4d9fc7a04b03e67b9f5f638">Tizen::ArtikCloud::EventFeedData::getEvent</a></div><div class="ttdeci">std::string getEvent()</div><div class="ttdoc">Get Event. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00172">EventFeedData.cpp:172</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_event_feed_data_html_a6d56be8f80f937c411189419d35d98ea"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html#a6d56be8f80f937c411189419d35d98ea">Tizen::ArtikCloud::EventFeedData::getData</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; getData()</div><div class="ttdoc">Get Message Payload. </div><div class="ttdef"><b>Definition:</b> <a href="_event_feed_data_8cpp_source.html#l00196">EventFeedData.cpp:196</a></div></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('_event_feed_data_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>EventFeedData.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

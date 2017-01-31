@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_action_in_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -136,66 +137,65 @@ $(document).ready(function(){initNavTree('_action_in_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;ActionDetailsArray.h&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_action_in.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html">ActionIn</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a68b4c6e19c1cd9754dd11a81a5bdcb8e">ActionIn</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a68b4c6e19c1cd9754dd11a81a5bdcb8e">ActionIn</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a7c59e0d6de51e861b9303c3b60512758">~ActionIn</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aafd7f1c343d6c6e0e2d5b2f91ebd7603">toJson</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5bccd816fa6507ad121a26b2583ebcc9">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a6c582716a0a06a1e992781ba9887b538">getData</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aea9a4b86f6e19f8bf3be1625243e6706">setData</a>(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a>  data);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5779780f14d40e6047d53c0c51c8a7ff">getCid</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_action_in.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html">ActionIn</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a68b4c6e19c1cd9754dd11a81a5bdcb8e">ActionIn</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a68b4c6e19c1cd9754dd11a81a5bdcb8e">ActionIn</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a7c59e0d6de51e861b9303c3b60512758">~ActionIn</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aafd7f1c343d6c6e0e2d5b2f91ebd7603">toJson</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5bccd816fa6507ad121a26b2583ebcc9">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a6c582716a0a06a1e992781ba9887b538">getData</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#ab9cd619e0ff5f01d1f2940f690e34fa6">setCid</a>(std::string  cid);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a8da59315a27777278b7ac2b7618406b0">getDdid</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aea9a4b86f6e19f8bf3be1625243e6706">setData</a>(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a>  data);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5779780f14d40e6047d53c0c51c8a7ff">getCid</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#ad73e77c1ecd69884d651886001af1bdf">setDdid</a>(std::string  ddid);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a0c3f62542d0a176f9bf748a4bff1dfbf">getSdid</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#ab9cd619e0ff5f01d1f2940f690e34fa6">setCid</a>(std::string  cid);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a8da59315a27777278b7ac2b7618406b0">getDdid</a>();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a25a7c5d31953f90f823f40aaa1d12568">setSdid</a>(std::string  sdid);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a069eff0932e35752dced651f28be2912">getTs</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#ad73e77c1ecd69884d651886001af1bdf">setDdid</a>(std::string  ddid);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a0c3f62542d0a176f9bf748a4bff1dfbf">getSdid</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a2d9c702975634bfa496aafa575db4595">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a3102cf99765303425353e64dde1678e0">getType</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a25a7c5d31953f90f823f40aaa1d12568">setSdid</a>(std::string  sdid);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a069eff0932e35752dced651f28be2912">getTs</a>();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a3de3bccae94f797dde61c4b4f204adeb">setType</a>(std::string  type);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a> data;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string cid;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string ddid;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::string sdid;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::string type;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ActionIn_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a2d9c702975634bfa496aafa575db4595">setTs</a>(<span class="keywordtype">long</span> <span class="keywordtype">long</span>  ts);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a3102cf99765303425353e64dde1678e0">getType</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a3de3bccae94f797dde61c4b4f204adeb">setType</a>(std::string  type);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">ActionDetailsArray</a> data;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string cid;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::string ddid;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::string sdid;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">long</span> <span class="keywordtype">long</span> ts;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::string type;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _ActionIn_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_aafd7f1c343d6c6e0e2d5b2f91ebd7603"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aafd7f1c343d6c6e0e2d5b2f91ebd7603">Tizen::ArtikCloud::ActionIn::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00181">ActionIn.cpp:181</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_aea9a4b86f6e19f8bf3be1625243e6706"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#aea9a4b86f6e19f8bf3be1625243e6706">Tizen::ArtikCloud::ActionIn::setData</a></div><div class="ttdeci">void setData(ActionDetailsArray data)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00259">ActionIn.cpp:259</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a5bccd816fa6507ad121a26b2583ebcc9"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5bccd816fa6507ad121a26b2583ebcc9">Tizen::ArtikCloud::ActionIn::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00100">ActionIn.cpp:100</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a6c582716a0a06a1e992781ba9887b538"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a6c582716a0a06a1e992781ba9887b538">Tizen::ArtikCloud::ActionIn::getData</a></div><div class="ttdeci">ActionDetailsArray getData()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00253">ActionIn.cpp:253</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html">Tizen::ArtikCloud::ActionIn</a></div><div class="ttdoc">Action sent to a WebSocket. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8h_source.html#l00039">ActionIn.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html">Tizen::ArtikCloud::ActionIn</a></div><div class="ttdoc">Action sent to a WebSocket. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8h_source.html#l00046">ActionIn.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a3de3bccae94f797dde61c4b4f204adeb"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a3de3bccae94f797dde61c4b4f204adeb">Tizen::ArtikCloud::ActionIn::setType</a></div><div class="ttdeci">void setType(std::string type)</div><div class="ttdoc">Set Type. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00319">ActionIn.cpp:319</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a7c59e0d6de51e861b9303c3b60512758"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a7c59e0d6de51e861b9303c3b60512758">Tizen::ArtikCloud::ActionIn::~ActionIn</a></div><div class="ttdeci">virtual ~ActionIn()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00034">ActionIn.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a069eff0932e35752dced651f28be2912"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a069eff0932e35752dced651f28be2912">Tizen::ArtikCloud::ActionIn::getTs</a></div><div class="ttdeci">long long getTs()</div><div class="ttdoc">Get Timestamp (past, present or future). Defaults to current time if not provided. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00301">ActionIn.cpp:301</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a25a7c5d31953f90f823f40aaa1d12568"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a25a7c5d31953f90f823f40aaa1d12568">Tizen::ArtikCloud::ActionIn::setSdid</a></div><div class="ttdeci">void setSdid(std::string sdid)</div><div class="ttdoc">Set Source Device ID. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00295">ActionIn.cpp:295</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_details_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">Tizen::ArtikCloud::ActionDetailsArray</a></div><div class="ttdoc">Contains the array of Action Details. </div><div class="ttdef"><b>Definition:</b> <a href="_action_details_array_8h_source.html#l00040">ActionDetailsArray.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_details_array_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_details_array.html">Tizen::ArtikCloud::ActionDetailsArray</a></div><div class="ttdoc">Contains the array of Action Details. </div><div class="ttdef"><b>Definition:</b> <a href="_action_details_array_8h_source.html#l00047">ActionDetailsArray.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a5779780f14d40e6047d53c0c51c8a7ff"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a5779780f14d40e6047d53c0c51c8a7ff">Tizen::ArtikCloud::ActionIn::getCid</a></div><div class="ttdeci">std::string getCid()</div><div class="ttdoc">Get Confirmation ID. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00265">ActionIn.cpp:265</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_ad73e77c1ecd69884d651886001af1bdf"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#ad73e77c1ecd69884d651886001af1bdf">Tizen::ArtikCloud::ActionIn::setDdid</a></div><div class="ttdeci">void setDdid(std::string ddid)</div><div class="ttdoc">Set Destination Device ID. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00283">ActionIn.cpp:283</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_action_in_html_a8da59315a27777278b7ac2b7618406b0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_action_in.html#a8da59315a27777278b7ac2b7618406b0">Tizen::ArtikCloud::ActionIn::getDdid</a></div><div class="ttdeci">std::string getDdid()</div><div class="ttdoc">Get Destination Device ID. </div><div class="ttdef"><b>Definition:</b> <a href="_action_in_8cpp_source.html#l00277">ActionIn.cpp:277</a></div></div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('_action_in_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>ActionIn.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -93,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_n.html#index_n"><span>n</span></a></li>
       <li><a href="functions_func_o.html#index_o"><span>o</span></a></li>
       <li><a href="functions_func_p.html#index_p"><span>p</span></a></li>
+      <li><a href="functions_func_q.html#index_q"><span>q</span></a></li>
       <li><a href="functions_func_r.html#index_r"><span>r</span></a></li>
       <li><a href="functions_func_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_func_t.html#index_t"><span>t</span></a></li>
@@ -121,7 +123,7 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -212,6 +214,15 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <li>~DevicesEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html#a4575233bef769c3a470925162add84ac">Tizen::ArtikCloud::DevicesEnvelope</a>
 </li>
+<li>~DeviceTask()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task.html#a993a89783ca0bf3f86ce804c06211c05">Tizen::ArtikCloud::DeviceTask</a>
+</li>
+<li>~DeviceTaskUpdateRequest()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html#a9e15ec9d534a801fb5db8e65f9ebf25b">Tizen::ArtikCloud::DeviceTaskUpdateRequest</a>
+</li>
+<li>~DeviceTaskUpdateResponse()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html#a9a751719f8e86c05742b18de44ab6539">Tizen::ArtikCloud::DeviceTaskUpdateResponse</a>
+</li>
 <li>~DeviceToken()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_token.html#a43178ff56871ba5e2af28e0397e148f0">Tizen::ArtikCloud::DeviceToken</a>
 </li>
@@ -227,8 +238,20 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <li>~DeviceTypeEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html#a38cb5be08f4eca1a2faa327d4d9687d7">Tizen::ArtikCloud::DeviceTypeEnvelope</a>
 </li>
+<li>~DeviceTypeInfo()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html#a7d2f15948b0acc233b695a1ed23ec2b6">Tizen::ArtikCloud::DeviceTypeInfo</a>
+</li>
+<li>~DeviceTypeInfoEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html#a4ddc14dd29f3dbcefc124edb1d196745">Tizen::ArtikCloud::DeviceTypeInfoEnvelope</a>
+</li>
 <li>~DeviceTypesEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html#a364f666a85a0512beb44ba677c50b763">Tizen::ArtikCloud::DeviceTypesEnvelope</a>
+</li>
+<li>~DeviceTypesInfo()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html#a501755e337eb9f3f49a5c3567d8f79f2">Tizen::ArtikCloud::DeviceTypesInfo</a>
+</li>
+<li>~DeviceTypesInfoEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html#acf803974726801fc2935500841c77d2f">Tizen::ArtikCloud::DeviceTypesInfoEnvelope</a>
 </li>
 <li>~ErrorEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_error_envelope.html#a5871e926736f1a2913e3f073878ce28f">Tizen::ArtikCloud::ErrorEnvelope</a>
@@ -308,6 +331,15 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <li>~MessageOut()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_message_out.html#adf8a8f3e5e2e79758f4214bf9544c2f5">Tizen::ArtikCloud::MessageOut</a>
 </li>
+<li>~MetadataEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html#a2cb49a4094a7d8ce5f99815cde2407fb">Tizen::ArtikCloud::MetadataEnvelope</a>
+</li>
+<li>~MetadataPropertiesEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html#aed535e596cb47fb2675da1579ed2ec03">Tizen::ArtikCloud::MetadataPropertiesEnvelope</a>
+</li>
+<li>~MetadataQueryEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html#afce3540c091dbe765f8251e0b75fb486">Tizen::ArtikCloud::MetadataQueryEnvelope</a>
+</li>
 <li>~NonEmptyString()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_non_empty_string.html#a5094dde88664a2b5da9ad573900957c7">Tizen::ArtikCloud::NonEmptyString</a>
 </li>
@@ -380,6 +412,63 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <li>~TagsEnvelope()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html#a71f1810c0bc653c9a850a8182bc6c1c2">Tizen::ArtikCloud::TagsEnvelope</a>
 </li>
+<li>~Task()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task.html#a3ecf499ea35fb4a96853969a1e1cbbce">Tizen::ArtikCloud::Task</a>
+</li>
+<li>~TaskByDid()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html#a5ea97528493eeef8adf3904cdd19f90e">Tizen::ArtikCloud::TaskByDid</a>
+</li>
+<li>~TaskByDidList()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list.html#abb660042211801d75fb1864c1e026e9e">Tizen::ArtikCloud::TaskByDidList</a>
+</li>
+<li>~TaskByDidListEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html#ae22179ddbdf7b32489295fa4fe1ea52e">Tizen::ArtikCloud::TaskByDidListEnvelope</a>
+</li>
+<li>~TaskEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_envelope.html#a83ed7bb1844563f643d96b3ede0f8e6d">Tizen::ArtikCloud::TaskEnvelope</a>
+</li>
+<li>~TaskHistory()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history.html#a844a60a8a04909b98db2124fd0ec04c5">Tizen::ArtikCloud::TaskHistory</a>
+</li>
+<li>~TaskHistoryList()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_history_list.html#ad65bf8ca1bc74be3bae887dcee90c002">Tizen::ArtikCloud::TaskHistoryList</a>
+</li>
+<li>~TaskList()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list.html#a62532b7a52881d389f94ea891e38eeb8">Tizen::ArtikCloud::TaskList</a>
+</li>
+<li>~TaskListEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html#acd72d90fd49efc62541b6a726e464b86">Tizen::ArtikCloud::TaskListEnvelope</a>
+</li>
+<li>~TaskParameters()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_parameters.html#ad83d1160bb022c01fb3f15ecb29891c8">Tizen::ArtikCloud::TaskParameters</a>
+</li>
+<li>~TaskRequest()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_request.html#af45e8768150ae83d9c076831173b1af1">Tizen::ArtikCloud::TaskRequest</a>
+</li>
+<li>~TasksStatusCounts()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html#a99b2ef2a6bce3af8ccea02e97c445fea">Tizen::ArtikCloud::TasksStatusCounts</a>
+</li>
+<li>~TaskStatus()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status.html#af44160b5e17d62dcb56bf15fc838d36d">Tizen::ArtikCloud::TaskStatus</a>
+</li>
+<li>~TaskStatusCounts()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html#aa3d3f8375b5b07fa6c5f7d0d8e558445">Tizen::ArtikCloud::TaskStatusCounts</a>
+</li>
+<li>~TaskStatuses()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html#a9c0d45255b799835c337406f1b6705a4">Tizen::ArtikCloud::TaskStatuses</a>
+</li>
+<li>~TaskStatusesEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html#ad0c8e337fb9e323ac67f455111639d1b">Tizen::ArtikCloud::TaskStatusesEnvelope</a>
+</li>
+<li>~TaskStatusesHistoryEnvelope()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_statuses_history_envelope.html#a9b98f19c66b4c3ecf0443d6de58f75f0">Tizen::ArtikCloud::TaskStatusesHistoryEnvelope</a>
+</li>
+<li>~TaskUpdateRequest()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_request.html#ae4dc92f49f7ed20c428db04c9655ce25">Tizen::ArtikCloud::TaskUpdateRequest</a>
+</li>
+<li>~TaskUpdateResponse()
+: <a class="el" href="class_tizen_1_1_artik_cloud_1_1_task_update_response.html#ae56a903ff001d9deb3f4d959d52a2e07">Tizen::ArtikCloud::TaskUpdateResponse</a>
+</li>
 <li>~Token()
 : <a class="el" href="class_tizen_1_1_artik_cloud_1_1_token.html#a3d7d59eaac1535df1433357d5d372f84">Tizen::ArtikCloud::Token</a>
 </li>
@@ -416,7 +505,7 @@ $(document).ready(function(){initNavTree('functions_func_~.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:10 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

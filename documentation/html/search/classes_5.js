@@ -11,5 +11,8 @@ var searchData=
   ['messageidenvelope',['MessageIDEnvelope',['../class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html',1,'Tizen::ArtikCloud']]],
   ['messagein',['MessageIn',['../class_tizen_1_1_artik_cloud_1_1_message_in.html',1,'Tizen::ArtikCloud']]],
   ['messageout',['MessageOut',['../class_tizen_1_1_artik_cloud_1_1_message_out.html',1,'Tizen::ArtikCloud']]],
-  ['messagesmanager',['MessagesManager',['../class_tizen_1_1_artik_cloud_1_1_messages_manager.html',1,'Tizen::ArtikCloud']]]
+  ['messagesmanager',['MessagesManager',['../class_tizen_1_1_artik_cloud_1_1_messages_manager.html',1,'Tizen::ArtikCloud']]],
+  ['metadataenvelope',['MetadataEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html',1,'Tizen::ArtikCloud']]],
+  ['metadatapropertiesenvelope',['MetadataPropertiesEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html',1,'Tizen::ArtikCloud']]],
+  ['metadataqueryenvelope',['MetadataQueryEnvelope',['../class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html',1,'Tizen::ArtikCloud']]]
 ];

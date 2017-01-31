@@ -29,6 +29,19 @@ rule build_long_cpp
   rspfile_content = $pchInc $cppflags
 
 #################################################################################
+# Unsupported Compilation Rules
+#################################################################################
+
+rule build_unsupported
+  command = echo "Ignoring unsupported extension"
+  description = Building $in not supported
+
+rule build_long_unsupported
+  command = echo "Ignoring unsupported extension"
+  description = Building $in not supported
+
+
+#################################################################################
 # Link Rules
 #################################################################################
 

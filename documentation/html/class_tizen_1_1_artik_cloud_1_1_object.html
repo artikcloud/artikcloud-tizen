@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -95,7 +96,7 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_object
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -146,72 +147,101 @@ $(document).ready(function(){initNavTree('class_tizen_1_1_artik_cloud_1_1_object
 <area href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response.html" alt="Tizen::ArtikCloud::DeviceRegStatusResponse" shape="rect" coords="363,1344,716,1368"/>
 <area href="class_tizen_1_1_artik_cloud_1_1_device_reg_status_response_envelope.html" alt="Tizen::ArtikCloud::DeviceRegStatusResponseEnvelope" shape="rect" coords="363,1400,716,1424"/>
 <area href="class_tizen_1_1_artik_cloud_1_1_devices_envelope.html" title="Devices Envelope. " alt="Tizen::ArtikCloud::DevicesEnvelope" shape="rect" coords="363,1456,716,1480"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_token.html" title="Device Token. " alt="Tizen::ArtikCloud::DeviceToken" shape="rect" coords="363,1512,716,1536"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_token_envelope.html" title="Device Token Envelope. " alt="Tizen::ArtikCloud::DeviceTokenEnvelope" shape="rect" coords="363,1568,716,1592"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_type.html" title="Device Type Information. " alt="Tizen::ArtikCloud::DeviceType" shape="rect" coords="363,1624,716,1648"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_type_array.html" title="Holds an array of DeviceTypes. " alt="Tizen::ArtikCloud::DeviceTypeArray" shape="rect" coords="363,1680,716,1704"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html" title="Device Type Envelope. " alt="Tizen::ArtikCloud::DeviceTypeEnvelope" shape="rect" coords="363,1736,716,1760"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html" title="DeviceTypes Envelope. " alt="Tizen::ArtikCloud::DeviceTypesEnvelope" shape="rect" coords="363,1792,716,1816"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_error_envelope.html" title="WebSocket Error Envelope. " alt="Tizen::ArtikCloud::ErrorEnvelope" shape="rect" coords="363,1848,716,1872"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html" title="WebSocket Event Feed. " alt="Tizen::ArtikCloud::EventFeedData" shape="rect" coords="363,1904,716,1928"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_data.html" title="Export Data. " alt="Tizen::ArtikCloud::ExportData" shape="rect" coords="363,1960,716,1984"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html" title="Export Data Array. " alt="Tizen::ArtikCloud::ExportDataArray" shape="rect" coords="363,2016,716,2040"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html" title="Export History Response. " alt="Tizen::ArtikCloud::ExportHistoryResponse" shape="rect" coords="363,2072,716,2096"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_normalized_messages_response.html" title="Export Normalized Messages Response. " alt="Tizen::ArtikCloud::ExportNormalizedMessagesResponse" shape="rect" coords="363,2128,716,2152"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_request.html" title="Export Request. " alt="Tizen::ArtikCloud::ExportRequest" shape="rect" coords="363,2184,716,2208"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_request_data.html" title="Export Request Data. " alt="Tizen::ArtikCloud::ExportRequestData" shape="rect" coords="363,2240,716,2264"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html" title="Export Request Info. " alt="Tizen::ArtikCloud::ExportRequestInfo" shape="rect" coords="363,2296,716,2320"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html" title="Export Request Response. " alt="Tizen::ArtikCloud::ExportRequestResponse" shape="rect" coords="363,2352,716,2376"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_response.html" title="Export Response. " alt="Tizen::ArtikCloud::ExportResponse" shape="rect" coords="363,2408,716,2432"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html" title="Export Status Response. " alt="Tizen::ArtikCloud::ExportStatusResponse" shape="rect" coords="363,2464,716,2488"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_field_path.html" alt="Tizen::ArtikCloud::FieldPath" shape="rect" coords="363,2520,716,2544"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_field_presence.html" title="Field Presence. " alt="Tizen::ArtikCloud::FieldPresence" shape="rect" coords="363,2576,716,2600"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html" title="Field Presence Envelope. " alt="Tizen::ArtikCloud::FieldPresenceEnvelope" shape="rect" coords="363,2632,716,2656"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html" title="Fields and Actions. " alt="Tizen::ArtikCloud::FieldsActions" shape="rect" coords="363,2688,716,2712"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_manifest_properties.html" title="Manifest Properties. " alt="Tizen::ArtikCloud::ManifestProperties" shape="rect" coords="363,2744,716,2768"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_manifest_properties_envelope.html" title="Manifest Properties Envelope. " alt="Tizen::ArtikCloud::ManifestPropertiesEnvelope" shape="rect" coords="363,2800,716,2824"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html" title="Manifest Versions. " alt="Tizen::ArtikCloud::ManifestVersions" shape="rect" coords="363,2856,716,2880"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_manifest_versions_envelope.html" title="Manifest Versions Envelope. " alt="Tizen::ArtikCloud::ManifestVersionsEnvelope" shape="rect" coords="363,2912,716,2936"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message.html" title="Message Information. " alt="Tizen::ArtikCloud::Message" shape="rect" coords="363,2968,716,2992"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message_action.html" title="Message or Action Information. " alt="Tizen::ArtikCloud::MessageAction" shape="rect" coords="363,3024,716,3048"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message_i_d.html" title="Mesage ID. " alt="Tizen::ArtikCloud::MessageID" shape="rect" coords="363,3080,716,3104"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html" title="Message ID Envelope. " alt="Tizen::ArtikCloud::MessageIDEnvelope" shape="rect" coords="363,3136,716,3160"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message_in.html" title="Message sent to a WebSocket. " alt="Tizen::ArtikCloud::MessageIn" shape="rect" coords="363,3192,716,3216"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_message_out.html" title="Message received by a WebSocket. " alt="Tizen::ArtikCloud::MessageOut" shape="rect" coords="363,3248,716,3272"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_non_empty_string.html" alt="Tizen::ArtikCloud::NonEmptyString" shape="rect" coords="363,3304,716,3328"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_normalized_action.html" title="Normalized Action. " alt="Tizen::ArtikCloud::NormalizedAction" shape="rect" coords="363,3360,716,3384"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_normalized_actions_envelope.html" title="Normalized Actions Envelope. " alt="Tizen::ArtikCloud::NormalizedActionsEnvelope" shape="rect" coords="363,3416,716,3440"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html" title="Normalized Message. " alt="Tizen::ArtikCloud::NormalizedMessage" shape="rect" coords="363,3472,716,3496"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_normalized_messages_envelope.html" title="Normalized Messages Envelope. " alt="Tizen::ArtikCloud::NormalizedMessagesEnvelope" shape="rect" coords="363,3528,716,3552"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_output_rule.html" title="Rule information. " alt="Tizen::ArtikCloud::OutputRule" shape="rect" coords="363,3584,716,3608"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_presence_envelope.html" alt="Tizen::ArtikCloud::PresenceEnvelope" shape="rect" coords="363,3640,716,3664"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_presence_model.html" alt="Tizen::ArtikCloud::PresenceModel" shape="rect" coords="363,3696,716,3720"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html" title="User Application Properties Envelope. " alt="Tizen::ArtikCloud::PropertiesEnvelope" shape="rect" coords="363,3752,716,3776"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html" alt="Tizen::ArtikCloud::RefreshTokenResponse" shape="rect" coords="363,3808,716,3832"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_register_message.html" title="WebSocket Registration Message. " alt="Tizen::ArtikCloud::RegisterMessage" shape="rect" coords="363,3864,716,3888"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_array.html" title="Holds an array of Rules. " alt="Tizen::ArtikCloud::RuleArray" shape="rect" coords="363,3920,716,3944"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_creation_info.html" title="Class to create a new Rule. " alt="Tizen::ArtikCloud::RuleCreationInfo" shape="rect" coords="363,3976,716,4000"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_envelope.html" title="Rule Envelope. " alt="Tizen::ArtikCloud::RuleEnvelope" shape="rect" coords="363,4032,716,4056"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_error.html" title="Rule Error. " alt="Tizen::ArtikCloud::RuleError" shape="rect" coords="363,4088,716,4112"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html" title="Rules Envelope. " alt="Tizen::ArtikCloud::RulesEnvelope" shape="rect" coords="363,4144,716,4168"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_update_info.html" title="Class to update an existing Rule. " alt="Tizen::ArtikCloud::RuleUpdateInfo" shape="rect" coords="363,4200,716,4224"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_rule_warning_output.html" title="Rule Warnings. " alt="Tizen::ArtikCloud::RuleWarningOutput" shape="rect" coords="363,4256,716,4280"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_snapshot_response.html" alt="Tizen::ArtikCloud::SnapshotResponse" shape="rect" coords="363,4312,716,4336"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html" alt="Tizen::ArtikCloud::SnapshotResponses" shape="rect" coords="363,4368,716,4392"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_snapshots_response_envelope.html" alt="Tizen::ArtikCloud::SnapshotsResponseEnvelope" shape="rect" coords="363,4424,716,4448"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_tag.html" title="Tag information. " alt="Tizen::ArtikCloud::Tag" shape="rect" coords="363,4480,716,4504"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_tag_array.html" title="Contains the arry of Tags. " alt="Tizen::ArtikCloud::TagArray" shape="rect" coords="363,4536,716,4560"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html" title="Tags Envelope. " alt="Tizen::ArtikCloud::TagsEnvelope" shape="rect" coords="363,4592,716,4616"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_token.html" alt="Tizen::ArtikCloud::Token" shape="rect" coords="363,4648,716,4672"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_token_info.html" alt="Tizen::ArtikCloud::TokenInfo" shape="rect" coords="363,4704,716,4728"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html" alt="Tizen::ArtikCloud::TokenInfoSuccessResponse" shape="rect" coords="363,4760,716,4784"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_token_request.html" alt="Tizen::ArtikCloud::TokenRequest" shape="rect" coords="363,4816,716,4840"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_token_response.html" alt="Tizen::ArtikCloud::TokenResponse" shape="rect" coords="363,4872,716,4896"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response.html" alt="Tizen::ArtikCloud::UnregisterDeviceResponse" shape="rect" coords="363,4928,716,4952"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response_envelope.html" alt="Tizen::ArtikCloud::UnregisterDeviceResponseEnvelope" shape="rect" coords="363,4984,716,5008"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_user.html" title="User Information. " alt="Tizen::ArtikCloud::User" shape="rect" coords="363,5040,716,5064"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html" title="User Envelope. " alt="Tizen::ArtikCloud::UserEnvelope" shape="rect" coords="363,5096,716,5120"/>
-<area href="class_tizen_1_1_artik_cloud_1_1_web_socket_error.html" title="WebSocket Error Information. " alt="Tizen::ArtikCloud::WebSocketError" shape="rect" coords="363,5152,716,5176"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_task.html" alt="Tizen::ArtikCloud::DeviceTask" shape="rect" coords="363,1512,716,1536"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_task_update_request.html" alt="Tizen::ArtikCloud::DeviceTaskUpdateRequest" shape="rect" coords="363,1568,716,1592"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_task_update_response.html" alt="Tizen::ArtikCloud::DeviceTaskUpdateResponse" shape="rect" coords="363,1624,716,1648"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_token.html" title="Device Token. " alt="Tizen::ArtikCloud::DeviceToken" shape="rect" coords="363,1680,716,1704"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_token_envelope.html" title="Device Token Envelope. " alt="Tizen::ArtikCloud::DeviceTokenEnvelope" shape="rect" coords="363,1736,716,1760"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_type.html" title="Device Type Information. " alt="Tizen::ArtikCloud::DeviceType" shape="rect" coords="363,1792,716,1816"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_type_array.html" title="Holds an array of DeviceTypes. " alt="Tizen::ArtikCloud::DeviceTypeArray" shape="rect" coords="363,1848,716,1872"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_type_envelope.html" title="Device Type Envelope. " alt="Tizen::ArtikCloud::DeviceTypeEnvelope" shape="rect" coords="363,1904,716,1928"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_type_info.html" alt="Tizen::ArtikCloud::DeviceTypeInfo" shape="rect" coords="363,1960,716,1984"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_type_info_envelope.html" alt="Tizen::ArtikCloud::DeviceTypeInfoEnvelope" shape="rect" coords="363,2016,716,2040"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_types_envelope.html" title="DeviceTypes Envelope. " alt="Tizen::ArtikCloud::DeviceTypesEnvelope" shape="rect" coords="363,2072,716,2096"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_types_info.html" alt="Tizen::ArtikCloud::DeviceTypesInfo" shape="rect" coords="363,2128,716,2152"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_device_types_info_envelope.html" alt="Tizen::ArtikCloud::DeviceTypesInfoEnvelope" shape="rect" coords="363,2184,716,2208"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_error_envelope.html" title="WebSocket Error Envelope. " alt="Tizen::ArtikCloud::ErrorEnvelope" shape="rect" coords="363,2240,716,2264"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_event_feed_data.html" title="WebSocket Event Feed. " alt="Tizen::ArtikCloud::EventFeedData" shape="rect" coords="363,2296,716,2320"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_data.html" title="Export Data. " alt="Tizen::ArtikCloud::ExportData" shape="rect" coords="363,2352,716,2376"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_data_array.html" title="Export Data Array. " alt="Tizen::ArtikCloud::ExportDataArray" shape="rect" coords="363,2408,716,2432"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_history_response.html" title="Export History Response. " alt="Tizen::ArtikCloud::ExportHistoryResponse" shape="rect" coords="363,2464,716,2488"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_normalized_messages_response.html" title="Export Normalized Messages Response. " alt="Tizen::ArtikCloud::ExportNormalizedMessagesResponse" shape="rect" coords="363,2520,716,2544"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_request.html" title="Export Request. " alt="Tizen::ArtikCloud::ExportRequest" shape="rect" coords="363,2576,716,2600"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_request_data.html" title="Export Request Data. " alt="Tizen::ArtikCloud::ExportRequestData" shape="rect" coords="363,2632,716,2656"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_request_info.html" title="Export Request Info. " alt="Tizen::ArtikCloud::ExportRequestInfo" shape="rect" coords="363,2688,716,2712"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_request_response.html" title="Export Request Response. " alt="Tizen::ArtikCloud::ExportRequestResponse" shape="rect" coords="363,2744,716,2768"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_response.html" title="Export Response. " alt="Tizen::ArtikCloud::ExportResponse" shape="rect" coords="363,2800,716,2824"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_export_status_response.html" title="Export Status Response. " alt="Tizen::ArtikCloud::ExportStatusResponse" shape="rect" coords="363,2856,716,2880"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_field_path.html" alt="Tizen::ArtikCloud::FieldPath" shape="rect" coords="363,2912,716,2936"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_field_presence.html" title="Field Presence. " alt="Tizen::ArtikCloud::FieldPresence" shape="rect" coords="363,2968,716,2992"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_field_presence_envelope.html" title="Field Presence Envelope. " alt="Tizen::ArtikCloud::FieldPresenceEnvelope" shape="rect" coords="363,3024,716,3048"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html" title="Fields and Actions. " alt="Tizen::ArtikCloud::FieldsActions" shape="rect" coords="363,3080,716,3104"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_manifest_properties.html" title="Manifest Properties. " alt="Tizen::ArtikCloud::ManifestProperties" shape="rect" coords="363,3136,716,3160"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_manifest_properties_envelope.html" title="Manifest Properties Envelope. " alt="Tizen::ArtikCloud::ManifestPropertiesEnvelope" shape="rect" coords="363,3192,716,3216"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_manifest_versions.html" title="Manifest Versions. " alt="Tizen::ArtikCloud::ManifestVersions" shape="rect" coords="363,3248,716,3272"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_manifest_versions_envelope.html" title="Manifest Versions Envelope. " alt="Tizen::ArtikCloud::ManifestVersionsEnvelope" shape="rect" coords="363,3304,716,3328"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message.html" title="Message Information. " alt="Tizen::ArtikCloud::Message" shape="rect" coords="363,3360,716,3384"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message_action.html" title="Message or Action Information. " alt="Tizen::ArtikCloud::MessageAction" shape="rect" coords="363,3416,716,3440"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message_i_d.html" title="Mesage ID. " alt="Tizen::ArtikCloud::MessageID" shape="rect" coords="363,3472,716,3496"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message_i_d_envelope.html" title="Message ID Envelope. " alt="Tizen::ArtikCloud::MessageIDEnvelope" shape="rect" coords="363,3528,716,3552"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message_in.html" title="Message sent to a WebSocket. " alt="Tizen::ArtikCloud::MessageIn" shape="rect" coords="363,3584,716,3608"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_message_out.html" title="Message received by a WebSocket. " alt="Tizen::ArtikCloud::MessageOut" shape="rect" coords="363,3640,716,3664"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_metadata_envelope.html" alt="Tizen::ArtikCloud::MetadataEnvelope" shape="rect" coords="363,3696,716,3720"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_metadata_properties_envelope.html" alt="Tizen::ArtikCloud::MetadataPropertiesEnvelope" shape="rect" coords="363,3752,716,3776"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_metadata_query_envelope.html" alt="Tizen::ArtikCloud::MetadataQueryEnvelope" shape="rect" coords="363,3808,716,3832"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_non_empty_string.html" alt="Tizen::ArtikCloud::NonEmptyString" shape="rect" coords="363,3864,716,3888"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_normalized_action.html" title="Normalized Action. " alt="Tizen::ArtikCloud::NormalizedAction" shape="rect" coords="363,3920,716,3944"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_normalized_actions_envelope.html" title="Normalized Actions Envelope. " alt="Tizen::ArtikCloud::NormalizedActionsEnvelope" shape="rect" coords="363,3976,716,4000"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_normalized_message.html" title="Normalized Message. " alt="Tizen::ArtikCloud::NormalizedMessage" shape="rect" coords="363,4032,716,4056"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_normalized_messages_envelope.html" title="Normalized Messages Envelope. " alt="Tizen::ArtikCloud::NormalizedMessagesEnvelope" shape="rect" coords="363,4088,716,4112"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_output_rule.html" title="Rule information. " alt="Tizen::ArtikCloud::OutputRule" shape="rect" coords="363,4144,716,4168"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_presence_envelope.html" alt="Tizen::ArtikCloud::PresenceEnvelope" shape="rect" coords="363,4200,716,4224"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_presence_model.html" alt="Tizen::ArtikCloud::PresenceModel" shape="rect" coords="363,4256,716,4280"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_properties_envelope.html" title="User Application Properties Envelope. " alt="Tizen::ArtikCloud::PropertiesEnvelope" shape="rect" coords="363,4312,716,4336"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_refresh_token_response.html" alt="Tizen::ArtikCloud::RefreshTokenResponse" shape="rect" coords="363,4368,716,4392"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_register_message.html" title="WebSocket Registration Message. " alt="Tizen::ArtikCloud::RegisterMessage" shape="rect" coords="363,4424,716,4448"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_array.html" title="Holds an array of Rules. " alt="Tizen::ArtikCloud::RuleArray" shape="rect" coords="363,4480,716,4504"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_creation_info.html" title="Class to create a new Rule. " alt="Tizen::ArtikCloud::RuleCreationInfo" shape="rect" coords="363,4536,716,4560"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_envelope.html" title="Rule Envelope. " alt="Tizen::ArtikCloud::RuleEnvelope" shape="rect" coords="363,4592,716,4616"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_error.html" title="Rule Error. " alt="Tizen::ArtikCloud::RuleError" shape="rect" coords="363,4648,716,4672"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rules_envelope.html" title="Rules Envelope. " alt="Tizen::ArtikCloud::RulesEnvelope" shape="rect" coords="363,4704,716,4728"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_update_info.html" title="Class to update an existing Rule. " alt="Tizen::ArtikCloud::RuleUpdateInfo" shape="rect" coords="363,4760,716,4784"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_rule_warning_output.html" title="Rule Warnings. " alt="Tizen::ArtikCloud::RuleWarningOutput" shape="rect" coords="363,4816,716,4840"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_snapshot_response.html" alt="Tizen::ArtikCloud::SnapshotResponse" shape="rect" coords="363,4872,716,4896"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html" alt="Tizen::ArtikCloud::SnapshotResponses" shape="rect" coords="363,4928,716,4952"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_snapshots_response_envelope.html" alt="Tizen::ArtikCloud::SnapshotsResponseEnvelope" shape="rect" coords="363,4984,716,5008"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_tag.html" title="Tag information. " alt="Tizen::ArtikCloud::Tag" shape="rect" coords="363,5040,716,5064"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_tag_array.html" title="Contains the arry of Tags. " alt="Tizen::ArtikCloud::TagArray" shape="rect" coords="363,5096,716,5120"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html" title="Tags Envelope. " alt="Tizen::ArtikCloud::TagsEnvelope" shape="rect" coords="363,5152,716,5176"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task.html" alt="Tizen::ArtikCloud::Task" shape="rect" coords="363,5208,716,5232"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_by_did.html" alt="Tizen::ArtikCloud::TaskByDid" shape="rect" coords="363,5264,716,5288"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list.html" alt="Tizen::ArtikCloud::TaskByDidList" shape="rect" coords="363,5320,716,5344"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_by_did_list_envelope.html" alt="Tizen::ArtikCloud::TaskByDidListEnvelope" shape="rect" coords="363,5376,716,5400"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_envelope.html" alt="Tizen::ArtikCloud::TaskEnvelope" shape="rect" coords="363,5432,716,5456"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_history.html" alt="Tizen::ArtikCloud::TaskHistory" shape="rect" coords="363,5488,716,5512"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_history_list.html" alt="Tizen::ArtikCloud::TaskHistoryList" shape="rect" coords="363,5544,716,5568"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_list.html" alt="Tizen::ArtikCloud::TaskList" shape="rect" coords="363,5600,716,5624"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_list_envelope.html" alt="Tizen::ArtikCloud::TaskListEnvelope" shape="rect" coords="363,5656,716,5680"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_parameters.html" alt="Tizen::ArtikCloud::TaskParameters" shape="rect" coords="363,5712,716,5736"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_request.html" alt="Tizen::ArtikCloud::TaskRequest" shape="rect" coords="363,5768,716,5792"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_tasks_status_counts.html" alt="Tizen::ArtikCloud::TasksStatusCounts" shape="rect" coords="363,5824,716,5848"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_status.html" alt="Tizen::ArtikCloud::TaskStatus" shape="rect" coords="363,5880,716,5904"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_status_counts.html" alt="Tizen::ArtikCloud::TaskStatusCounts" shape="rect" coords="363,5936,716,5960"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_statuses.html" alt="Tizen::ArtikCloud::TaskStatuses" shape="rect" coords="363,5992,716,6016"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_statuses_envelope.html" alt="Tizen::ArtikCloud::TaskStatusesEnvelope" shape="rect" coords="363,6048,716,6072"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_statuses_history_envelope.html" alt="Tizen::ArtikCloud::TaskStatusesHistoryEnvelope" shape="rect" coords="363,6104,716,6128"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_update_request.html" alt="Tizen::ArtikCloud::TaskUpdateRequest" shape="rect" coords="363,6160,716,6184"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_task_update_response.html" alt="Tizen::ArtikCloud::TaskUpdateResponse" shape="rect" coords="363,6216,716,6240"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_token.html" alt="Tizen::ArtikCloud::Token" shape="rect" coords="363,6272,716,6296"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_token_info.html" alt="Tizen::ArtikCloud::TokenInfo" shape="rect" coords="363,6328,716,6352"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_token_info_success_response.html" alt="Tizen::ArtikCloud::TokenInfoSuccessResponse" shape="rect" coords="363,6384,716,6408"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_token_request.html" alt="Tizen::ArtikCloud::TokenRequest" shape="rect" coords="363,6440,716,6464"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_token_response.html" alt="Tizen::ArtikCloud::TokenResponse" shape="rect" coords="363,6496,716,6520"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response.html" alt="Tizen::ArtikCloud::UnregisterDeviceResponse" shape="rect" coords="363,6552,716,6576"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_unregister_device_response_envelope.html" alt="Tizen::ArtikCloud::UnregisterDeviceResponseEnvelope" shape="rect" coords="363,6608,716,6632"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_user.html" title="User Information. " alt="Tizen::ArtikCloud::User" shape="rect" coords="363,6664,716,6688"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_user_envelope.html" title="User Envelope. " alt="Tizen::ArtikCloud::UserEnvelope" shape="rect" coords="363,6720,716,6744"/>
+<area href="class_tizen_1_1_artik_cloud_1_1_web_socket_error.html" title="WebSocket Error Information. " alt="Tizen::ArtikCloud::WebSocketError" shape="rect" coords="363,6776,716,6800"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -236,7 +266,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>fromJson</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>Tizen</b></li><li class="navelem"><b>ArtikCloud</b></li><li class="navelem"><a class="el" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:10 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:36 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

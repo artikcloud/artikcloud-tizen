@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_fields_actions_8h_source.html','');})
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,45 +138,44 @@ $(document).ready(function(){initNavTree('_fields_actions_8h_source.html','');})
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">FieldsActions</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a787d7f8bfbbc228bd7f8e31f31cde997">FieldsActions</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a787d7f8bfbbc228bd7f8e31f31cde997">FieldsActions</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aef5451146a20a9af57ec58b0bf95aa23">~FieldsActions</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a58f0c1e62b35c3dc41f1782938701981">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aab2afdc53fe790ef96fc1b634a7e773a">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a8685c27412442a3efaafb67585a03723">getFields</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aebc74bc761e0d1da92e3fab0062241cf">setFields</a>(std::map &lt;std::string, std::string&gt; fields);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aff34901f8b3ca5e67d4a2b0a1a2df41b">getActions</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">FieldsActions</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a787d7f8bfbbc228bd7f8e31f31cde997">FieldsActions</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a787d7f8bfbbc228bd7f8e31f31cde997">FieldsActions</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aef5451146a20a9af57ec58b0bf95aa23">~FieldsActions</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a58f0c1e62b35c3dc41f1782938701981">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aab2afdc53fe790ef96fc1b634a7e773a">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a8685c27412442a3efaafb67585a03723">getFields</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a1428f348c78db97a6fd53555eb0a0315">setActions</a>(std::map &lt;std::string, std::string&gt; actions);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::map &lt;std::string, std::string&gt;fields;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::map &lt;std::string, std::string&gt;actions;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FieldsActions_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aebc74bc761e0d1da92e3fab0062241cf">setFields</a>(std::map &lt;std::string, std::string&gt; fields);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::map&lt;std::string, std::string&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aff34901f8b3ca5e67d4a2b0a1a2df41b">getActions</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a1428f348c78db97a6fd53555eb0a0315">setActions</a>(std::map &lt;std::string, std::string&gt; actions);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::map &lt;std::string, std::string&gt;fields;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::map &lt;std::string, std::string&gt;actions;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _FieldsActions_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_a787d7f8bfbbc228bd7f8e31f31cde997"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a787d7f8bfbbc228bd7f8e31f31cde997">Tizen::ArtikCloud::FieldsActions::FieldsActions</a></div><div class="ttdeci">FieldsActions()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00029">FieldsActions.cpp:29</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_aebc74bc761e0d1da92e3fab0062241cf"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aebc74bc761e0d1da92e3fab0062241cf">Tizen::ArtikCloud::FieldsActions::setFields</a></div><div class="ttdeci">void setFields(std::map&lt; std::string, std::string &gt; fields)</div><div class="ttdoc">Set Message Fields. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00161">FieldsActions.cpp:161</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_a8685c27412442a3efaafb67585a03723"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a8685c27412442a3efaafb67585a03723">Tizen::ArtikCloud::FieldsActions::getFields</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; getFields()</div><div class="ttdoc">Get Message Fields. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00155">FieldsActions.cpp:155</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_aff34901f8b3ca5e67d4a2b0a1a2df41b"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aff34901f8b3ca5e67d4a2b0a1a2df41b">Tizen::ArtikCloud::FieldsActions::getActions</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; getActions()</div><div class="ttdoc">Get Actions. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00167">FieldsActions.cpp:167</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">Tizen::ArtikCloud::FieldsActions</a></div><div class="ttdoc">Fields and Actions. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8h_source.html#l00040">FieldsActions.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html">Tizen::ArtikCloud::FieldsActions</a></div><div class="ttdoc">Fields and Actions. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8h_source.html#l00047">FieldsActions.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_a58f0c1e62b35c3dc41f1782938701981"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a58f0c1e62b35c3dc41f1782938701981">Tizen::ArtikCloud::FieldsActions::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00104">FieldsActions.cpp:104</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_a1428f348c78db97a6fd53555eb0a0315"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#a1428f348c78db97a6fd53555eb0a0315">Tizen::ArtikCloud::FieldsActions::setActions</a></div><div class="ttdeci">void setActions(std::map&lt; std::string, std::string &gt; actions)</div><div class="ttdoc">Set Actions. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00173">FieldsActions.cpp:173</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_fields_actions_html_aab2afdc53fe790ef96fc1b634a7e773a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_fields_actions.html#aab2afdc53fe790ef96fc1b634a7e773a">Tizen::ArtikCloud::FieldsActions::fromJson</a></div><div class="ttdeci">void fromJson(char *jsonStr)</div><div class="ttdoc">Fills in members of this class from JSON string representing it. </div><div class="ttdef"><b>Definition:</b> <a href="_fields_actions_8cpp_source.html#l00068">FieldsActions.cpp:68</a></div></div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_fields_actions_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>FieldsActions.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

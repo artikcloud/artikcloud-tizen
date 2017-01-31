@@ -3,4 +3,9 @@
 #modify
 author-signature.xml
 signature1.xml
+bin/uibuildersingleview
+res/tizen_blank_16.png
+res/tizen_blank_32.png
+res/tizen_blank_64.png
+shared/res/uibuildersingleview.png
 tizen-manifest.xml

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_tags_manager_8h_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,66 +133,71 @@ $(document).ready(function(){initNavTree('_tags_manager_8h_source.html','');});
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;TagsEnvelope.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;Error.h&quot;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>Tizen{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a875657dd9ad58c1a0f738d61b7cc391a">getTagCategoriesSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#af6203ddbd5fc8cc38cf14a66526d57b5">getTagCategoriesAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a4991a34437dd8fbe7b3a50f718cf231d">getTagSuggestionsSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::string entityType, std::string tags, std::string name, <span class="keywordtype">int</span> count, </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#afe76cc8e139fb6f49222d531ce68c9a8">getTagSuggestionsAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::string entityType, std::string tags, std::string name, <span class="keywordtype">int</span> count, </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a8f6c5c3536f6df39a54ba8fe2079be84">getTagsByCategoriesSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string categories, </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">TagsManager</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a875657dd9ad58c1a0f738d61b7cc391a">getTagCategoriesSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#af6203ddbd5fc8cc38cf14a66526d57b5">getTagCategoriesAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a4991a34437dd8fbe7b3a50f718cf231d">getTagSuggestionsSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string entityType, std::string tags, std::string name, <span class="keywordtype">int</span> count, </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#afe76cc8e139fb6f49222d531ce68c9a8">getTagSuggestionsAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string entityType, std::string tags, std::string name, <span class="keywordtype">int</span> count, </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a143ede04a12a5f866c0b7a7c470ccfd0">getTagsByCategoriesAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a8f6c5c3536f6df39a54ba8fe2079be84">getTagsByCategoriesSync</a>(<span class="keywordtype">char</span> * accessToken,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::string categories, </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">static</span> std::string getBasePath()</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;https://api.artik.cloud/v1.1&quot;</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TagsManager_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a143ede04a12a5f866c0b7a7c470ccfd0">getTagsByCategoriesAsync</a>(<span class="keywordtype">char</span> * accessToken,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::string categories, </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span>(* handler)(<a class="code" href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">TagsEnvelope</a>, <a class="code" href="class_tizen_1_1_artik_cloud_1_1_error.html">Error</a>, <span class="keywordtype">void</span>* )</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    , <span class="keywordtype">void</span>* userData);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">static</span> std::string getBasePath()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;https://api.artik.cloud/v1.1&quot;</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TagsManager_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_a875657dd9ad58c1a0f738d61b7cc391a"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a875657dd9ad58c1a0f738d61b7cc391a">Tizen::ArtikCloud::TagsManager::getTagCategoriesSync</a></div><div class="ttdeci">bool getTagCategoriesSync(char *accessToken, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get all categories. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00203">TagsManager.cpp:203</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_af6203ddbd5fc8cc38cf14a66526d57b5"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#af6203ddbd5fc8cc38cf14a66526d57b5">Tizen::ArtikCloud::TagsManager::getTagCategoriesAsync</a></div><div class="ttdeci">bool getTagCategoriesAsync(char *accessToken, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get all categories. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00193">TagsManager.cpp:193</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_afe76cc8e139fb6f49222d531ce68c9a8"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#afe76cc8e139fb6f49222d531ce68c9a8">Tizen::ArtikCloud::TagsManager::getTagSuggestionsAsync</a></div><div class="ttdeci">bool getTagSuggestionsAsync(char *accessToken, std::string entityType, std::string tags, std::string name, int count, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get tag suggestions. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00367">TagsManager.cpp:367</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">Tizen::ArtikCloud::TagsEnvelope</a></div><div class="ttdoc">Tags Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_tags_envelope_8h_source.html#l00039">TagsEnvelope.h:39</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_envelope_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_envelope.html">Tizen::ArtikCloud::TagsEnvelope</a></div><div class="ttdoc">Tags Envelope. </div><div class="ttdef"><b>Definition:</b> <a href="_tags_envelope_8h_source.html#l00046">TagsEnvelope.h:46</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_error_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_error.html">Tizen::ArtikCloud::Error</a></div><div class="ttdef"><b>Definition:</b> <a href="_error_8h_source.html#l00024">Error.h:24</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_a8f6c5c3536f6df39a54ba8fe2079be84"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a8f6c5c3536f6df39a54ba8fe2079be84">Tizen::ArtikCloud::TagsManager::getTagsByCategoriesSync</a></div><div class="ttdeci">bool getTagsByCategoriesSync(char *accessToken, std::string categories, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get all tags of categories. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00530">TagsManager.cpp:530</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_a4991a34437dd8fbe7b3a50f718cf231d"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a4991a34437dd8fbe7b3a50f718cf231d">Tizen::ArtikCloud::TagsManager::getTagSuggestionsSync</a></div><div class="ttdeci">bool getTagSuggestionsSync(char *accessToken, std::string entityType, std::string tags, std::string name, int count, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get tag suggestions. Synchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00377">TagsManager.cpp:377</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html_a143ede04a12a5f866c0b7a7c470ccfd0"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html#a143ede04a12a5f866c0b7a7c470ccfd0">Tizen::ArtikCloud::TagsManager::getTagsByCategoriesAsync</a></div><div class="ttdeci">bool getTagsByCategoriesAsync(char *accessToken, std::string categories, void(*handler)(TagsEnvelope, Error, void *), void *userData)</div><div class="ttdoc">Get all tags of categories. Asynchronous </div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8cpp_source.html#l00520">TagsManager.cpp:520</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">Tizen::ArtikCloud::TagsManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8h_source.html#l00029">TagsManager.h:29</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_tags_manager_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_tags_manager.html">Tizen::ArtikCloud::TagsManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_tags_manager_8h_source.html#l00038">TagsManager.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>TagsManager.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -92,7 +93,7 @@ $(document).ready(function(){initNavTree('_snapshot_responses_8h_source.html',''
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -137,48 +138,47 @@ $(document).ready(function(){initNavTree('_snapshot_responses_8h_source.html',''
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;Object.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">SnapshotResponses</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a67ecc20017f07c350fe1d2dff7bb566d">SnapshotResponses</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a67ecc20017f07c350fe1d2dff7bb566d">SnapshotResponses</a>(<span class="keywordtype">char</span>* str);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a2008a1cf0c9fc993d75b849c793c519f">~SnapshotResponses</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#aeda2998d6133bafdf9cf9b7e4d3ab7cf">toJson</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a4f2604c420d3c4c7929d057c24d5db67">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#aff04a5278009b22c712b1477b338280d">getSdids</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a29b2547fde73f1a263d123ef33855c29">setSdids</a>(std::string  sdids);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#abadcff3cfd01a59dd203d7e108180cb2">getSize</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>Tizen {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>ArtikCloud {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">SnapshotResponses</a> : <span class="keyword">public</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_object.html">Object</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a67ecc20017f07c350fe1d2dff7bb566d">SnapshotResponses</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a67ecc20017f07c350fe1d2dff7bb566d">SnapshotResponses</a>(<span class="keywordtype">char</span>* str);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a2008a1cf0c9fc993d75b849c793c519f">~SnapshotResponses</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#aeda2998d6133bafdf9cf9b7e4d3ab7cf">toJson</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a4f2604c420d3c4c7929d057c24d5db67">fromJson</a>(<span class="keywordtype">char</span>* jsonStr);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::string <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#aff04a5278009b22c712b1477b338280d">getSdids</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a01b9e511259a36427964e0080d286ef4">setSize</a>(<span class="keywordtype">int</span>  size);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::list&lt;SnapshotResponse&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a54a8122550a434bea3ab4df64bd9f1ea">getData</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a29b2547fde73f1a263d123ef33855c29">setSdids</a>(std::string  sdids);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#abadcff3cfd01a59dd203d7e108180cb2">getSize</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a5eb352b300df87386638d8c9b54e62b2">setData</a>(std::list &lt;SnapshotResponse&gt; data);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::string sdids;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> size;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::list &lt;SnapshotResponse&gt;data;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> __init();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SnapshotResponses_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a01b9e511259a36427964e0080d286ef4">setSize</a>(<span class="keywordtype">int</span>  size);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::list&lt;SnapshotResponse&gt; <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a54a8122550a434bea3ab4df64bd9f1ea">getData</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a5eb352b300df87386638d8c9b54e62b2">setData</a>(std::list &lt;SnapshotResponse&gt; data);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::string sdids;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> size;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::list &lt;SnapshotResponse&gt;data;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> __init();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> __cleanup();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _SnapshotResponses_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_a29b2547fde73f1a263d123ef33855c29"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a29b2547fde73f1a263d123ef33855c29">Tizen::ArtikCloud::SnapshotResponses::setSdids</a></div><div class="ttdeci">void setSdids(std::string sdids)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00196">SnapshotResponses.cpp:196</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_a2008a1cf0c9fc993d75b849c793c519f"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a2008a1cf0c9fc993d75b849c793c519f">Tizen::ArtikCloud::SnapshotResponses::~SnapshotResponses</a></div><div class="ttdeci">virtual ~SnapshotResponses()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00034">SnapshotResponses.cpp:34</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_abadcff3cfd01a59dd203d7e108180cb2"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#abadcff3cfd01a59dd203d7e108180cb2">Tizen::ArtikCloud::SnapshotResponses::getSize</a></div><div class="ttdeci">int getSize()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00202">SnapshotResponses.cpp:202</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_object_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_object.html">Tizen::ArtikCloud::Object</a></div><div class="ttdef"><b>Definition:</b> <a href="_object_8h_source.html#l00023">Object.h:23</a></div></div>
-<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">Tizen::ArtikCloud::SnapshotResponses</a></div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8h_source.html#l00040">SnapshotResponses.h:40</a></div></div>
+<div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html">Tizen::ArtikCloud::SnapshotResponses</a></div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8h_source.html#l00047">SnapshotResponses.h:47</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_aeda2998d6133bafdf9cf9b7e4d3ab7cf"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#aeda2998d6133bafdf9cf9b7e4d3ab7cf">Tizen::ArtikCloud::SnapshotResponses::toJson</a></div><div class="ttdeci">char * toJson()</div><div class="ttdoc">Retrieve a string JSON representation of this class. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00134">SnapshotResponses.cpp:134</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_a54a8122550a434bea3ab4df64bd9f1ea"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a54a8122550a434bea3ab4df64bd9f1ea">Tizen::ArtikCloud::SnapshotResponses::getData</a></div><div class="ttdeci">std::list&lt; SnapshotResponse &gt; getData()</div><div class="ttdoc">Get. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00214">SnapshotResponses.cpp:214</a></div></div>
 <div class="ttc" id="class_tizen_1_1_artik_cloud_1_1_snapshot_responses_html_a5eb352b300df87386638d8c9b54e62b2"><div class="ttname"><a href="class_tizen_1_1_artik_cloud_1_1_snapshot_responses.html#a5eb352b300df87386638d8c9b54e62b2">Tizen::ArtikCloud::SnapshotResponses::setData</a></div><div class="ttdeci">void setData(std::list&lt; SnapshotResponse &gt; data)</div><div class="ttdoc">Set. </div><div class="ttdef"><b>Definition:</b> <a href="_snapshot_responses_8cpp_source.html#l00220">SnapshotResponses.cpp:220</a></div></div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('_snapshot_responses_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>SnapshotResponses.h</b></li>
-    <li class="footer">Generated on Fri Oct 21 2016 19:34:09 for ARTIK Cloud API 2.0.0 Tizen SDK by
+    <li class="footer">Generated on Tue Jan 10 2017 19:46:35 for ARTIK Cloud API 2.0.0 Tizen SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

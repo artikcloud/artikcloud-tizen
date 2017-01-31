@@ -20,14 +20,15 @@ var searchData=
   ['actions',['Actions',['../class_tizen_1_1_artik_cloud_1_1_actions.html#ace0fce73fe3cfb2ea7112cfdbf12b131',1,'Tizen::ArtikCloud::Actions']]],
   ['adddeviceasync',['addDeviceAsync',['../class_tizen_1_1_artik_cloud_1_1_devices_manager.html#a03641bf884d112d3808c84af2d0ef0a4',1,'Tizen::ArtikCloud::DevicesManager']]],
   ['adddevicesync',['addDeviceSync',['../class_tizen_1_1_artik_cloud_1_1_devices_manager.html#a6d6e65cdf5b2a9f8ca870c2d7d7a962a',1,'Tizen::ArtikCloud::DevicesManager']]],
-  ['aggregatedata',['AggregateData',['../class_tizen_1_1_artik_cloud_1_1_aggregate_data.html#a0f4884d49ab6252f7f7aa5c5d7acda91',1,'Tizen::ArtikCloud::AggregateData']]],
   ['aggregatedata',['AggregateData',['../class_tizen_1_1_artik_cloud_1_1_aggregate_data.html',1,'Tizen::ArtikCloud']]],
+  ['aggregatedata',['AggregateData',['../class_tizen_1_1_artik_cloud_1_1_aggregate_data.html#a0f4884d49ab6252f7f7aa5c5d7acda91',1,'Tizen::ArtikCloud::AggregateData']]],
   ['aggregateshistogramdata',['AggregatesHistogramData',['../class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html#a74bfe15963b8452af923b2dec317a68f',1,'Tizen::ArtikCloud::AggregatesHistogramData']]],
   ['aggregateshistogramdata',['AggregatesHistogramData',['../class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_data.html',1,'Tizen::ArtikCloud']]],
-  ['aggregateshistogramresponse',['AggregatesHistogramResponse',['../class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_response.html',1,'Tizen::ArtikCloud']]],
   ['aggregateshistogramresponse',['AggregatesHistogramResponse',['../class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_response.html#a6d7f5c2906abe29d252a7fa7961b38d0',1,'Tizen::ArtikCloud::AggregatesHistogramResponse']]],
+  ['aggregateshistogramresponse',['AggregatesHistogramResponse',['../class_tizen_1_1_artik_cloud_1_1_aggregates_histogram_response.html',1,'Tizen::ArtikCloud']]],
   ['aggregatesresponse',['AggregatesResponse',['../class_tizen_1_1_artik_cloud_1_1_aggregates_response.html',1,'Tizen::ArtikCloud']]],
   ['aggregatesresponse',['AggregatesResponse',['../class_tizen_1_1_artik_cloud_1_1_aggregates_response.html#a07948ada0ec1d2b9ce43c17152672e10',1,'Tizen::ArtikCloud::AggregatesResponse']]],
+  ['appproperties',['AppProperties',['../class_tizen_1_1_artik_cloud_1_1_app_properties.html',1,'Tizen::ArtikCloud']]],
   ['appproperties',['AppProperties',['../class_tizen_1_1_artik_cloud_1_1_app_properties.html#a333fcd95c6b0ee9dcd950801c0fcfb47',1,'Tizen::ArtikCloud::AppProperties']]],
-  ['appproperties',['AppProperties',['../class_tizen_1_1_artik_cloud_1_1_app_properties.html',1,'Tizen::ArtikCloud']]]
+  ['api_20endpoints',['API Endpoints',['../group___operations.html',1,'']]]
 ];
