@@ -13,28 +13,28 @@ This SDK Extension helps you connect your Tizen 2.4 mobile native applications t
 1.	Use the Tizen IDE `Package-Manager` (Update Manager) to install the `Native app. Development (IDE)` package for Tizen 2.4
 2.  Add the Tizen ARTIK Cloud Addon using the `Package Manager`.  Click on `Configuration/Settings (Gear Icon) -> Extension SDK -> Add -> Set Repository Path`.  Set the respository path to the `pkg_list_<YOUR_OS>` file (located in /artikcloud-tizen/2.4-tizen-artik-cloud-SDKs) folder corresponding to your OS.   In the `name` field, give it a name like "artik-cloud-addon.
 
-![Screenshot](./res/img_add_repository.png)
+	![Screenshot](./res/img_add_repository.png)
 
-4.	In the main window of `Package Manager`, click on the `Extension SDK` tab (Extras), and install `2.4 artik-cloud add-on sdk`.
+3.	In the main window of `Package Manager`, click on the `Extension SDK` tab (Extras), and install `2.4 artik-cloud add-on sdk`.
 
-![Screenshot](./res/img_install_artikcloud_addon.png)
+	![Screenshot](./res/img_install_artikcloud_addon.png)
 
 ##Usage
 
 1.	Create a new Native App project for Tizen
 2.	Add the SDK to your app by right-clicking on the project in `project Explorer -> Properties -> C/C++ Build -> click on Tizen Settings -> Framework tab -> Check the box "artik-cloud"`
 
-![Screenshot](./res/img_ide_add_framework.png)
+	![Screenshot](./res/img_ide_add_framework.png)
 
 3.	Then link to the SDK library by right-clicking on the project in `project Explorer -> Properties -> C/C++ Build -> Settings -> Tool Settings tab -> Under C++ Linker click Libraries -> Click the "+" button to add another library -> In the popup type "artik-cloud" -> click ok`
 
-![Screenshot](./res/img_ide_link_library.png)
+	![Screenshot](./res/img_ide_link_library.png)
 
 4.	Now you can simply call the Artik api endpoints by importing API Manager classes such as `DevicesManager.h`, `UsersManager.h`, `MessagesManager.h`.
 
 Check in the [sample](./sample) folder for an example of how to use the API. See the file `/html/index.html` inside the [documentation](./documentation) folder for the full API reference.
 
-##Getting Started
+##Getting Started 
 
 All the SDK classes are under the namespace `Tizen::ArtikCloud`.
 All the API endpoints are accessed via *Manager classes* such as `DevicesManager.h`, `UsersManager.h`, `MessagesManager.h`.
