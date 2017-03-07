@@ -4,9 +4,8 @@ This SDK Extension helps you connect your Tizen 2.4 mobile native applications t
 
 ##Prerequisites
 
-* Download latest [Tizen IDE/Tizen Studio](https://developer.tizen.org/development/tizen-studio/download).  During installation, include the `Native app. Development (IDE)` package for 2.4 installed, or using the Tizen Package-Manager application
-* Download latest [ARTIK Cloud Tizen SDK 2.4](https://github.com/artikcloud/artikcloud-tizen)
-* Tizen Emulator / Tizen Device
+* [Tizen IDE/Tizen Studio](https://developer.tizen.org/development/tizen-studio/download) with the `Native app. Development (IDE)` package for 2.4 installed
+* [ARTIK Cloud Tizen SDK 2.4](https://github.com/artikcloud/artikcloud-tizen)
 
 ##Installation
 
