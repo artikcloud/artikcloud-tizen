@@ -4,20 +4,32 @@ This SDK Extension helps you connect your Tizen 2.4 mobile native applications t
 
 ##Prerequisites
 
-Using this SDK requires [Tizen IDE/Tizen Studio](https://developer.tizen.org/development/tizen-studio/download) to be installed.
+* Download latest [Tizen IDE/Tizen Studio](https://developer.tizen.org/development/tizen-studio/download).  During installation, include the `Native app. Development (IDE)` package for 2.4 installed, or using the Tizen Package-Manager application
+* Download latest [ARTIK Cloud Tizen SDK 2.4](https://github.com/artikcloud/artikcloud-tizen)
+* Tizen Emulator / Tizen Device
 
 ##Installation
 
-1.	Use the Tizen IDE `Package Manager` (Update Manager) to install the `Native app. Development (IDE)` package for 2.4
-2.	From the current repository download the folder `artikcloud-tizen/2.4-tizen-artik-cloud-SDKs/`
-3.	Go to `Package Manager -> Configuration -> Extra Repository -> Add -> Set Repository Path`. Select the `pkg_list_***` file from inside the above folder and click ok. In the `name` field, give it any name and click ok.
+1.	Use the Tizen IDE `Package-Manager` (Update Manager) to install the `Native app. Development (IDE)` package for Tizen 2.4
+2.  Add the Tizen ARTIK Cloud Addon using the `Package Manager`.  Click on `Configuration/Settings (Gear Icon) -> Extension SDK -> Add -> Set Repository Path`.  Set the respository path to the `pkg_list_<YOUR_OS>` file (located in /artikcloud-tizen/2.4-tizen-artik-cloud-SDKs) folder corresponding to your OS.   In the `name` field, give it a name like "artik-cloud-addon.
+
+![Screenshot](./res/img_add_repository.png width="450")
+
 4.	In the main window of `Package Manager`, click on the `Extension SDK` tab (Extras), and install `2.4 artik-cloud add-on sdk`.
+
+![Screenshot](./res/img_install_artikcloud_addon.png width="450")
 
 ##Usage
 
 1.	Create a new Native App project for Tizen
 2.	Add the SDK to your app by right-clicking on the project in `project Explorer -> Properties -> C/C++ Build -> click on Tizen Settings -> Framework tab -> Check the box "artik-cloud"`
-3.	Then link to the SDK library by right-clicking on the project in `project Explorer -> Properties -> C/C++ Build -> Settings -> Tool Settings tab -> Under C++ Linker click Libraries -> Click the "+" button to add another library -> In the popup type "artik-cloud" -> click ok -> click ok`
+
+![Screenshot](./res/img_ide_add_framework.png width="450")
+
+3.	Then link to the SDK library by right-clicking on the project in `project Explorer -> Properties -> C/C++ Build -> Settings -> Tool Settings tab -> Under C++ Linker click Libraries -> Click the "+" button to add another library -> In the popup type "artik-cloud" -> click ok`
+
+![Screenshot](./res/img_ide_link_library.png width="450")
+
 4.	Now you can simply call the Artik api endpoints by importing API Manager classes such as `DevicesManager.h`, `UsersManager.h`, `MessagesManager.h`.
 
 Check in the [sample](./sample) folder for an example of how to use the API. See the file `/html/index.html` inside the [documentation](./documentation) folder for the full API reference.

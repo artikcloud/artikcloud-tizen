@@ -12,8 +12,8 @@ This sample code sends and gets a message to and from ARTIK Cloud. It uses the [
  2. On the device dashboard, click to connect a new device. Select the Demo Fire Sensor (from cloud.artik.sample.demofiresensor) and name your sensor SampleFireSensor (or any name you'd like).
  3. Click the Settings icon of the device you just added. Get the **device ID** and **device token**. If the token does not already exist, click "GENERATE DEVICE TOKEN…" to get one.
  4. Install the ARTIK Cloud Tizen SDK. See the [instructions](https://github.com/artikcloud/artikcloud-tizen) here.
- 4. Import the sample project to Tizen Studio by going to `File -> Import -> Existing Projects into Workspace -> Click Browse next to Select root directory -> Select` the sample folder from the current repository.
- 5. In Tizen studio, edit the `src/callRule.cpp` file, replacing "deviceId" and "deviceToken" with the ones you obtained in step 3.
+ 5. Import the sample project to Tizen Studio by going to `File -> Import -> Existing Projects into Workspace -> Click Browse next to Select root directory -> Select` the sample folder from the current repository.
+ 6. In Tizen studio, edit the `src/callRule.cpp` file, replacing "deviceId" and "deviceToken" with the ones you obtained in step 3.
 
 ## Run the code
 
